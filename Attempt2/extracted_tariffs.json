@@ -1,0 +1,31 @@
+[
+  {
+    "Contractnaam": "Energiek Variabel",
+    "Contractduur": "Variabel (onbepaald)",
+    "Geschatte leveringskosten obv verbruik": "135",
+    "Vastrecht gas per jaar": "71,8740",
+    "Variabel gas per m3": "1,1170",
+    "Vastrecht elektriciteit per jaar": "71,8740",
+    "Variabel elektriciteit enkel / piek per kWh": "0,2717",
+    "Variabel elektriciteit dal per kWh": "0,2523"
+  },
+  {
+    "Contractnaam": "Frank Energie Variabel November 2025",
+    "Contractduur": "Variabel (onbepaald)",
+    "Geschatte leveringskosten obv verbruik": "136",
+    "Vastrecht gas per jaar": "83,9982",
+    "Variabel gas per m3": "1,1069",
+    "Vastrecht elektriciteit per jaar": "84,0000",
+    "Variabel elektriciteit enkel / piek per kWh": "0,2584"
+  },
+  {
+    "Contractnaam": "Variabel energiezuinig maandtarief",
+    "Contractduur": "Variabel (onbepaald)",
+    "Geschatte leveringskosten obv verbruik": "145",
+    "Vastrecht gas per jaar": "89,9998",
+    "Variabel gas per m3": "1,1844",
+    "Vastrecht elektriciteit per jaar": "96,0014",
+    "Variabel elektriciteit enkel / piek per kWh": "0,2604",
+    "Variabel elektriciteit dal per kWh": "0,2592"
+  }
+]

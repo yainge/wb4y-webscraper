@@ -2,6 +2,7 @@ import re
 import json
 import asyncio
 import uuid
+from pathlib import Path
 from bs4 import BeautifulSoup
 
 VIEW_URL = "https://public.tableau.com/views/MonitorConsumentenmarktEnergie/Variabeleenvastecontracten?:showVizHome=no"
@@ -521,13 +522,19 @@ async def scrape_with_playwright_async() -> list:
 
 
 async def main():
-    """Run the tariff scraper."""
+    """Run the tariff scraper and save results to JSON."""
     print("Launching Playwright tariff scraper...\n")
     results = await scrape_with_playwright_async()
     
     print(f"{'='*60}")
     print(f"Total extracted: {len(results)} tariffs")
     print(f"{'='*60}\n")
+    
+    # Save results to JSON file in Attempt2 folder
+    output_path = Path(__file__).parent / "extracted_tariffs.json"
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
+    print(f"✓ Results saved to: {output_path}\n")
     
     return results
 
