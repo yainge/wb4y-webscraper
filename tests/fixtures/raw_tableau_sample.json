@@ -1,0 +1,69 @@
+{
+  "Variabele contracten": [
+    {
+      "Leverancier": "Eneco",
+      "Contractnaam": "Eneco Flexibel",
+      "Contracttype": "variabel",
+      "Energiesoort": "elektriciteit",
+      "Tarief": "0.28",
+      "Vaste kosten": "7.95",
+      "Peildatum": "2025-01"
+    },
+    {
+      "Leverancier": "Eneco",
+      "Contractnaam": "Eneco Flexibel",
+      "Contracttype": "variabel",
+      "Energiesoort": "gas",
+      "Tarief": "1.12",
+      "Vaste kosten": "5.50",
+      "Peildatum": "2025-01"
+    },
+    {
+      "Leverancier": "Vattenfall",
+      "Contractnaam": "Vattenfall Variabel",
+      "Contracttype": "variabel",
+      "Energiesoort": "elektriciteit",
+      "Tarief": "0.31",
+      "Vaste kosten": "8.25",
+      "Peildatum": "2025-01"
+    },
+    {
+      "Leverancier": "Essent",
+      "Contractnaam": "Essent Variabel",
+      "Contracttype": "variabel",
+      "Energiesoort": "stroom",
+      "Tarief": "0.29",
+      "Vaste kosten": "7.50",
+      "Peildatum": "2025-02"
+    }
+  ],
+  "Vaste contracten": [
+    {
+      "Leverancier": "Eneco",
+      "Contractnaam": "Eneco Vast 1 jaar",
+      "Contracttype": "vast",
+      "Energiesoort": "elektriciteit",
+      "Tarief": "0.35",
+      "Vaste kosten": "8.50",
+      "Peildatum": "2025-01"
+    },
+    {
+      "Leverancier": "Eneco",
+      "Contractnaam": "Eneco Vast 1 jaar",
+      "Contracttype": "vast",
+      "Energiesoort": "aardgas",
+      "Tarief": "1.25",
+      "Vaste kosten": "6.00",
+      "Peildatum": "2025-01"
+    },
+    {
+      "Leverancier": "Greenchoice",
+      "Contractnaam": "Greenchoice Vast",
+      "Contracttype": "vast",
+      "Energiesoort": "elektriciteit",
+      "Tarief": "0.33",
+      "Vaste kosten": "7.75",
+      "Peildatum": "2025-01"
+    }
+  ]
+}

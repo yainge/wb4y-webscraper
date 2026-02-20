@@ -1,0 +1,56 @@
+name: Scrape ACM Energy Prices
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (skip DB publish)"
+        required: false
+        default: "false"
+        type: boolean
+  # Optional monthly cron — uncomment when ready:
+  # schedule:
+  #   - cron: "30 8 2 * *"  # 2nd of each month at 08:30 UTC
+
+env:
+  PYTHON_VERSION: "3.12"
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Set up Python
+        run: uv python install ${{ env.PYTHON_VERSION }}
+
+      - name: Install dependencies
+        run: uv pip install -e ".[dev]" --system
+
+      - name: Run tests
+        run: python -m pytest tests/ -v --tb=short
+
+      - name: Run scraper
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            wb4u-scraper run --dry-run
+          else
+            wb4u-scraper run
+          fi
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scrape-output-${{ github.run_id }}
+          path: |
+            data/normalized/
+            data/raw/
+          retention-days: 30

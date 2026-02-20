@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+
+# Data (local outputs, not committed)
+data/raw/tableau/*/
+data/normalized/*.parquet
+data/normalized/*.jsonl
+!data/raw/tableau/.gitkeep
+!data/normalized/.gitkeep
+
+# Exports
+exports/excel/*.xlsx
+!exports/excel/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+htmlcov/

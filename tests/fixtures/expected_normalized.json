@@ -1,0 +1,68 @@
+[
+  {
+    "provider_name": "Eneco",
+    "contract_name": "Eneco Flexibel",
+    "contract_type": "variable",
+    "commodity": "electricity",
+    "meter_direction": "consumption",
+    "tou": "flat",
+    "unit": "eur_per_kwh",
+    "value": 0.28,
+    "valid_from": "2025-01"
+  },
+  {
+    "provider_name": "Eneco",
+    "contract_name": "Eneco Flexibel",
+    "contract_type": "variable",
+    "commodity": "electricity",
+    "meter_direction": "consumption",
+    "tou": "flat",
+    "unit": "eur_per_month",
+    "value": 7.95,
+    "valid_from": "2025-01"
+  },
+  {
+    "provider_name": "Eneco",
+    "contract_name": "Eneco Flexibel",
+    "contract_type": "variable",
+    "commodity": "gas",
+    "meter_direction": "consumption",
+    "tou": "flat",
+    "unit": "eur_per_m3",
+    "value": 1.12,
+    "valid_from": "2025-01"
+  },
+  {
+    "provider_name": "Eneco",
+    "contract_name": "Eneco Flexibel",
+    "contract_type": "variable",
+    "commodity": "gas",
+    "meter_direction": "consumption",
+    "tou": "flat",
+    "unit": "eur_per_month",
+    "value": 5.50,
+    "valid_from": "2025-01"
+  },
+  {
+    "provider_name": "Vattenfall",
+    "contract_name": "Vattenfall Variabel",
+    "contract_type": "variable",
+    "commodity": "electricity",
+    "meter_direction": "consumption",
+    "tou": "flat",
+    "unit": "eur_per_kwh",
+    "value": 0.31,
+    "valid_from": "2025-01"
+  },
+  {
+    "provider_name": "Vattenfall",
+    "contract_name": "Vattenfall Variabel",
+    "contract_type": "variable",
+    "commodity": "electricity",
+    "meter_direction": "consumption",
+    "tou": "flat",
+    "unit": "eur_per_month",
+    "value": 8.25,
+    "valid_from": "2025-01"
+  }
+]

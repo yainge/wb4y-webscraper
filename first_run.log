@@ -1,0 +1,95 @@
+/home/yuki/src/wb4u_webscrapper/.venv/lib/python3.12/site-packages/pandera/_pandas_deprecated.py:146: FutureWarning: Importing pandas-specific classes and functions from the
+top-level pandera module will be **removed in a future version of pandera**.
+If you're using pandera to validate pandas objects, we highly recommend updating
+your import:
+
+```
+# old import
+import pandera as pa
+
+# new import
+import pandera.pandas as pa
+```
+
+If you're using pandera to validate objects from other compatible libraries
+like pyspark or polars, see the supported libraries section of the documentation
+for more information on how to import pandera:
+
+https://pandera.readthedocs.io/en/stable/supported_libraries.html
+
+To disable this warning, set the environment variable:
+
+```
+export DISABLE_PANDERA_IMPORT_WARNING=True
+```
+
+  warnings.warn(_future_warning, FutureWarning)
+[2m2026-02-20T08:17:40.393759Z[0m [[32m[1minfo     [0m] [1mpipeline_start                [0m [36mdry_run[0m=[35mTrue[0m [36mrun_id[0m=[35m20260220T081740_13c7a6a7[0m
+[2m2026-02-20T08:17:40.525619Z[0m [[32m[1minfo     [0m] [1mtableau_connect               [0m [36murl[0m=[35mhttps://public.tableau.com/views/MonitorConsumentenmarktEnergie/Variabeleenvastecontracten[0m
+[2m2026-02-20T08:17:40.760253Z[0m [[33m[1mwarning  [0m] [1mtableau_retry                 [0m [36mattempt[0m=[35m1[0m [36mwait[0m=[35m2.0[0m
+[2m2026-02-20T08:17:43.068785Z[0m [[33m[1mwarning  [0m] [1mtableau_retry                 [0m [36mattempt[0m=[35m2[0m [36mwait[0m=[35m4.0[0m
+/home/yuki/src/wb4u_webscrapper/.venv/lib/python3.12/site-packages/structlog/_base.py:173: UserWarning: Remove `format_exc_info` from your processor chain if you want pretty exceptions.
+  event_dict = proc(self._logger, method_name, event_dict)
+[2m2026-02-20T08:17:47.372782Z[0m [[31m[1merror    [0m] [1mpipeline_failed               [0m [36merror[0m=[35m'Tableau connection failed: Failed to connect to Tableau after 3 attempts'[0m
+Traceback (most recent call last):
+  File "/home/yuki/src/wb4u_webscrapper/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuki/src/wb4u_webscrapper/src/wb4u_scraper/scraper/tableau_client.py", line 137, in _do_connect
+    self._ts.loads(url)
+  File "/home/yuki/src/wb4u_webscrapper/.venv/lib/python3.12/site-packages/tableauscraper/TableauScraper.py", line 79, in loads
+    self.tableauData = json.loads(
+                       ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yuki/src/wb4u_webscrapper/src/wb4u_scraper/scraper/tableau_client.py", line 50, in connect
+    wb = self._connect_with_retry(url)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuki/src/wb4u_webscrapper/src/wb4u_scraper/scraper/tableau_client.py", line 140, in _connect_with_retry
+    return _do_connect()
+           ^^^^^^^^^^^^^
+  File "/home/yuki/src/wb4u_webscrapper/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 331, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuki/src/wb4u_webscrapper/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuki/src/wb4u_webscrapper/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 371, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/yuki/src/wb4u_webscrapper/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 414, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x77ff575ff920 state=finished raised JSONDecodeError>]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yuki/src/wb4u_webscrapper/src/wb4u_scraper/scraper/extraction.py", line 57, in _run_tableau_extraction
+    client.connect()
+  File "/home/yuki/src/wb4u_webscrapper/src/wb4u_scraper/scraper/tableau_client.py", line 52, in connect
+    raise TableauClientError(
+wb4u_scraper.scraper.tableau_client.TableauClientError: Failed to connect to Tableau after 3 attempts
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yuki/src/wb4u_webscrapper/src/wb4u_scraper/cli.py", line 46, in run
+    extraction = run_extraction(settings, use_fallback=fallback)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuki/src/wb4u_webscrapper/src/wb4u_scraper/scraper/extraction.py", line 49, in run_extraction
+    return _run_tableau_extraction(settings, result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuki/src/wb4u_webscrapper/src/wb4u_scraper/scraper/extraction.py", line 59, in _run_tableau_extraction
+    raise ExtractionError(f"Tableau connection failed: {exc}") from exc
+wb4u_scraper.scraper.extraction.ExtractionError: Tableau connection failed: Failed to connect to Tableau after 3 attempts
