@@ -1,0 +1,90 @@
+curl ^"https://public.tableau.com/vizql/w/MonitorConsumentenmarktEnergie/v/Variabeleenvastecontracten/sessions/0DF8027BB00A45FDA9245D8A5EFF07DE-0:0/commands/tabsrv/render-tooltip-server^" ^
+  -H ^"accept: text/javascript^" ^
+  -H ^"accept-language: en-US,en;q=0.9,en-GB;q=0.8,nl;q=0.7^" ^
+  -H ^"content-type: multipart/form-data; boundary=CtJ6DEKz^" ^
+  -b ^"tableau_public_negotiated_locale=en-us; org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE=en; tableau_locale=en; OptanonAlertBoxClosed=2026-02-20T09:30:05.585Z; _gid=GA1.2.1747343291.1771579883; XSRF-TOKEN=wuJB29efUUbS8qJnAnq1ayxQqNQhY6hl; _cs_c=1; ak_bmsc=F8690DC8F17B0D0B32E24C84C3D55F36~000000000000000000000000000000~YAAQnUd7XGzQdGecAQAATqp1eh4hnDQpk3eNhwTOfS68doasUphyxqyF3OsDk1NkJTX0/4eX/BtDvt6gKDEPXe8fICCH27hYdAkSAhYIIX+nmGPvfaxO8tlGjs7X1h5vsEsTGqoZ6kYn0fAdLtAy53ziLBtsrT5vN2WkVfihhWS1f/q00hjQ7Lh4QIEBTmTUBfivZuSiffJVYKxZ5FXSEFaVbjRFiwrzZ/FPd71wAQrIv4cndN256y4sTfWidVPWciexUub8Z+ZZ/SMr8woJc1wF9/C9vDosrz797njJ7m7lLSQpJfvo/zXEhbCHUCGQgl9V+cvutmZT3WyYDuQRK9SF9tVuxJnxzU6GDsQr1jsi4w4+vJLXzZ4gN+L+PsCxrAiFoPEvLIFleUDs; optimizelyEndUserId=oeu1771581069263r0.510818002966662; _rdt_uuid=1771581068859.1c391626-0e8d-43e2-be8d-a4f9fc75b492; _cs_id=e9d9cc81-fe71-a6d7-d9d1-920fdf5cf9c9.1771580087.1.1771581179.1771580087.1.1805744087093.1.x; optimizelySession=1771581179898; _gcl_au=1.1.410573106.1771579883.1287007096.1771581075.1771581186; OptanonConsent=isGpcEnabled=0^&datestamp=Fri+Feb+20+2026+10^%^3A53^%^3A11+GMT^%^2B0100+(Central+European+Standard+Time)^&version=6.17.0^&isIABGlobal=false^&hosts=^&consentId=d8b68257-789e-4708-8e57-056ec3fff164^&interactionCount=1^&landingPath=NotLandingPage^&groups=1^%^3A1^%^2C2^%^3A1^%^2C3^%^3A1^%^2C4^%^3A1^&geolocation=NL^%^3BNH^&AwaitingReconsent=false^&browserGpcFlag=0; _ga=GA1.2.1345609915.1771579883; _ga_8YLN0SNXVS=GS2.1.s1771579881^$o1^$g1^$t1771581204^$j60^$l0^$h0; _ga=GA1.3.1345609915.1771579883; _gid=GA1.3.1747343291.1771579883; bm_sv=29A708B3AAB5C6C982E0FD652E14AF94~YAAQnUd7XAMxdWecAQAA3sB3eh7DlRdzihvPX6x3OqWGs2sdWcdOv4qEBEre0n9Qtvf5NLYyvpj0J9FD2i0zs+FR8Z/i0B7CzEVdW0evaq/+qoTU8fyQ0fUGmVpd2dmfGn6NQPJWXFiiCrPKguE0ADHxlLXdTp3m0n4Mqn2VSB2BLTuHsoQxnS5F293f9nV5J3W2Y358RiTVF+iEgfb9WdwpdfpNCWHFKO90EjnoL+2fkKz3pJ88dITvplQ/A2DN9q4=~1; _cs_s=6.0.U.9.1771583063708^" ^
+  -H ^"global-session-header: MTAuNzYuOTAuMTA2OjgwODA=^" ^
+  -H ^"origin: https://public.tableau.com^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://public.tableau.com/views/MonitorConsumentenmarktEnergie/Variabeleenvastecontracten?:showVizHome=no^" ^
+  -H ^"sec-ch-ua: ^\^"Not:A-Brand^\^";v=^\^"99^\^", ^\^"Microsoft Edge^\^";v=^\^"145^\^", ^\^"Chromium^\^";v=^\^"145^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?1^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Android^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: same-origin^" ^
+  -H ^"user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36 Edg/145.0.0.0^" ^
+  -H ^"x-b3-sampled: 1^" ^
+  -H ^"x-b3-spanid: dd3a911eda94362a47eaf091e84cf300^" ^
+  -H ^"x-b3-traceid: 54bb5cfac6405755b26fab497b29593a^" ^
+  -H ^"x-requested-with: XMLHttpRequest^" ^
+  -H ^"x-tableau-version: 2025.3^" ^
+  -H ^"x-tsi-active-tab: Variabele^%^20en^%^20vaste^%^20contracten^" ^
+  -H ^"x-xsrf-token: wuJB29efUUbS8qJnAnq1ayxQqNQhY6hl^" ^
+  --data-raw ^"--CtJ6DEKz^
+
+Content-Disposition: form-data; name=^\^"worksheet^\^"^
+
+^
+
+Retail Tarieven staafdiagram alle contracten^
+
+--CtJ6DEKz^
+
+Content-Disposition: form-data; name=^\^"dashboard^\^"^
+
+^
+
+Variabele en vaste contracten^
+
+--CtJ6DEKz^
+
+Content-Disposition: form-data; name=^\^"vizRegionRect^\^"^
+
+^
+
+^{^\^"r^\^":^\^"viz^\^",^\^"x^\^":65,^\^"y^\^":30,^\^"w^\^":0,^\^"h^\^":0,^\^"fieldVector^\^":null^}^
+
+--CtJ6DEKz^
+
+Content-Disposition: form-data; name=^\^"allowHoverActions^\^"^
+
+^
+
+true^
+
+--CtJ6DEKz^
+
+Content-Disposition: form-data; name=^\^"allowPromptText^\^"^
+
+^
+
+true^
+
+--CtJ6DEKz^
+
+Content-Disposition: form-data; name=^\^"allowWork^\^"^
+
+^
+
+true^
+
+--CtJ6DEKz^
+
+Content-Disposition: form-data; name=^\^"useInlineImages^\^"^
+
+^
+
+true^
+
+--CtJ6DEKz^
+
+Content-Disposition: form-data; name=^\^"telemetryCommandId^\^"^
+
+^
+
+1jht8imk8^$gmce-o6-ap-ee-6em6so^
+
+--CtJ6DEKz--^
+
+^"
