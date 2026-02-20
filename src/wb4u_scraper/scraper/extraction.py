@@ -50,13 +50,18 @@ def run_extraction(settings: ScraperSettings, *, use_fallback: bool = False) -> 
 
 
 def _run_tableau_extraction(settings: ScraperSettings, result: ExtractionResult) -> ExtractionResult:
-    """Primary extraction path using TableauScraper."""
+    """Primary extraction path using TableauScraper, with automatic Playwright fallback."""
     # 1. Connect
     client = TableauClient(settings)
     try:
         client.connect()
     except TableauClientError as exc:
-        raise ExtractionError(f"Tableau connection failed: {exc}") from exc
+        logger.warning(
+            "tableau_primary_failed_auto_fallback",
+            error=str(exc),
+            msg="TableauScraper cannot reach the dashboard — trying Playwright fallback",
+        )
+        return _run_fallback_extraction(settings, result)
 
     navigator = DashboardNavigator(client)
 
