@@ -500,7 +500,7 @@ async def scrape_provider_contracts(page, base_url: str, provider_name: str, pro
     return contracts
 
 
-async def scrape_with_playwright_async(month_filter: int = None) -> dict:
+async def scrape_with_playwright_async(month_filter: int = None, month_range: tuple = None) -> dict:
     """
     Load Tableau dashboard, capture bootstrap and command headers from first VizQL request, extract tariffs.
     """
@@ -703,7 +703,13 @@ async def scrape_with_playwright_async(month_filter: int = None) -> dict:
         month_results = {}  # Dict to store results per month
         
         # Filter months if specified
-        months_to_process = MONTHS if month_filter is None else {k: v for k, v in MONTHS.items() if v == month_filter}
+        if month_filter is not None:
+            months_to_process = {k: v for k, v in MONTHS.items() if v == month_filter}
+        elif month_range is not None:
+            min_idx, max_idx = month_range
+            months_to_process = {k: v for k, v in MONTHS.items() if min_idx <= v <= max_idx}
+        else:
+            months_to_process = MONTHS
         
         print(f"Processing {len(months_to_process)} month(s) with {len(PROVIDERS)} providers each")
         start_time = time.time()
@@ -776,22 +782,52 @@ async def main():
     parser = argparse.ArgumentParser(description="Extract energy tariffs from Tableau dashboard")
     parser.add_argument("--month-0-only", action="store_true", help="Only extract data for month 0 (januari 2026)")
     parser.add_argument("--month", type=int, help="Only extract data for a specific month index")
+    parser.add_argument("--from-month", type=str, help="Start month (e.g., 'maart 2025')")
+    parser.add_argument("--to-month", type=str, help="End month (e.g., 'februari 2026')")
     args = parser.parse_args()
     
     print("Launching Playwright tariff scraper...\n")
     
     # Determine which month(s) to process
     month_filter = None
+    month_range = None
+    
     if args.month_0_only:
         month_filter = 0
         print("Mode: Processing month 0 (januari 2026) only for testing\n")
     elif args.month is not None:
         month_filter = args.month
         print(f"Mode: Processing month {args.month} only\n")
+    elif args.from_month and args.to_month:
+        # Find month indices
+        from_idx = None
+        to_idx = None
+        
+        for month_name, month_idx in MONTHS.items():
+            if month_name.lower() == args.from_month.lower():
+                from_idx = month_idx
+            if month_name.lower() == args.to_month.lower():
+                to_idx = month_idx
+        
+        if from_idx is None:
+            print(f"Error: Start month '{args.from_month}' not found in months.json")
+            available = ", ".join(sorted(MONTHS.keys()))
+            print(f"Available months: {available}")
+            return None
+        
+        if to_idx is None:
+            print(f"Error: End month '{args.to_month}' not found in months.json")
+            available = ", ".join(sorted(MONTHS.keys()))
+            print(f"Available months: {available}")
+            return None
+        
+        # Create range filter: include all months with indices between from_idx and to_idx (inclusive)
+        month_range = (min(from_idx, to_idx), max(from_idx, to_idx))
+        print(f"Mode: Processing months from '{args.from_month}' (index {from_idx}) to '{args.to_month}' (index {to_idx})\n")
     else:
         print(f"Mode: Processing all {len(MONTHS)} months\n")
     
-    month_results = await scrape_with_playwright_async(month_filter=month_filter)
+    month_results = await scrape_with_playwright_async(month_filter=month_filter, month_range=month_range)
     
     # Results are already saved per month in appropriate year folders
     print(f"\n[OK] Extraction completed\n")
