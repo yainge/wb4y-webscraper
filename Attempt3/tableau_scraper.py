@@ -3,6 +3,8 @@ import json
 import asyncio
 import uuid
 import sys
+import argparse
+import time
 from pathlib import Path
 from bs4 import BeautifulSoup
 
@@ -383,109 +385,122 @@ async def scrape_provider_contracts(page, base_url: str, provider_name: str, pro
     
     await asyncio.sleep(0.5)
     
-    print(f"Phase 1: Scanning Y positions to discover tuple IDs...\n")
+    print(f"Phase 1: Scanning Y positions to discover tuple IDs...")
     discovered_tuple_ids = set()
     tuple_id_coords = {}
     
     select_url = f"{base_url}/tabsrv/select-region-no-return-server"
     tooltip_url = f"{base_url}/tabsrv/render-tooltip-server"
     
-    X_CLICK = 100
-    Y_POSITIONS = [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300]
+    X_CLICK = 140
+    Y_POSITIONS = list(range(0, 4001, 30))  # Scan every 30 pixels from 0 to 4000
     
-    for y_pos in Y_POSITIONS:
-        select_payload = {
-            "worksheet": "Retail Tarieven staafdiagram alle contracten",
-            "dashboard": "Variabele en vaste contracten",
-            "vizRegionRect": {
-                "x": X_CLICK,
-                "y": y_pos,
-                "w": 0,
-                "h": 0,
-                "r": "viz"
-            },
-            "mouseAction": "simple",
-            "telemetryCommandId": "wb4y"
-        }
-        status, _ = await post_multipart(page, select_url, select_payload, required_headers)
-        
-        tooltip_payload = {
-            "worksheet": "Retail Tarieven staafdiagram alle contracten",
-            "dashboard": "Variabele en vaste contracten",
-            "vizRegionRect": {
-                "r": "viz",
-                "x": X_CLICK,
-                "y": y_pos,
-                "w": 0,
-                "h": 0,
-                "fieldVector": None
-            },
-            "allowHoverActions": "true",
-            "allowPromptText": "true",
-            "allowWork": "true",
-            "useInlineImages": "true",
-            "telemetryCommandId": "wb4y"
-        }
-        status, tooltip_text = await post_multipart(page, tooltip_url, tooltip_payload, required_headers)
-        
-        if status == 200 and tooltip_text:
-            try:
-                tip_payload = extract_tooltip_payload(tooltip_text)
-                
-                if "tupleId" in tip_payload:
-                    tid = int(tip_payload["tupleId"])
-                    is_empty = tip_payload.get("isEmpty", False)
-                    
-                    if tid > 0 and not is_empty:
-                        discovered_tuple_ids.add(str(tid))
-                        tuple_id_coords[str(tid)] = (X_CLICK, y_pos)
-                        print(f"  y={y_pos}: Discovered tuple_id={tid}")
-            except:
-                pass
-        
-        await asyncio.sleep(0.2)
-    
-    print(f"\n[OK] Discovered {len(discovered_tuple_ids)} unique tuple IDs\n")
-    
-    # Phase 2: Fetch each contract
-    print(f"Phase 2: Fetching full contract data...\n")
-    contracts = {}
-    
-    for tid in sorted(discovered_tuple_ids):
-        if tid in tuple_id_coords:
-            x_pos, y_pos = tuple_id_coords[tid]
+    async def scan_y_position(y_pos):
+        """Scan a single Y position and return tuple IDs if found."""
+        try:
+            select_payload = {
+                "worksheet": "Retail Tarieven staafdiagram alle contracten",
+                "dashboard": "Variabele en vaste contracten",
+                "vizRegionRect": {
+                    "x": X_CLICK,
+                    "y": y_pos,
+                    "w": 0,
+                    "h": 0,
+                    "r": "viz"
+                },
+                "mouseAction": "simple",
+                "telemetryCommandId": "wb4y"
+            }
+            await post_multipart(page, select_url, select_payload, required_headers)
             
+            tooltip_payload = {
+                "worksheet": "Retail Tarieven staafdiagram alle contracten",
+                "dashboard": "Variabele en vaste contracten",
+                "vizRegionRect": {
+                    "r": "viz",
+                    "x": X_CLICK,
+                    "y": y_pos,
+                    "w": 0,
+                    "h": 0,
+                    "fieldVector": None
+                },
+                "allowHoverActions": "true",
+                "allowPromptText": "true",
+                "allowWork": "true",
+                "useInlineImages": "true",
+                "telemetryCommandId": "wb4y"
+            }
+            status, tooltip_text = await post_multipart(page, tooltip_url, tooltip_payload, required_headers)
+            
+            if status == 200 and tooltip_text:
+                try:
+                    tip_payload = extract_tooltip_payload(tooltip_text)
+                    if "tupleId" in tip_payload:
+                        tid = int(tip_payload["tupleId"])
+                        is_empty = tip_payload.get("isEmpty", False)
+                        if tid > 0 and not is_empty:
+                            return tid, y_pos
+                except:
+                    pass
+        except:
+            pass
+        return None, None
+    
+    # Scan all Y positions in parallel
+    scan_tasks = [scan_y_position(y_pos) for y_pos in Y_POSITIONS]
+    results = await asyncio.gather(*scan_tasks)
+    
+    for tid, y_pos in results:
+        if tid is not None:
+            discovered_tuple_ids.add(str(tid))
+            tuple_id_coords[str(tid)] = (X_CLICK, y_pos)
+            print(f"  y={y_pos}: Discovered tuple_id={tid}")
+    
+    print(f"[OK] Discovered {len(discovered_tuple_ids)} unique tuple IDs")
+    
+    # Phase 2: Fetch each contract (only if we found any tuples)
+    contracts = {}
+    if discovered_tuple_ids:
+        print(f"Phase 2: Fetching full contract data...")
+        
+        async def fetch_contract(tid):
+            """Fetch a single contract's full data."""
+            if tid not in tuple_id_coords:
+                return None, None, None
+            
+            x_pos, y_pos = tuple_id_coords[tid]
             contract_data = await fetch_tooltip_at_coordinates(page, base_url, x_pos, y_pos, required_headers)
             
             if contract_data:
                 normalized_data = normalize_contract_data(contract_data)
-                
                 contract_name = normalized_data.get("Contractnaam", "")
                 duration = normalized_data.get("Contractduur", "")
-                
-                key = f"{provider_name} | {contract_name} | {duration}"
-                
                 normalized_data["_month_idx"] = month_name
                 normalized_data["_session_id"] = session_id
-                
+                return tid, contract_name, normalized_data
+            return tid, None, None
+        
+        # Fetch all contracts in parallel (with concurrency limit to avoid overload)
+        fetch_tasks = [fetch_contract(tid) for tid in sorted(discovered_tuple_ids)]
+        results = await asyncio.gather(*fetch_tasks)
+        
+        for tid, contract_name, normalized_data in results:
+            if normalized_data:
+                key = f"{provider_name} | {contract_name} | {normalized_data.get('Contractduur', '')}"
                 contracts[key] = normalized_data
                 print(f"  [OK] tuple_id={tid}: {contract_name}")
-            else:
+            elif tid:
                 print(f"  [FAIL] tuple_id={tid}: Failed to fetch")
-        
-        await asyncio.sleep(0.2)
     
-    print(f"[OK] {len(contracts)} contracts fetched for {provider_name}\n")
+    print(f"[OK] {len(contracts)} contracts fetched for {provider_name}")
     
     # Deselect this provider before moving to next
-    print(f"Deselecting provider...")
     await filter_by_provider(page, base_url, provider_index, "deselect", required_headers)
-    await asyncio.sleep(0.5)
     
     return contracts
 
 
-async def scrape_with_playwright_async() -> dict:
+async def scrape_with_playwright_async(month_filter: int = None) -> dict:
     """
     Load Tableau dashboard, capture bootstrap and command headers from first VizQL request, extract tariffs.
     """
@@ -687,7 +702,13 @@ async def scrape_with_playwright_async() -> dict:
         
         month_results = {}  # Dict to store results per month
         
-        for month_name, month_idx in MONTHS.items():
+        # Filter months if specified
+        months_to_process = MONTHS if month_filter is None else {k: v for k, v in MONTHS.items() if v == month_filter}
+        
+        print(f"Processing {len(months_to_process)} month(s) with {len(PROVIDERS)} providers each")
+        start_time = time.time()
+        
+        for month_name, month_idx in months_to_process.items():
             print(f"\n{'='*60}")
             print(f"Month: {month_name} (ID: {month_idx})")
             print(f"{'='*60}")
@@ -695,34 +716,32 @@ async def scrape_with_playwright_async() -> dict:
             year = get_year_from_month_name(month_name)
             
             # Set month parameter
-            print(f"Setting month parameter...")
             month_url = f"{base_url}/tabdoc/set-parameter-value-from-index"
             month_payload = {
                 "parameterName": "[Parameters].[Parameter 1]",
                 "idx": str(month_idx),
                 "telemetryCommandId": "wb4y"
             }
-            status, resp = await post_multipart(page, month_url, month_payload, required_headers)
-            print(f"  Status: {status}\n")
+            status, _ = await post_multipart(page, month_url, month_payload, required_headers)
             
-            await asyncio.sleep(0.5)
+            await asyncio.sleep(0.1)
             
             # Clear all providers first
-            print(f"Clearing all providers...")
             await filter_by_provider(page, base_url, 0, "clear_all", required_headers)
-            await asyncio.sleep(0.5)
+            await asyncio.sleep(0.1)
             
             # Loop over ALL providers
             all_contracts = {}
-            for i, (provider_name, provider_index) in enumerate(PROVIDERS.items()):
-                print(f"\n[{i+1}/{len(PROVIDERS)}] Processing {provider_name}...")
-                
+            provider_list = list(PROVIDERS.items())
+            for i, (provider_name, provider_index) in enumerate(provider_list):
+                progress = f"[{i+1}/{len(PROVIDERS)}]"
                 provider_contracts = await scrape_provider_contracts(
                     page, base_url, provider_name, provider_index, month_name, session_id, required_headers
                 )
                 all_contracts.update(provider_contracts)
                 
-                await asyncio.sleep(0.3)
+                # Minimal wait to avoid overwhelming the server
+                await asyncio.sleep(0.05)
             
             # Store results for this month
             month_results[month_name] = all_contracts
@@ -734,16 +753,19 @@ async def scrape_with_playwright_async() -> dict:
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(all_contracts, f, indent=2, ensure_ascii=False)
             
-            print(f"\n[OK] Saved {len(all_contracts)} contracts to: {output_path}")
-            print(f"     Extracted contracts: {len(all_contracts)}")
+            print(f"[OK] Saved {len(all_contracts)} contracts to: {output_path}")
         
+        elapsed = time.time() - start_time
         print(f"\n{'='*60}")
         print(f"Extraction Complete!")
         print(f"{'='*60}")
-        print(f"Total months processed: {len(MONTHS)}")
+        print(f"Total months processed: {len(months_to_process)}")
+        print(f"Time elapsed: {elapsed:.1f} seconds ({elapsed/60:.1f} minutes)")
+        
         for month_name, contracts in month_results.items():
             year = get_year_from_month_name(month_name)
-            print(f"  {month_name} ({year}/): {len(contracts)} contracts")
+            contracts_count = len(contracts)
+            print(f"  {month_name} ({year}/): {contracts_count} contracts")
         
         await browser.close()
         return month_results
@@ -751,12 +773,28 @@ async def scrape_with_playwright_async() -> dict:
 
 async def main():
     """Run the tariff scraper for all months and all providers."""
+    parser = argparse.ArgumentParser(description="Extract energy tariffs from Tableau dashboard")
+    parser.add_argument("--month-0-only", action="store_true", help="Only extract data for month 0 (januari 2026)")
+    parser.add_argument("--month", type=int, help="Only extract data for a specific month index")
+    args = parser.parse_args()
+    
     print("Launching Playwright tariff scraper...\n")
-    month_results = await scrape_with_playwright_async()
+    
+    # Determine which month(s) to process
+    month_filter = None
+    if args.month_0_only:
+        month_filter = 0
+        print("Mode: Processing month 0 (januari 2026) only for testing\n")
+    elif args.month is not None:
+        month_filter = args.month
+        print(f"Mode: Processing month {args.month} only\n")
+    else:
+        print(f"Mode: Processing all {len(MONTHS)} months\n")
+    
+    month_results = await scrape_with_playwright_async(month_filter=month_filter)
     
     # Results are already saved per month in appropriate year folders
-    # This function just provides a summary
-    print(f"\n[OK] Extraction completed for all months\n")
+    print(f"\n[OK] Extraction completed\n")
     
     return month_results
 
