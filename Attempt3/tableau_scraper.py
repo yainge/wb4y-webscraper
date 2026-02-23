@@ -276,6 +276,21 @@ async def filter_by_provider(page, base_url: str, provider_index: int, action: s
         return False
 
 
+def detect_meter_type(data: dict) -> str:
+    """
+    Detect if contract is single or double meter based on presence of dal tariff.
+    Returns "single" if only piek tariff exists, "double" if dal tariff also exists.
+    """
+    dal_field = "Variabel elektriciteit dal per kWh"
+    dal_value = data.get(dal_field, "NaN")
+    
+    # If dal field exists and is not NaN, it's a double meter
+    if dal_value and dal_value != "NaN":
+        return "double"
+    
+    return "single"
+
+
 def normalize_contract_data(data: dict) -> dict:
     """
     Normalize contract data by adding missing fields as NaN.
@@ -305,6 +320,62 @@ def normalize_contract_data(data: dict) -> dict:
             normalized[key] = value
     
     return normalized
+
+
+def restructure_contract_data(
+    provider_name: str,
+    normalized_data: dict,
+    meter_type: str,
+    month_name: str,
+    session_id: str
+) -> dict:
+    """
+    Restructure contract data into new format that allows duplicate contract names
+    with different meter types.
+    
+    Returns a dict with:
+    - provider, contract_name, contract_duration, meter_type
+    - tariffs dict (gas and electricity)
+    - metadata (_tupleId, _month_idx, _session_id)
+    """
+    # Extract tariff values
+    piek_field = "Variabel elektriciteit enkel / piek per kWh"
+    dal_field = "Variabel elektriciteit dal per kWh"
+    
+    piek_value = normalized_data.get(piek_field, "NaN")
+    dal_value = normalized_data.get(dal_field, "NaN")
+    
+    # Convert "NaN" to None for null tariffs
+    piek_value = None if piek_value == "NaN" else piek_value
+    dal_value = None if dal_value == "NaN" else dal_value
+    
+    # For single meter, dal should be None
+    if meter_type == "single":
+        dal_value = None
+    
+    restructured = {
+        "provider": provider_name,
+        "contract_name": normalized_data.get("Contractnaam", ""),
+        "contract_duration": normalized_data.get("Contractduur", ""),
+        "meter_type": meter_type,
+        "tariffs": {
+            "gas": {
+                "fixed_yearly": normalized_data.get("Vastrecht gas per jaar", "NaN"),
+                "variable_per_m3": normalized_data.get("Variabel gas per m3", "NaN")
+            },
+            "electricity": {
+                "fixed_yearly": normalized_data.get("Vastrecht elektriciteit per jaar", "NaN"),
+                "piek_per_kwh": piek_value,
+                "dal_per_kwh": dal_value
+            }
+        },
+        "estimated_annual_costs": normalized_data.get("Geschatte leveringskosten obv verbruik", "NaN"),
+        "_tupleId": normalized_data.get("_tupleId", ""),
+        "_month_idx": month_name,
+        "_session_id": session_id
+    }
+    
+    return restructured
 
 
 async def fetch_tooltip_at_coordinates(page, base_url: str, x_pos: int, y_pos: int, required_headers: dict) -> dict:
@@ -372,10 +443,10 @@ async def fetch_tooltip_at_coordinates(page, base_url: str, x_pos: int, y_pos: i
 
 
 
-async def scrape_provider_contracts(page, base_url: str, provider_name: str, provider_index: int, month_name: str, session_id: str, required_headers: dict) -> dict:
+async def scrape_provider_contracts(page, base_url: str, provider_name: str, provider_index: int, month_name: str, session_id: str, required_headers: dict) -> list:
     """
     Scrape all contracts for a specific provider.
-    Returns a dict of contracts keyed by provider | contract_name | duration.
+    Returns a list of contracts (allows duplicate contract names with different meter types).
     """
     print(f"\nProvider: {provider_name} (index {provider_index})")
     print(f"Selecting provider...")
@@ -459,7 +530,7 @@ async def scrape_provider_contracts(page, base_url: str, provider_name: str, pro
     print(f"[OK] Discovered {len(discovered_tuple_ids)} unique tuple IDs")
     
     # Phase 2: Fetch each contract (only if we found any tuples)
-    contracts = {}
+    contracts = []  # Changed from dict to list
     if discovered_tuple_ids:
         print(f"Phase 2: Fetching full contract data...")
         
@@ -473,22 +544,23 @@ async def scrape_provider_contracts(page, base_url: str, provider_name: str, pro
             
             if contract_data:
                 normalized_data = normalize_contract_data(contract_data)
-                contract_name = normalized_data.get("Contractnaam", "")
-                duration = normalized_data.get("Contractduur", "")
-                normalized_data["_month_idx"] = month_name
-                normalized_data["_session_id"] = session_id
-                return tid, contract_name, normalized_data
-            return tid, None, None
+                meter_type = detect_meter_type(normalized_data)
+                restructured = restructure_contract_data(
+                    provider_name, normalized_data, meter_type, month_name, session_id
+                )
+                return tid, restructured
+            return tid, None
         
         # Fetch all contracts in parallel (with concurrency limit to avoid overload)
         fetch_tasks = [fetch_contract(tid) for tid in sorted(discovered_tuple_ids)]
         results = await asyncio.gather(*fetch_tasks)
         
-        for tid, contract_name, normalized_data in results:
-            if normalized_data:
-                key = f"{provider_name} | {contract_name} | {normalized_data.get('Contractduur', '')}"
-                contracts[key] = normalized_data
-                print(f"  [OK] tuple_id={tid}: {contract_name}")
+        for tid, contract_data in results:
+            if contract_data:
+                contracts.append(contract_data)
+                meter_type = contract_data.get("meter_type", "unknown")
+                contract_name = contract_data.get("contract_name", "")
+                print(f"  [OK] tuple_id={tid}: {contract_name} ({meter_type})")
             elif tid:
                 print(f"  [FAIL] tuple_id={tid}: Failed to fetch")
     
@@ -737,14 +809,14 @@ async def scrape_with_playwright_async(month_filter: int = None, month_range: tu
             await asyncio.sleep(0.1)
             
             # Loop over ALL providers
-            all_contracts = {}
+            all_contracts = []  # Changed from dict to list
             provider_list = list(PROVIDERS.items())
             for i, (provider_name, provider_index) in enumerate(provider_list):
                 progress = f"[{i+1}/{len(PROVIDERS)}]"
                 provider_contracts = await scrape_provider_contracts(
                     page, base_url, provider_name, provider_index, month_name, session_id, required_headers
                 )
-                all_contracts.update(provider_contracts)
+                all_contracts.extend(provider_contracts)  # Extend list instead of dict.update()
                 
                 # Minimal wait to avoid overwhelming the server
                 await asyncio.sleep(0.05)
@@ -771,7 +843,12 @@ async def scrape_with_playwright_async(month_filter: int = None, month_range: tu
         for month_name, contracts in month_results.items():
             year = get_year_from_month_name(month_name)
             contracts_count = len(contracts)
-            print(f"  {month_name} ({year}/): {contracts_count} contracts")
+            
+            # Count by meter type
+            single_count = sum(1 for c in contracts if c.get("meter_type") == "single")
+            double_count = sum(1 for c in contracts if c.get("meter_type") == "double")
+            
+            print(f"  {month_name} ({year}/): {contracts_count} contracts ({single_count} single, {double_count} double meter)")
         
         await browser.close()
         return month_results
