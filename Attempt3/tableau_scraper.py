@@ -42,8 +42,8 @@ def get_year_from_month_name(month_name: str) -> int:
 
 
 def create_year_directories(base_path: Path) -> None:
-    """Create year directories: 2024/, 2025/, 2026/."""
-    for year in [2024, 2025, 2026]:
+    """Create year directories: 2023/, 2024/, 2025/, 2026/."""
+    for year in [2023, 2024, 2025, 2026]:
         year_dir = base_path / str(year)
         year_dir.mkdir(parents=True, exist_ok=True)
 

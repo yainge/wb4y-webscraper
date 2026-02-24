@@ -1,0 +1,5672 @@
+[
+  {
+    "provider": "AllureNRG",
+    "contract_name": "Groen",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "72,6000",
+        "variable_per_m3": "1,2818"
+      },
+      "electricity": {
+        "fixed_yearly": "72,6000",
+        "piek_per_kwh": "0,3884",
+        "dal_per_kwh": "0,3763"
+      }
+    },
+    "estimated_annual_costs": "186",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "AllureNRG",
+    "contract_name": "Groen",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "72,6000",
+        "variable_per_m3": "1,2818"
+      },
+      "electricity": {
+        "fixed_yearly": "72,6000",
+        "piek_per_kwh": "0,3836",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "AllureNRG",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "145,2000",
+        "variable_per_m3": "1,4500"
+      },
+      "electricity": {
+        "fixed_yearly": "145,2000",
+        "piek_per_kwh": "0,4000",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "219",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "AllureNRG",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "145,2000",
+        "variable_per_m3": "1,4500"
+      },
+      "electricity": {
+        "fixed_yearly": "145,2000",
+        "piek_per_kwh": "0,4000",
+        "dal_per_kwh": "0,4000"
+      }
+    },
+    "estimated_annual_costs": "219",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Audax Renewables",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "94,3800",
+        "variable_per_m3": "1,5897"
+      },
+      "electricity": {
+        "fixed_yearly": "94,3800",
+        "piek_per_kwh": "0,4634",
+        "dal_per_kwh": "0,4274"
+      }
+    },
+    "estimated_annual_costs": "236",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Audax Renewables",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "94,3800",
+        "variable_per_m3": "1,5897"
+      },
+      "electricity": {
+        "fixed_yearly": "94,3800",
+        "piek_per_kwh": "0,4563",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "239",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Budget Energie",
+    "contract_name": "Groene Stroom en Aardgas Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,1614"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3642",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "170",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Budget Energie",
+    "contract_name": "Groene Stroom en Aardgas Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,1614"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3710",
+        "dal_per_kwh": "0,3599"
+      }
+    },
+    "estimated_annual_costs": "170",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Budget Energie",
+    "contract_name": "Groene Stroom en Aardgas 1 Jaar Vast A",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "83,8772",
+        "variable_per_m3": "1,3126"
+      },
+      "electricity": {
+        "fixed_yearly": "83,8772",
+        "piek_per_kwh": "0,3582",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "185",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Budget Energie",
+    "contract_name": "Nederlandse Wind Stroom en CO2-gecompenseerd Gas Vast 1 Jaar",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "83,8772",
+        "variable_per_m3": "1,3187"
+      },
+      "electricity": {
+        "fixed_yearly": "83,8772",
+        "piek_per_kwh": "0,3594",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "186",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Budget Energie",
+    "contract_name": "Groene Stroom en Aardgas 1 Jaar Vast B",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "83,8772",
+        "variable_per_m3": "1,3126"
+      },
+      "electricity": {
+        "fixed_yearly": "83,8772",
+        "piek_per_kwh": "0,3884",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "193",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Budget Energie",
+    "contract_name": "Groene Stroom en Aardgas 2 Jaar Vast",
+    "contract_duration": "Vast (2 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "83,8772",
+        "variable_per_m3": "1,3247"
+      },
+      "electricity": {
+        "fixed_yearly": "83,8772",
+        "piek_per_kwh": "0,3914",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "195",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Budget Energie",
+    "contract_name": "Groene Stroom en Aardgas 3 Jaar Vast",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "83,8772",
+        "variable_per_m3": "1,3308"
+      },
+      "electricity": {
+        "fixed_yearly": "83,8772",
+        "piek_per_kwh": "0,3999",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "198",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Budget Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,4086"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3998",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "203",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Budget Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,4086"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,4170",
+        "dal_per_kwh": "0,3918"
+      }
+    },
+    "estimated_annual_costs": "204",
+    "_tupleId": "9",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Cleanenergy",
+    "contract_name": "Particulier variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "90,7500",
+        "variable_per_m3": "1,3126"
+      },
+      "electricity": {
+        "fixed_yearly": "90,7500",
+        "piek_per_kwh": "0,3945",
+        "dal_per_kwh": "0,3945"
+      }
+    },
+    "estimated_annual_costs": "195",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Cleanenergy",
+    "contract_name": "Particulier variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "90,7500",
+        "variable_per_m3": "1,3126"
+      },
+      "electricity": {
+        "fixed_yearly": "90,7500",
+        "piek_per_kwh": "0,3945",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "195",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Cleanenergy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "90,7500",
+        "variable_per_m3": "1,3792"
+      },
+      "electricity": {
+        "fixed_yearly": "90,7500",
+        "piek_per_kwh": "0,4429",
+        "dal_per_kwh": "0,4187"
+      }
+    },
+    "estimated_annual_costs": "211",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Cleanenergy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "90,7500",
+        "variable_per_m3": "1,3792"
+      },
+      "electricity": {
+        "fixed_yearly": "90,7500",
+        "piek_per_kwh": "0,4308",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "211",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Cleanenergy",
+    "contract_name": "Particulier 1-jaar vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "144,4740",
+        "variable_per_m3": "1,4397"
+      },
+      "electricity": {
+        "fixed_yearly": "144,4740",
+        "piek_per_kwh": "0,3993",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "218",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Cleanenergy",
+    "contract_name": "Particulier 1-jaar vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "144,4740",
+        "variable_per_m3": "1,4397"
+      },
+      "electricity": {
+        "fixed_yearly": "144,4740",
+        "piek_per_kwh": "0,3993",
+        "dal_per_kwh": "0,3993"
+      }
+    },
+    "estimated_annual_costs": "218",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Cleanenergy",
+    "contract_name": "Particulier 3-jaar vast",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "144,4740",
+        "variable_per_m3": "1,4397"
+      },
+      "electricity": {
+        "fixed_yearly": "144,4740",
+        "piek_per_kwh": "0,3993",
+        "dal_per_kwh": "0,3993"
+      }
+    },
+    "estimated_annual_costs": "218",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Cleanenergy",
+    "contract_name": "Particulier 3-jaar vast",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "144,4740",
+        "variable_per_m3": "1,4397"
+      },
+      "electricity": {
+        "fixed_yearly": "144,4740",
+        "piek_per_kwh": "0,3993",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "218",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "CNS",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "90,7500",
+        "variable_per_m3": "4,0102"
+      },
+      "electricity": {
+        "fixed_yearly": "90,7500",
+        "piek_per_kwh": "0,8962",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "588",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Coolblue Energie",
+    "contract_name": "1 jaar Zeker",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "143,7480",
+        "variable_per_m3": "1,3562"
+      },
+      "electricity": {
+        "fixed_yearly": "143,7480",
+        "piek_per_kwh": "0,3030",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "185",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Coolblue Energie",
+    "contract_name": "1 jaar Zeker",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "143,7480",
+        "variable_per_m3": "1,3562"
+      },
+      "electricity": {
+        "fixed_yearly": "143,7480",
+        "piek_per_kwh": "0,3131",
+        "dal_per_kwh": "0,2947"
+      }
+    },
+    "estimated_annual_costs": "185",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Coolblue Energie",
+    "contract_name": "Halfjaar Zeker",
+    "contract_duration": "Vast (<1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "85,2324",
+        "variable_per_m3": "1,3708"
+      },
+      "electricity": {
+        "fixed_yearly": "85,2324",
+        "piek_per_kwh": "0,3851",
+        "dal_per_kwh": "0,3612"
+      }
+    },
+    "estimated_annual_costs": "194",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Coolblue Energie",
+    "contract_name": "Halfjaar Zeker",
+    "contract_duration": "Vast (<1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "85,2324",
+        "variable_per_m3": "1,3708"
+      },
+      "electricity": {
+        "fixed_yearly": "85,2324",
+        "piek_per_kwh": "0,3752",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "195",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Coolblue Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "85,2324",
+        "variable_per_m3": "1,3620"
+      },
+      "electricity": {
+        "fixed_yearly": "85,2324",
+        "piek_per_kwh": "0,3961",
+        "dal_per_kwh": "0,3892"
+      }
+    },
+    "estimated_annual_costs": "199",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Coolblue Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "85,2324",
+        "variable_per_m3": "1,3620"
+      },
+      "electricity": {
+        "fixed_yearly": "85,2324",
+        "piek_per_kwh": "0,3928",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "199",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DELTA energie",
+    "contract_name": "DELTA Groene Stroom en/of DELTA Gas, variabele leveringsprijs (a)",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "78,5532",
+        "variable_per_m3": "1,2907"
+      },
+      "electricity": {
+        "fixed_yearly": "78,5532",
+        "piek_per_kwh": "0,3825",
+        "dal_per_kwh": "0,3712"
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DELTA energie",
+    "contract_name": "DELTA Puur Zeeuws Groen, vaste leveringsprijs (1 jaar) en/of DELTA Groen Gas, vaste leveringsprijs (1 jaar)",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,3996",
+        "variable_per_m3": "1,4278"
+      },
+      "electricity": {
+        "fixed_yearly": "107,3996",
+        "piek_per_kwh": "0,3789",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "205",
+    "_tupleId": "10",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DELTA energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "78,5532",
+        "variable_per_m3": "1,2907"
+      },
+      "electricity": {
+        "fixed_yearly": "78,5532",
+        "piek_per_kwh": "0,3825",
+        "dal_per_kwh": "0,3712"
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DELTA energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "78,5532",
+        "variable_per_m3": "1,2907"
+      },
+      "electricity": {
+        "fixed_yearly": "78,5532",
+        "piek_per_kwh": "0,3772",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DELTA energie",
+    "contract_name": "DELTA Groene Stroom en/of DELTA Gas, variabele leveringsprijs (a)",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "78,5532",
+        "variable_per_m3": "1,2907"
+      },
+      "electricity": {
+        "fixed_yearly": "78,5532",
+        "piek_per_kwh": "0,3772",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DELTA energie",
+    "contract_name": "DELTA Groene Actiestroom, vaste leveringsprijs (3 jaar) en/of DELTA Actiegas, vaste leveringsprijs (3 jaar)",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "121,7986",
+        "variable_per_m3": "1,3242"
+      },
+      "electricity": {
+        "fixed_yearly": "121,7986",
+        "piek_per_kwh": "0,3693",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "195",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DELTA energie",
+    "contract_name": "DELTA Groene Actiestroom, vaste leveringsprijs (1 jaar) en/of DELTA Actiegas, vaste leveringsprijs (1 jaar)",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "121,7986",
+        "variable_per_m3": "1,3513"
+      },
+      "electricity": {
+        "fixed_yearly": "121,7986",
+        "piek_per_kwh": "0,3703",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "198",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DELTA energie",
+    "contract_name": "DELTA Groene Stroom, vaste leveringsprijs (3 jaar) en/of DELTA Gas, vaste leveringsprijs (3 jaar)",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,3996",
+        "variable_per_m3": "1,3607"
+      },
+      "electricity": {
+        "fixed_yearly": "107,3996",
+        "piek_per_kwh": "0,3767",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "198",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DELTA energie",
+    "contract_name": "DELTA Groene Stroom, vaste leveringsprijs (1 jaar) en/of DELTA Gas, vaste leveringsprijs (1 jaar)",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,3996",
+        "variable_per_m3": "1,3854"
+      },
+      "electricity": {
+        "fixed_yearly": "107,3996",
+        "piek_per_kwh": "0,3774",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "201",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DELTA energie",
+    "contract_name": "DELTA Puur Zeeuws Groen, vaste leveringsprijs (3 jaar) en/of DELTA Groen Gas, vaste leveringsprijs (3 jaar)",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,3996",
+        "variable_per_m3": "1,4112"
+      },
+      "electricity": {
+        "fixed_yearly": "107,3996",
+        "piek_per_kwh": "0,3786",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "204",
+    "_tupleId": "9",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DGB energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "130,6800",
+        "variable_per_m3": "1,1009"
+      },
+      "electricity": {
+        "fixed_yearly": "130,6800",
+        "piek_per_kwh": "0,4375",
+        "dal_per_kwh": "0,3454"
+      }
+    },
+    "estimated_annual_costs": "180",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DGB energie",
+    "contract_name": "1-DGB website groen elektricteit vaste einddatum 1-1-2024 en 8-DGB website gas vaste einddatum 1-1-2024",
+    "contract_duration": "Vast (<1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "130,6800",
+        "variable_per_m3": "1,2659"
+      },
+      "electricity": {
+        "fixed_yearly": "130,6800",
+        "piek_per_kwh": "0,5072",
+        "dal_per_kwh": "0,3694"
+      }
+    },
+    "estimated_annual_costs": "208",
+    "_tupleId": "10",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DGB energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "130,6800",
+        "variable_per_m3": "1,1009"
+      },
+      "electricity": {
+        "fixed_yearly": "130,6800",
+        "piek_per_kwh": "0,3915",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "181",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DGB energie",
+    "contract_name": "206-DGB nieuwe klanten elektriciteit onbepaalde tijd, variabele tarieven en 13-DGB nieuwe klanten gas onbepaalde tijd, variabele tarieven",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "130,6800",
+        "variable_per_m3": "1,1656"
+      },
+      "electricity": {
+        "fixed_yearly": "130,6800",
+        "piek_per_kwh": "0,3763",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "183",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DGB energie",
+    "contract_name": "6-DGB nieuwe klanten elektriciteit onbepaalde tijd, variabele tarieven en 13-DGB nieuwe klanten gas onbepaalde tijd, variabele tarieven",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "130,6800",
+        "variable_per_m3": "1,1656"
+      },
+      "electricity": {
+        "fixed_yearly": "130,6800",
+        "piek_per_kwh": "0,3844",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "185",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DGB energie",
+    "contract_name": "206-DGB nieuwe klanten elektriciteit onbepaalde tijd, variabele tarieven en 13-DGB nieuwe klanten gas onbepaalde tijd, variabele tarieven",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "130,6800",
+        "variable_per_m3": "1,1656"
+      },
+      "electricity": {
+        "fixed_yearly": "130,6800",
+        "piek_per_kwh": "0,4635",
+        "dal_per_kwh": "0,3389"
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DGB energie",
+    "contract_name": "6-DGB nieuwe klanten elektriciteit onbepaalde tijd, variabele tarieven en 13-DGB nieuwe klanten gas onbepaalde tijd, variabele tarieven",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "130,6800",
+        "variable_per_m3": "1,1656"
+      },
+      "electricity": {
+        "fixed_yearly": "130,6800",
+        "piek_per_kwh": "0,4717",
+        "dal_per_kwh": "0,3470"
+      }
+    },
+    "estimated_annual_costs": "191",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DGB energie",
+    "contract_name": "201-DGB website grijs elektricteit vaste einddatum 1-1-2024 en 8-DGB website gas vaste einddatum 1-1-2024",
+    "contract_duration": "Vast (<1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "130,6800",
+        "variable_per_m3": "1,2417"
+      },
+      "electricity": {
+        "fixed_yearly": "130,6800",
+        "piek_per_kwh": "0,4043",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "198",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DGB energie",
+    "contract_name": "1-DGB website groen elektricteit vaste einddatum 1-1-2024 en 8-DGB website gas vaste einddatum 1-1-2024",
+    "contract_duration": "Vast (<1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "130,6800",
+        "variable_per_m3": "1,2659"
+      },
+      "electricity": {
+        "fixed_yearly": "130,6800",
+        "piek_per_kwh": "0,4124",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "202",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "DGB energie",
+    "contract_name": "201-DGB website grijs elektricteit vaste einddatum 1-1-2024 en 8-DGB website gas vaste einddatum 1-1-2024",
+    "contract_duration": "Vast (<1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "130,6800",
+        "variable_per_m3": "1,2417"
+      },
+      "electricity": {
+        "fixed_yearly": "130,6800",
+        "piek_per_kwh": "0,4991",
+        "dal_per_kwh": "0,3613"
+      }
+    },
+    "estimated_annual_costs": "204",
+    "_tupleId": "9",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "EasyEnergy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "145,2000",
+        "variable_per_m3": "2,8307"
+      },
+      "electricity": {
+        "fixed_yearly": "145,2000",
+        "piek_per_kwh": "0,5807",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "400",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "ELIX",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "145,2000",
+        "variable_per_m3": "1,5567"
+      },
+      "electricity": {
+        "fixed_yearly": "145,2000",
+        "piek_per_kwh": "0,3978",
+        "dal_per_kwh": "0,3736"
+      }
+    },
+    "estimated_annual_costs": "226",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "ELIX",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "145,2000",
+        "variable_per_m3": "1,5567"
+      },
+      "electricity": {
+        "fixed_yearly": "145,2000",
+        "piek_per_kwh": "0,3857",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "226",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Eneco HollandseWind & Zon 6 maanden",
+    "contract_duration": "Vast (<1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8800",
+        "variable_per_m3": "1,3268"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,3668",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "186",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Eneco HollandseWind & Zon 3 jaar",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8800",
+        "variable_per_m3": "1,3344"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,3950",
+        "dal_per_kwh": "0,3950"
+      }
+    },
+    "estimated_annual_costs": "195",
+    "_tupleId": "10",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Eneco CO2-GecompenseerdGas 3 jaar",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "86,8801",
+        "variable_per_m3": "1,3344"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,3950",
+        "dal_per_kwh": "0,3950"
+      }
+    },
+    "estimated_annual_costs": "196",
+    "_tupleId": "11",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Eneco CO2-GecompenseerdGas 3 jaar",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "86,8801",
+        "variable_per_m3": "1,3344"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,3950",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "196",
+    "_tupleId": "12",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,5000"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3944",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "210",
+    "_tupleId": "13",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,5000"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,4430",
+        "dal_per_kwh": "0,3890"
+      }
+    },
+    "estimated_annual_costs": "216",
+    "_tupleId": "14",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Eneco HollandseWind & Zon 6 maanden",
+    "contract_duration": "Vast (<1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8800",
+        "variable_per_m3": "1,3268"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,3935",
+        "dal_per_kwh": "0,3460"
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Eneco CO2-GecompenseerdGas 6 maanden",
+    "contract_duration": "Vast (<1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "86,8801",
+        "variable_per_m3": "1,3268"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,3668",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "188",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Eneco CO2-GecompenseerdGas 6 maanden",
+    "contract_duration": "Vast (<1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "86,8801",
+        "variable_per_m3": "1,3268"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,3935",
+        "dal_per_kwh": "0,3460"
+      }
+    },
+    "estimated_annual_costs": "188",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Eneco HollandseWind & Zon 1 jaar",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8800",
+        "variable_per_m3": "1,3298"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,3775",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "190",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Eneco HollandseWind & Zon 1 jaar",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8800",
+        "variable_per_m3": "1,3298"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,3999",
+        "dal_per_kwh": "0,3600"
+      }
+    },
+    "estimated_annual_costs": "190",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Eneco CO2-GecompenseerdGas 1 jaar",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "86,8801",
+        "variable_per_m3": "1,3298"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,3775",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "191",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Eneco CO2-GecompenseerdGas 1 jaar",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "86,8801",
+        "variable_per_m3": "1,3298"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,3999",
+        "dal_per_kwh": "0,3600"
+      }
+    },
+    "estimated_annual_costs": "191",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Eneco",
+    "contract_name": "Eneco HollandseWind & Zon 3 jaar",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8800",
+        "variable_per_m3": "1,3344"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,3950",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "195",
+    "_tupleId": "9",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energie.VanOns",
+    "contract_name": "Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "78,0000",
+        "variable_per_m3": "1,3160"
+      },
+      "electricity": {
+        "fixed_yearly": "78,0000",
+        "piek_per_kwh": "0,3987",
+        "dal_per_kwh": "0,3678"
+      }
+    },
+    "estimated_annual_costs": "191",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energie.VanOns",
+    "contract_name": "Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "78,0000",
+        "variable_per_m3": "1,3160"
+      },
+      "electricity": {
+        "fixed_yearly": "78,0000",
+        "piek_per_kwh": "0,3837",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "191",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energie.VanOns",
+    "contract_name": "1 jaar vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "78,0000",
+        "variable_per_m3": "1,4952"
+      },
+      "electricity": {
+        "fixed_yearly": "78,0000",
+        "piek_per_kwh": "0,3612",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "202",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energie.VanOns",
+    "contract_name": "Cooperatief contract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "78,0000",
+        "variable_per_m3": "1,4131"
+      },
+      "electricity": {
+        "fixed_yearly": "78,0000",
+        "piek_per_kwh": "0,3988",
+        "dal_per_kwh": "0,3869"
+      }
+    },
+    "estimated_annual_costs": "203",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energie.VanOns",
+    "contract_name": "1 jaar vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "78,0000",
+        "variable_per_m3": "1,4952"
+      },
+      "electricity": {
+        "fixed_yearly": "78,0000",
+        "piek_per_kwh": "0,3743",
+        "dal_per_kwh": "0,3515"
+      }
+    },
+    "estimated_annual_costs": "203",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energie.VanOns",
+    "contract_name": "Cooperatief contract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "78,0000",
+        "variable_per_m3": "1,4131"
+      },
+      "electricity": {
+        "fixed_yearly": "78,0000",
+        "piek_per_kwh": "0,3949",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "203",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energie.VanOns",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "78,0000",
+        "variable_per_m3": "1,4615"
+      },
+      "electricity": {
+        "fixed_yearly": "78,0000",
+        "piek_per_kwh": "0,4191",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "214",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energie.VanOns",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "78,0000",
+        "variable_per_m3": "1,4615"
+      },
+      "electricity": {
+        "fixed_yearly": "78,0000",
+        "piek_per_kwh": "0,4351",
+        "dal_per_kwh": "0,4111"
+      }
+    },
+    "estimated_annual_costs": "215",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energiedirect.nl",
+    "contract_name": "Groene Stroom en Gas onbepaalde tijd variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,2987"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3703",
+        "dal_per_kwh": "0,3679"
+      }
+    },
+    "estimated_annual_costs": "184",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energiedirect.nl",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,2987"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3703",
+        "dal_per_kwh": "0,3679"
+      }
+    },
+    "estimated_annual_costs": "184",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energiedirect.nl",
+    "contract_name": "Groene Stroom en Gas onbepaalde tijd variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,2987"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3691",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "184",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energiedirect.nl",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,2987"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3691",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "184",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energiedirect.nl",
+    "contract_name": "AltijdVoordeel Groene Stroom en Gas",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,3307"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3739",
+        "dal_per_kwh": "0,3715"
+      }
+    },
+    "estimated_annual_costs": "188",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energiedirect.nl",
+    "contract_name": "AltijdVoordeel Groene Stroom en Gas",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,3307"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3727",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "188",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energiedirect.nl",
+    "contract_name": "AltijdVoordeel Groene Stroom en Gas",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "83,9256",
+        "variable_per_m3": "1,3776"
+      },
+      "electricity": {
+        "fixed_yearly": "83,9256",
+        "piek_per_kwh": "0,3957",
+        "dal_per_kwh": "0,3932"
+      }
+    },
+    "estimated_annual_costs": "201",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energiedirect.nl",
+    "contract_name": "AltijdVoordeel Groene Stroom en Gas",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "83,9256",
+        "variable_per_m3": "1,3776"
+      },
+      "electricity": {
+        "fixed_yearly": "83,9256",
+        "piek_per_kwh": "0,3945",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "201",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energyhouse",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "60,0039",
+        "variable_per_m3": "2,2115"
+      },
+      "electricity": {
+        "fixed_yearly": "89,9998",
+        "piek_per_kwh": "0,5346",
+        "dal_per_kwh": "0,4603"
+      }
+    },
+    "estimated_annual_costs": "306",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energyhouse",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "60,0039",
+        "variable_per_m3": "2,2115"
+      },
+      "electricity": {
+        "fixed_yearly": "89,9998",
+        "piek_per_kwh": "0,5049",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "309",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energyzero",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "90,0000",
+        "variable_per_m3": "5,9885"
+      },
+      "electricity": {
+        "fixed_yearly": "90,0000",
+        "piek_per_kwh": "1,6066",
+        "dal_per_kwh": "1,2431"
+      }
+    },
+    "estimated_annual_costs": "915",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Energyzero",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "90,0000",
+        "variable_per_m3": "5,9885"
+      },
+      "electricity": {
+        "fixed_yearly": "90,0000",
+        "piek_per_kwh": "1,4248",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "917",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Engie retail",
+    "contract_name": "ENGIE Opgewekt 1jr",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "105,7044",
+        "variable_per_m3": "1,2996"
+      },
+      "electricity": {
+        "fixed_yearly": "105,7044",
+        "piek_per_kwh": "0,2932",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "170",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Engie retail",
+    "contract_name": "ENGIE Opgewekt 1jr",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "105,7044",
+        "variable_per_m3": "1,2996"
+      },
+      "electricity": {
+        "fixed_yearly": "105,7044",
+        "piek_per_kwh": "0,3381",
+        "dal_per_kwh": "0,2644"
+      }
+    },
+    "estimated_annual_costs": "172",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Engie retail",
+    "contract_name": "ENGIE Open",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "105,7044",
+        "variable_per_m3": "1,3285"
+      },
+      "electricity": {
+        "fixed_yearly": "105,7044",
+        "piek_per_kwh": "0,3795",
+        "dal_per_kwh": "0,3419"
+      }
+    },
+    "estimated_annual_costs": "190",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Engie retail",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "105,7044",
+        "variable_per_m3": "1,3285"
+      },
+      "electricity": {
+        "fixed_yearly": "105,7044",
+        "piek_per_kwh": "0,3795",
+        "dal_per_kwh": "0,3419"
+      }
+    },
+    "estimated_annual_costs": "190",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Engie retail",
+    "contract_name": "ENGIE Open",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "105,7044",
+        "variable_per_m3": "1,3285"
+      },
+      "electricity": {
+        "fixed_yearly": "105,7044",
+        "piek_per_kwh": "0,3607",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "191",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Engie retail",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "105,7044",
+        "variable_per_m3": "1,3285"
+      },
+      "electricity": {
+        "fixed_yearly": "105,7044",
+        "piek_per_kwh": "0,3607",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "191",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Essent",
+    "contract_name": "Groene Stroom en Gas Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,8272",
+        "variable_per_m3": "1,3271"
+      },
+      "electricity": {
+        "fixed_yearly": "77,8272",
+        "piek_per_kwh": "0,3916",
+        "dal_per_kwh": "0,3892"
+      }
+    },
+    "estimated_annual_costs": "194",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Essent",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,8272",
+        "variable_per_m3": "1,3271"
+      },
+      "electricity": {
+        "fixed_yearly": "77,8272",
+        "piek_per_kwh": "0,3916",
+        "dal_per_kwh": "0,3892"
+      }
+    },
+    "estimated_annual_costs": "194",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Essent",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,8272",
+        "variable_per_m3": "1,3271"
+      },
+      "electricity": {
+        "fixed_yearly": "77,8272",
+        "piek_per_kwh": "0,3904",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "194",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Essent",
+    "contract_name": "Groene Stroom en Gas Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,8272",
+        "variable_per_m3": "1,3271"
+      },
+      "electricity": {
+        "fixed_yearly": "77,8272",
+        "piek_per_kwh": "0,3904",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "194",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Essent",
+    "contract_name": "ZekerheidsGarantie Groene Stroom en Gas",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,8272",
+        "variable_per_m3": "1,3623"
+      },
+      "electricity": {
+        "fixed_yearly": "77,8272",
+        "piek_per_kwh": "0,3899",
+        "dal_per_kwh": "0,3874"
+      }
+    },
+    "estimated_annual_costs": "197",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Essent",
+    "contract_name": "ZekerheidsGarantie Groene Stroom en Gas",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,8272",
+        "variable_per_m3": "1,3623"
+      },
+      "electricity": {
+        "fixed_yearly": "77,8272",
+        "piek_per_kwh": "0,3886",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "197",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Essent",
+    "contract_name": "ZekerheidsGarantie Groene Stroom en Gas",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "89,8788",
+        "variable_per_m3": "1,3990"
+      },
+      "electricity": {
+        "fixed_yearly": "89,8788",
+        "piek_per_kwh": "0,3993",
+        "dal_per_kwh": "0,3969"
+      }
+    },
+    "estimated_annual_costs": "205",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Essent",
+    "contract_name": "ZekerheidsGarantie Groene Stroom en Gas",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "89,8788",
+        "variable_per_m3": "1,3990"
+      },
+      "electricity": {
+        "fixed_yearly": "89,8788",
+        "piek_per_kwh": "0,3981",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "205",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Frank energie",
+    "contract_name": "Variabel contract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "84,0000",
+        "variable_per_m3": "1,2189"
+      },
+      "electricity": {
+        "fixed_yearly": "84,0000",
+        "piek_per_kwh": "0,3263",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "167",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Frank energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "119,9352",
+        "variable_per_m3": "1,6233"
+      },
+      "electricity": {
+        "fixed_yearly": "119,9352",
+        "piek_per_kwh": "0,4492",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "245",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice",
+    "contract_name": "Nederlandse Windstroom 1 jaar",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,2920"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3961",
+        "dal_per_kwh": "0,3434"
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice",
+    "contract_name": "Nederlandse Windstroom 3 jaar",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,3774"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3916",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "201",
+    "_tupleId": "10",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice",
+    "contract_name": "Nederlandse Windstroom 1 jaar",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,2920"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3698",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice",
+    "contract_name": "Nederlandse Windstroom Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,2927"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3769",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,2927"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3769",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice",
+    "contract_name": "Nederlandse Windstroom Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,2927"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3841",
+        "dal_per_kwh": "0,3710"
+      }
+    },
+    "estimated_annual_costs": "190",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,2927"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3841",
+        "dal_per_kwh": "0,3710"
+      }
+    },
+    "estimated_annual_costs": "190",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice",
+    "contract_name": "Nederlandse Windstroom 2 jaar",
+    "contract_duration": "Vast (2 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,3480"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3965",
+        "dal_per_kwh": "0,3687"
+      }
+    },
+    "estimated_annual_costs": "196",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice",
+    "contract_name": "Nederlandse Windstroom 2 jaar",
+    "contract_duration": "Vast (2 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,3480"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3826",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "196",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice",
+    "contract_name": "Nederlandse Windstroom 3 jaar",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,3774"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3945",
+        "dal_per_kwh": "0,3886"
+      }
+    },
+    "estimated_annual_costs": "201",
+    "_tupleId": "9",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice Zakelijk",
+    "contract_name": "1 jaar 100% NL Wind",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,2935"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3852",
+        "dal_per_kwh": "0,3423"
+      }
+    },
+    "estimated_annual_costs": "186",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice Zakelijk",
+    "contract_name": "1 jaar 100% NL Wind",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,2935"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3644",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "186",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice Zakelijk",
+    "contract_name": "Groen & Vrij Zakelijk",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,2990"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3692",
+        "dal_per_kwh": "0,3683"
+      }
+    },
+    "estimated_annual_costs": "188",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice Zakelijk",
+    "contract_name": "Groen & Vrij Zakelijk",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,2990"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3690",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "188",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice Zakelijk",
+    "contract_name": "3 jaar 100% NL Wind",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,3944"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,4076",
+        "dal_per_kwh": "0,3663"
+      }
+    },
+    "estimated_annual_costs": "202",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice Zakelijk",
+    "contract_name": "3 jaar 100% NL Wind",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "93,4241",
+        "variable_per_m3": "1,3944"
+      },
+      "electricity": {
+        "fixed_yearly": "93,4241",
+        "piek_per_kwh": "0,3876",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "202",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice Zakelijk",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "76,0001",
+        "variable_per_m3": "2,5581"
+      },
+      "electricity": {
+        "fixed_yearly": "76,0001",
+        "piek_per_kwh": "0,8727",
+        "dal_per_kwh": "0,7148"
+      }
+    },
+    "estimated_annual_costs": "417",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Greenchoice Zakelijk",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "76,0001",
+        "variable_per_m3": "2,5581"
+      },
+      "electricity": {
+        "fixed_yearly": "76,0001",
+        "piek_per_kwh": "0,8174",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "424",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Groenpand",
+    "contract_name": "Groenpand Groene stroom & gas",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "101,6400",
+        "variable_per_m3": "1,1881"
+      },
+      "electricity": {
+        "fixed_yearly": "101,6400",
+        "piek_per_kwh": "0,3590",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "176",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Groenpand",
+    "contract_name": "Groenpand Groene stroom & gas",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "101,6400",
+        "variable_per_m3": "1,1881"
+      },
+      "electricity": {
+        "fixed_yearly": "101,6400",
+        "piek_per_kwh": "0,3844",
+        "dal_per_kwh": "0,3454"
+      }
+    },
+    "estimated_annual_costs": "177",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Groenpand",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "217,8000",
+        "variable_per_m3": "1,3370"
+      },
+      "electricity": {
+        "fixed_yearly": "217,8000",
+        "piek_per_kwh": "0,4116",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "224",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Groenpand",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "217,8000",
+        "variable_per_m3": "1,3370"
+      },
+      "electricity": {
+        "fixed_yearly": "217,8000",
+        "piek_per_kwh": "0,4424",
+        "dal_per_kwh": "0,3936"
+      }
+    },
+    "estimated_annual_costs": "225",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "HalloSTROOM",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "144,8128",
+        "variable_per_m3": "4,9396"
+      },
+      "electricity": {
+        "fixed_yearly": "145,0548",
+        "piek_per_kwh": "1,1081",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "742",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "HEM",
+    "contract_name": "Collectief Hollands vast 3 jaar zekerheid met cashback",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "101,4948",
+        "variable_per_m3": "1,6212"
+      },
+      "electricity": {
+        "fixed_yearly": "101,4948",
+        "piek_per_kwh": "0,3945",
+        "dal_per_kwh": "0,3703"
+      }
+    },
+    "estimated_annual_costs": "224",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "HEM",
+    "contract_name": "Collectief Hollands vast 3 jaar zekerheid met cashback",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "101,4948",
+        "variable_per_m3": "1,6212"
+      },
+      "electricity": {
+        "fixed_yearly": "101,4948",
+        "piek_per_kwh": "0,3824",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "224",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "HEM",
+    "contract_name": "Hollands Vast 3 jaar zekerheid met cashback online",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "101,4948",
+        "variable_per_m3": "2,2313"
+      },
+      "electricity": {
+        "fixed_yearly": "101,4948",
+        "piek_per_kwh": "0,7110",
+        "dal_per_kwh": "0,6901"
+      }
+    },
+    "estimated_annual_costs": "366",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "HEM",
+    "contract_name": "Hollands Vast 3 jaar zekerheid met cashback online",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "101,4948",
+        "variable_per_m3": "2,2313"
+      },
+      "electricity": {
+        "fixed_yearly": "101,4948",
+        "piek_per_kwh": "0,7041",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "367",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "HEM",
+    "contract_name": "Hollands Vast 3 jaar zekerheid met cashback",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "101,4948",
+        "variable_per_m3": "2,7153"
+      },
+      "electricity": {
+        "fixed_yearly": "101,4948",
+        "piek_per_kwh": "0,9288",
+        "dal_per_kwh": "0,9079"
+      }
+    },
+    "estimated_annual_costs": "470",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "HEM",
+    "contract_name": "Hollands Vast 3 jaar zekerheid met cashback",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "101,4948",
+        "variable_per_m3": "2,7153"
+      },
+      "electricity": {
+        "fixed_yearly": "101,4948",
+        "piek_per_kwh": "0,9219",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "471",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "HEM",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "101,4948",
+        "variable_per_m3": "4,3074"
+      },
+      "electricity": {
+        "fixed_yearly": "101,4948",
+        "piek_per_kwh": "1,2289",
+        "dal_per_kwh": "0,9525"
+      }
+    },
+    "estimated_annual_costs": "668",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "HEM",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "101,4948",
+        "variable_per_m3": "4,3074"
+      },
+      "electricity": {
+        "fixed_yearly": "101,4948",
+        "piek_per_kwh": "1,0890",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "669",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Hezelaer Energy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "363,0000",
+        "variable_per_m3": "1,5033"
+      },
+      "electricity": {
+        "fixed_yearly": "363,0000",
+        "piek_per_kwh": "0,4107",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "264",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Hezelaer Energy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "363,0000",
+        "variable_per_m3": "1,5033"
+      },
+      "electricity": {
+        "fixed_yearly": "363,0000",
+        "piek_per_kwh": "0,4371",
+        "dal_per_kwh": "0,3975"
+      }
+    },
+    "estimated_annual_costs": "265",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Hezelaer Energy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "363,0000",
+        "variable_per_m3": "1,5033"
+      },
+      "electricity": {
+        "fixed_yearly": "363,0000",
+        "piek_per_kwh": "0,4180",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "265",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Hezelaer Energy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "363,0000",
+        "variable_per_m3": "1,5033"
+      },
+      "electricity": {
+        "fixed_yearly": "363,0000",
+        "piek_per_kwh": "0,4204",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "266",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Hezelaer Energy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "363,0000",
+        "variable_per_m3": "1,5033"
+      },
+      "electricity": {
+        "fixed_yearly": "363,0000",
+        "piek_per_kwh": "0,4443",
+        "dal_per_kwh": "0,4047"
+      }
+    },
+    "estimated_annual_costs": "267",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Hezelaer Energy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "363,0000",
+        "variable_per_m3": "1,5033"
+      },
+      "electricity": {
+        "fixed_yearly": "363,0000",
+        "piek_per_kwh": "0,4467",
+        "dal_per_kwh": "0,4072"
+      }
+    },
+    "estimated_annual_costs": "268",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Holland Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "108,9000",
+        "variable_per_m3": "3,3152"
+      },
+      "electricity": {
+        "fixed_yearly": "108,9000",
+        "piek_per_kwh": "0,9390",
+        "dal_per_kwh": "0,8785"
+      }
+    },
+    "estimated_annual_costs": "526",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Holland Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "108,9000",
+        "variable_per_m3": "3,3152"
+      },
+      "electricity": {
+        "fixed_yearly": "108,9000",
+        "piek_per_kwh": "0,9087",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "527",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "HVC",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "69,9985",
+        "variable_per_m3": "1,4741"
+      },
+      "electricity": {
+        "fixed_yearly": "69,9985",
+        "piek_per_kwh": "0,4163",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "213",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "HVC",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "69,9985",
+        "variable_per_m3": "1,4741"
+      },
+      "electricity": {
+        "fixed_yearly": "69,9985",
+        "piek_per_kwh": "0,4484",
+        "dal_per_kwh": "0,4009"
+      }
+    },
+    "estimated_annual_costs": "215",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Gewoon EnergieGas 3 jaar vast / Elektriciteit 3 jaar vast groenAcquisitie Loyaliteitsbonus",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3172"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3810",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "193",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Sepa GreenGas variabel / Elektriciteit variabel groenAcquisitie",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3792"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3833",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "200",
+    "_tupleId": "10",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Gewoon Energie Gas variabel / Elektriciteit variabel groen",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3792"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3833",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "200",
+    "_tupleId": "11",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Innova Energie Gas variabel / Elektriciteit variabel groen",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3792"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3833",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "200",
+    "_tupleId": "12",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Sepa GreenGas variabel / Elektriciteit variabel groenAcquisitie",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3792"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3991",
+        "dal_per_kwh": "0,3752"
+      }
+    },
+    "estimated_annual_costs": "201",
+    "_tupleId": "13",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Innova Energie Gas variabel / Elektriciteit variabel groen",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3792"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3991",
+        "dal_per_kwh": "0,3752"
+      }
+    },
+    "estimated_annual_costs": "201",
+    "_tupleId": "15",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Gewoon Energie Gas variabel / Elektriciteit variabel groen",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3792"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3991",
+        "dal_per_kwh": "0,3752"
+      }
+    },
+    "estimated_annual_costs": "201",
+    "_tupleId": "16",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Innova EnergieGas 3 jaar vast / Elektriciteit 3 jaar vast groenAcquisitie Loyaliteitsbonus",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3172"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3810",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "193",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Innova EnergieGas 3 jaar vast / Elektriciteit 3 jaar vast groenAcquisitie Loyaliteitsbonus",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3172"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3907",
+        "dal_per_kwh": "0,3756"
+      }
+    },
+    "estimated_annual_costs": "194",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Gewoon EnergieGas 3 jaar vast / Elektriciteit 3 jaar vast groenAcquisitie Loyaliteitsbonus",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3172"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3907",
+        "dal_per_kwh": "0,3756"
+      }
+    },
+    "estimated_annual_costs": "194",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Innova EnergieGas 1 jaar vast / Elektriciteit 1 jaar vast groenAcquisitie Loyaliteitsbonus",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3409"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3818",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "196",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Gewoon EnergieGas 1 jaar vast / Elektriciteit 1 jaar vast groenAcquisitie Loyaliteitsbonus",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3409"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3818",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "196",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Innova EnergieGas 1 jaar vast / Elektriciteit 1 jaar vast groenAcquisitie Loyaliteitsbonus",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3409"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3963",
+        "dal_per_kwh": "0,3736"
+      }
+    },
+    "estimated_annual_costs": "196",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Gewoon EnergieGas 1 jaar vast / Elektriciteit 1 jaar vast groenAcquisitie Loyaliteitsbonus",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3409"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3963",
+        "dal_per_kwh": "0,3736"
+      }
+    },
+    "estimated_annual_costs": "196",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Innova Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,5900",
+        "variable_per_m3": "1,3792"
+      },
+      "electricity": {
+        "fixed_yearly": "95,5900",
+        "piek_per_kwh": "0,3833",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "200",
+    "_tupleId": "9",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Kikker Energie",
+    "contract_name": "Kikker Energie variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "141,3280",
+        "variable_per_m3": "1,3855"
+      },
+      "electricity": {
+        "fixed_yearly": "141,3280",
+        "piek_per_kwh": "0,3985",
+        "dal_per_kwh": "0,3747"
+      }
+    },
+    "estimated_annual_costs": "209",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Kikker Energie",
+    "contract_name": "Kikker Energie variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "141,3280",
+        "variable_per_m3": "1,3855"
+      },
+      "electricity": {
+        "fixed_yearly": "141,3280",
+        "piek_per_kwh": "0,3926",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "210",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Kikker Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8800",
+        "variable_per_m3": "2,7764"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,5838",
+        "dal_per_kwh": "0,5433"
+      }
+    },
+    "estimated_annual_costs": "378",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Kikker Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8800",
+        "variable_per_m3": "2,7764"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8800",
+        "piek_per_kwh": "0,5737",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "381",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Mega",
+    "contract_name": "180",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,8836",
+        "variable_per_m3": "1,2833"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8836",
+        "piek_per_kwh": "0,3799",
+        "dal_per_kwh": "0,3200"
+      }
+    },
+    "estimated_annual_costs": "184",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Mega",
+    "contract_name": "180",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,8836",
+        "variable_per_m3": "1,2833"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8836",
+        "piek_per_kwh": "0,3578",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "186",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Mega",
+    "contract_name": "Mega 2 jaar vast",
+    "contract_duration": "Vast (2 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "83,9256",
+        "variable_per_m3": "1,3218"
+      },
+      "electricity": {
+        "fixed_yearly": "83,9256",
+        "piek_per_kwh": "0,3935",
+        "dal_per_kwh": "0,3362"
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Mega",
+    "contract_name": "Mega 2 jaar vast",
+    "contract_duration": "Vast (2 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "83,9256",
+        "variable_per_m3": "1,3218"
+      },
+      "electricity": {
+        "fixed_yearly": "83,9256",
+        "piek_per_kwh": "0,3724",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Mega",
+    "contract_name": "Variabel (maandelijks) contract (tarieven oktober)",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "123,4200",
+        "variable_per_m3": "1,3069"
+      },
+      "electricity": {
+        "fixed_yearly": "123,4200",
+        "piek_per_kwh": "0,3953",
+        "dal_per_kwh": "0,3379"
+      }
+    },
+    "estimated_annual_costs": "193",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Mega",
+    "contract_name": "Variabel (maandelijks) contract (tarieven oktober)",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "123,4200",
+        "variable_per_m3": "1,3069"
+      },
+      "electricity": {
+        "fixed_yearly": "123,4200",
+        "piek_per_kwh": "0,3741",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "195",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Mega",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "123,4200",
+        "variable_per_m3": "1,4935"
+      },
+      "electricity": {
+        "fixed_yearly": "123,4200",
+        "piek_per_kwh": "0,4394",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "230",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Mega",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "123,4200",
+        "variable_per_m3": "1,4935"
+      },
+      "electricity": {
+        "fixed_yearly": "123,4200",
+        "piek_per_kwh": "0,4569",
+        "dal_per_kwh": "0,4266"
+      }
+    },
+    "estimated_annual_costs": "231",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "NewEnergy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "60,0039",
+        "variable_per_m3": "2,2115"
+      },
+      "electricity": {
+        "fixed_yearly": "89,9998",
+        "piek_per_kwh": "0,5346",
+        "dal_per_kwh": "0,4603"
+      }
+    },
+    "estimated_annual_costs": "306",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "NewEnergy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "60,0039",
+        "variable_per_m3": "2,2115"
+      },
+      "electricity": {
+        "fixed_yearly": "89,9998",
+        "piek_per_kwh": "0,5049",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "309",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Nextenergy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "60,0000",
+        "variable_per_m3": "3,0000"
+      },
+      "electricity": {
+        "fixed_yearly": "60,0039",
+        "piek_per_kwh": "1,0000",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "512",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Nieuwestroom",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "145,2000",
+        "variable_per_m3": "2,8307"
+      },
+      "electricity": {
+        "fixed_yearly": "145,2000",
+        "piek_per_kwh": "0,5807",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "400",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Noord Energie",
+    "contract_name": "Yebbo Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,8836",
+        "variable_per_m3": "1,1402"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8836",
+        "piek_per_kwh": "0,3977",
+        "dal_per_kwh": "0,3514"
+      }
+    },
+    "estimated_annual_costs": "176",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Noord Energie",
+    "contract_name": "Yebbo Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,8836",
+        "variable_per_m3": "1,1402"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8836",
+        "piek_per_kwh": "0,3790",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "178",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Noord Energie",
+    "contract_name": "Yebbo 1 jaar vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,8836",
+        "variable_per_m3": "1,2858"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8836",
+        "piek_per_kwh": "0,3849",
+        "dal_per_kwh": "0,3766"
+      }
+    },
+    "estimated_annual_costs": "192",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Noord Energie",
+    "contract_name": "Yebbo 1 jaar vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,8836",
+        "variable_per_m3": "1,2858"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8836",
+        "piek_per_kwh": "0,3830",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "193",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Noord Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "240,0035",
+        "variable_per_m3": "1,2098"
+      },
+      "electricity": {
+        "fixed_yearly": "240,0035",
+        "piek_per_kwh": "0,5155",
+        "dal_per_kwh": "0,4671"
+      }
+    },
+    "estimated_annual_costs": "235",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Noord Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "240,0035",
+        "variable_per_m3": "1,2098"
+      },
+      "electricity": {
+        "fixed_yearly": "240,0035",
+        "piek_per_kwh": "0,4913",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "236",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Om | nieuwe energie",
+    "contract_name": "Flex",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "68,4618",
+        "variable_per_m3": "1,2968"
+      },
+      "electricity": {
+        "fixed_yearly": "68,4618",
+        "piek_per_kwh": "0,3636",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "182",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Om | nieuwe energie",
+    "contract_name": "Flex",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "68,4618",
+        "variable_per_m3": "1,2968"
+      },
+      "electricity": {
+        "fixed_yearly": "68,4618",
+        "piek_per_kwh": "0,3730",
+        "dal_per_kwh": "0,3564"
+      }
+    },
+    "estimated_annual_costs": "182",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Om | nieuwe energie",
+    "contract_name": "vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "81,7053",
+        "variable_per_m3": "1,4226"
+      },
+      "electricity": {
+        "fixed_yearly": "81,7053",
+        "piek_per_kwh": "0,4000",
+        "dal_per_kwh": "0,3800"
+      }
+    },
+    "estimated_annual_costs": "203",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Om | nieuwe energie",
+    "contract_name": "vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "81,7053",
+        "variable_per_m3": "1,4226"
+      },
+      "electricity": {
+        "fixed_yearly": "81,7053",
+        "piek_per_kwh": "0,3900",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "203",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Om | nieuwe energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "68,4618",
+        "variable_per_m3": "1,4534"
+      },
+      "electricity": {
+        "fixed_yearly": "68,4618",
+        "piek_per_kwh": "0,4182",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "212",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Om | nieuwe energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "68,4618",
+        "variable_per_m3": "1,4534"
+      },
+      "electricity": {
+        "fixed_yearly": "68,4618",
+        "piek_per_kwh": "0,4407",
+        "dal_per_kwh": "0,4059"
+      }
+    },
+    "estimated_annual_costs": "213",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Opensource energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "94,3800",
+        "variable_per_m3": "4,1622"
+      },
+      "electricity": {
+        "fixed_yearly": "94,3800",
+        "piek_per_kwh": "1,0448",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "642",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Opensource energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "94,3800",
+        "variable_per_m3": "4,1622"
+      },
+      "electricity": {
+        "fixed_yearly": "94,3800",
+        "piek_per_kwh": "1,0448",
+        "dal_per_kwh": "1,0448"
+      }
+    },
+    "estimated_annual_costs": "642",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Oxxio Sales Oxxio.nl 1 jaar stroom",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,3151"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3591",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "183",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Oxxio 3 jaar: CO2-gecompenseerd Gas",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,8804",
+        "variable_per_m3": "1,3209"
+      },
+      "electricity": {
+        "fixed_yearly": "77,8756",
+        "piek_per_kwh": "0,3844",
+        "dal_per_kwh": "0,3844"
+      }
+    },
+    "estimated_annual_costs": "193",
+    "_tupleId": "10",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Oxxio 3 jaar: Nederlandse Windstroom",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,8756",
+        "variable_per_m3": "1,3209"
+      },
+      "electricity": {
+        "fixed_yearly": "98,8812",
+        "piek_per_kwh": "0,3844",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "193",
+    "_tupleId": "11",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Oxxio 3 jaar: Nederlandse Windstroom",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,8756",
+        "variable_per_m3": "1,3209"
+      },
+      "electricity": {
+        "fixed_yearly": "98,8812",
+        "piek_per_kwh": "0,3844",
+        "dal_per_kwh": "0,3844"
+      }
+    },
+    "estimated_annual_costs": "193",
+    "_tupleId": "12",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "59,8950",
+        "variable_per_m3": "1,5000"
+      },
+      "electricity": {
+        "fixed_yearly": "59,8950",
+        "piek_per_kwh": "0,3944",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "208",
+    "_tupleId": "13",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "59,8950",
+        "variable_per_m3": "1,5000"
+      },
+      "electricity": {
+        "fixed_yearly": "59,8950",
+        "piek_per_kwh": "0,4430",
+        "dal_per_kwh": "0,3890"
+      }
+    },
+    "estimated_annual_costs": "214",
+    "_tupleId": "14",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Oxxio 1 jaar: CO2-gecompenseerd Gas",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "89,8788",
+        "variable_per_m3": "1,3151"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3591",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "185",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Oxxio 1 jaar: Nederlandse Windstroom",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,3151"
+      },
+      "electricity": {
+        "fixed_yearly": "92,8796",
+        "piek_per_kwh": "0,3591",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "185",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Oxxio Sales Oxxio.nl 1 jaar stroom",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,3151"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3999",
+        "dal_per_kwh": "0,3509"
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Oxxio 1 jaar: CO2-gecompenseerd Gas",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "89,8788",
+        "variable_per_m3": "1,3151"
+      },
+      "electricity": {
+        "fixed_yearly": "71,8740",
+        "piek_per_kwh": "0,3999",
+        "dal_per_kwh": "0,3509"
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Oxxio 1 jaar: Nederlandse Windstroom",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,8740",
+        "variable_per_m3": "1,3151"
+      },
+      "electricity": {
+        "fixed_yearly": "92,8796",
+        "piek_per_kwh": "0,3999",
+        "dal_per_kwh": "0,3509"
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Oxxio Sales Oxxio.nl 3 jaar stroom",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,8756",
+        "variable_per_m3": "1,3209"
+      },
+      "electricity": {
+        "fixed_yearly": "77,8756",
+        "piek_per_kwh": "0,3844",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "192",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Oxxio Sales Oxxio.nl 3 jaar stroom",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,8756",
+        "variable_per_m3": "1,3209"
+      },
+      "electricity": {
+        "fixed_yearly": "77,8756",
+        "piek_per_kwh": "0,3844",
+        "dal_per_kwh": "0,3844"
+      }
+    },
+    "estimated_annual_costs": "192",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "OXXIO",
+    "contract_name": "Oxxio 3 jaar: CO2-gecompenseerd Gas",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,8804",
+        "variable_per_m3": "1,3209"
+      },
+      "electricity": {
+        "fixed_yearly": "77,8756",
+        "piek_per_kwh": "0,3844",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "193",
+    "_tupleId": "9",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Powerpeers",
+    "contract_name": "Vaste prijs 1 jaar",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,8800",
+        "variable_per_m3": "1,2174"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8800",
+        "piek_per_kwh": "0,3145",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "168",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Powerpeers",
+    "contract_name": "Vaste prijs 3 jaar",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,8800",
+        "variable_per_m3": "1,3713"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8800",
+        "piek_per_kwh": "0,3728",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "198",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Powerpeers",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,8800",
+        "variable_per_m3": "1,3575"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8800",
+        "piek_per_kwh": "0,4574",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "219",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Pure Energie",
+    "contract_name": "Pure Energie Wind 1 jaar vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "87,1200",
+        "variable_per_m3": "1,3414"
+      },
+      "electricity": {
+        "fixed_yearly": "87,1200",
+        "piek_per_kwh": "0,3669",
+        "dal_per_kwh": "0,3507"
+      }
+    },
+    "estimated_annual_costs": "188",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Pure Energie",
+    "contract_name": "Pure Energie 1 jaar vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "87,1200",
+        "variable_per_m3": "1,4189"
+      },
+      "electricity": {
+        "fixed_yearly": "87,1200",
+        "piek_per_kwh": "0,3975",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "206",
+    "_tupleId": "10",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Pure Energie",
+    "contract_name": "Pure Energie Wind 1 jaar vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "87,1200",
+        "variable_per_m3": "1,3414"
+      },
+      "electricity": {
+        "fixed_yearly": "87,1200",
+        "piek_per_kwh": "0,3593",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "188",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Pure Energie",
+    "contract_name": "Pure Energie Wind 2 jaar vast",
+    "contract_duration": "Vast (2 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "87,1200",
+        "variable_per_m3": "1,3545"
+      },
+      "electricity": {
+        "fixed_yearly": "87,1200",
+        "piek_per_kwh": "0,3771",
+        "dal_per_kwh": "0,3528"
+      }
+    },
+    "estimated_annual_costs": "191",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Pure Energie",
+    "contract_name": "Pure Energie Wind 2 jaar vast",
+    "contract_duration": "Vast (2 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "87,1200",
+        "variable_per_m3": "1,3545"
+      },
+      "electricity": {
+        "fixed_yearly": "87,1200",
+        "piek_per_kwh": "0,3656",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "191",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Pure Energie",
+    "contract_name": "Pure Energie Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "87,1200",
+        "variable_per_m3": "1,3458"
+      },
+      "electricity": {
+        "fixed_yearly": "87,1200",
+        "piek_per_kwh": "0,3999",
+        "dal_per_kwh": "0,3590"
+      }
+    },
+    "estimated_annual_costs": "194",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Pure Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "87,1200",
+        "variable_per_m3": "1,3458"
+      },
+      "electricity": {
+        "fixed_yearly": "87,1200",
+        "piek_per_kwh": "0,3999",
+        "dal_per_kwh": "0,3590"
+      }
+    },
+    "estimated_annual_costs": "194",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Pure Energie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "87,1200",
+        "variable_per_m3": "1,3458"
+      },
+      "electricity": {
+        "fixed_yearly": "87,1200",
+        "piek_per_kwh": "0,3815",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "195",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Pure Energie",
+    "contract_name": "Pure Energie Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "87,1200",
+        "variable_per_m3": "1,3458"
+      },
+      "electricity": {
+        "fixed_yearly": "87,1200",
+        "piek_per_kwh": "0,3815",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "195",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Pure Energie",
+    "contract_name": "Pure Energie 1 jaar vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "87,1200",
+        "variable_per_m3": "1,4189"
+      },
+      "electricity": {
+        "fixed_yearly": "87,1200",
+        "piek_per_kwh": "0,3991",
+        "dal_per_kwh": "0,3957"
+      }
+    },
+    "estimated_annual_costs": "206",
+    "_tupleId": "9",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Scholt Energy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "580,8000",
+        "variable_per_m3": "1,7894"
+      },
+      "electricity": {
+        "fixed_yearly": "580,8000",
+        "piek_per_kwh": "0,4976",
+        "dal_per_kwh": "0,4667"
+      }
+    },
+    "estimated_annual_costs": "346",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Scholt Energy",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "580,8000",
+        "variable_per_m3": "1,7894"
+      },
+      "electricity": {
+        "fixed_yearly": "580,8000",
+        "piek_per_kwh": "0,4883",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "348",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "UnitedConsumers",
+    "contract_name": "1 jaar vaste prijs",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "109,2025",
+        "variable_per_m3": "1,2866"
+      },
+      "electricity": {
+        "fixed_yearly": "109,2025",
+        "piek_per_kwh": "0,3879",
+        "dal_per_kwh": "0,3345"
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "UnitedConsumers",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "85,0025",
+        "variable_per_m3": "1,2968"
+      },
+      "electricity": {
+        "fixed_yearly": "85,0025",
+        "piek_per_kwh": "0,3800",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "10",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "UnitedConsumers",
+    "contract_name": "1 jaar vaste prijs",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "109,2025",
+        "variable_per_m3": "1,2866"
+      },
+      "electricity": {
+        "fixed_yearly": "109,2025",
+        "piek_per_kwh": "0,3608",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "UnitedConsumers",
+    "contract_name": "1 jaar vaste prijs Prijsvergelijkers Middel verbruik",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "124,1944",
+        "variable_per_m3": "1,2798"
+      },
+      "electricity": {
+        "fixed_yearly": "124,1944",
+        "piek_per_kwh": "0,3891",
+        "dal_per_kwh": "0,3336"
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "UnitedConsumers",
+    "contract_name": "1 jaar vaste prijs Prijsvergelijkers Hoog verbruik",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "124,1944",
+        "variable_per_m3": "1,2798"
+      },
+      "electricity": {
+        "fixed_yearly": "124,1944",
+        "piek_per_kwh": "0,3891",
+        "dal_per_kwh": "0,3336"
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "UnitedConsumers",
+    "contract_name": "1 jaar vaste prijs Prijsvergelijkers Laag verbruik",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "124,1944",
+        "variable_per_m3": "1,2798"
+      },
+      "electricity": {
+        "fixed_yearly": "124,1944",
+        "piek_per_kwh": "0,3891",
+        "dal_per_kwh": "0,3336"
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "UnitedConsumers",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "85,0025",
+        "variable_per_m3": "1,2968"
+      },
+      "electricity": {
+        "fixed_yearly": "85,0025",
+        "piek_per_kwh": "0,3900",
+        "dal_per_kwh": "0,3700"
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "UnitedConsumers",
+    "contract_name": "1 jaar vaste prijs Prijsvergelijkers Middel verbruik",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "124,1944",
+        "variable_per_m3": "1,2798"
+      },
+      "electricity": {
+        "fixed_yearly": "124,1944",
+        "piek_per_kwh": "0,3613",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "UnitedConsumers",
+    "contract_name": "1 jaar vaste prijs Prijsvergelijkers Hoog verbruik",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "124,1944",
+        "variable_per_m3": "1,2798"
+      },
+      "electricity": {
+        "fixed_yearly": "124,1944",
+        "piek_per_kwh": "0,3613",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "UnitedConsumers",
+    "contract_name": "1 jaar vaste prijs Prijsvergelijkers Laag verbruik",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "124,1944",
+        "variable_per_m3": "1,2798"
+      },
+      "electricity": {
+        "fixed_yearly": "124,1944",
+        "piek_per_kwh": "0,3613",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "189",
+    "_tupleId": "9",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vandebron",
+    "contract_name": "1 Jaar Vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "86,9990",
+        "variable_per_m3": "1,3500"
+      },
+      "electricity": {
+        "fixed_yearly": "86,9990",
+        "piek_per_kwh": "0,3267",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "181",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vandebron",
+    "contract_name": "1 Jaar Vast",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "86,9990",
+        "variable_per_m3": "1,3500"
+      },
+      "electricity": {
+        "fixed_yearly": "86,9990",
+        "piek_per_kwh": "0,3484",
+        "dal_per_kwh": "0,3079"
+      }
+    },
+    "estimated_annual_costs": "181",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vandebron",
+    "contract_name": "3 Jaar Vast",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "86,9990",
+        "variable_per_m3": "1,3697"
+      },
+      "electricity": {
+        "fixed_yearly": "71,9950",
+        "piek_per_kwh": "0,3253",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "181",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vandebron",
+    "contract_name": "3 Jaar Vast",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "86,9990",
+        "variable_per_m3": "1,3697"
+      },
+      "electricity": {
+        "fixed_yearly": "71,9950",
+        "piek_per_kwh": "0,3469",
+        "dal_per_kwh": "0,3063"
+      }
+    },
+    "estimated_annual_costs": "181",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vandebron",
+    "contract_name": "Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "86,9990",
+        "variable_per_m3": "1,3490"
+      },
+      "electricity": {
+        "fixed_yearly": "86,9990",
+        "piek_per_kwh": "0,3697",
+        "dal_per_kwh": "0,3352"
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vandebron",
+    "contract_name": "Variabel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "86,9990",
+        "variable_per_m3": "1,3490"
+      },
+      "electricity": {
+        "fixed_yearly": "86,9990",
+        "piek_per_kwh": "0,3521",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "187",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vandebron",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "74,9958",
+        "variable_per_m3": "1,4233"
+      },
+      "electricity": {
+        "fixed_yearly": "74,9958",
+        "piek_per_kwh": "0,3994",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "205",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vandebron",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "74,9958",
+        "variable_per_m3": "1,4233"
+      },
+      "electricity": {
+        "fixed_yearly": "74,9958",
+        "piek_per_kwh": "0,4288",
+        "dal_per_kwh": "0,3733"
+      }
+    },
+    "estimated_annual_costs": "205",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "VanHelder",
+    "contract_name": "Gezinsenergie Flexibel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "83,8772",
+        "variable_per_m3": "1,3283"
+      },
+      "electricity": {
+        "fixed_yearly": "83,8772",
+        "piek_per_kwh": "0,3970",
+        "dal_per_kwh": "0,3614"
+      }
+    },
+    "estimated_annual_costs": "192",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "VanHelder",
+    "contract_name": "Gezinsenergie Flexibel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "83,8772",
+        "variable_per_m3": "1,3283"
+      },
+      "electricity": {
+        "fixed_yearly": "83,8772",
+        "piek_per_kwh": "0,3799",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "192",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "VanHelder",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "87,1200",
+        "variable_per_m3": "2,1657"
+      },
+      "electricity": {
+        "fixed_yearly": "87,1200",
+        "piek_per_kwh": "0,7623",
+        "dal_per_kwh": "0,6316"
+      }
+    },
+    "estimated_annual_costs": "356",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "VanHelder",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "87,1200",
+        "variable_per_m3": "2,1657"
+      },
+      "electricity": {
+        "fixed_yearly": "87,1200",
+        "piek_per_kwh": "0,6970",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "356",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vattenfall",
+    "contract_name": "Groen uit Nederland Vast 1 jaar (niveau HVR-A) en VastePrijsGas 1 jaar (niveau A)",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,8320",
+        "variable_per_m3": "1,2681"
+      },
+      "electricity": {
+        "fixed_yearly": "131,8416",
+        "piek_per_kwh": "0,3337",
+        "dal_per_kwh": "0,2845"
+      }
+    },
+    "estimated_annual_costs": "172",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vattenfall",
+    "contract_name": "Groen uit Nederland Vast en VastePrijsGas 1 jaar",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,8320",
+        "variable_per_m3": "1,3262"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8836",
+        "piek_per_kwh": "0,4112",
+        "dal_per_kwh": "0,3670"
+      }
+    },
+    "estimated_annual_costs": "197",
+    "_tupleId": "10",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vattenfall",
+    "contract_name": "Groen uit Nederland Vast en VastePrijsGas 3 jaar",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,8836",
+        "variable_per_m3": "1,3591"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8836",
+        "piek_per_kwh": "0,4096",
+        "dal_per_kwh": "0,3670"
+      }
+    },
+    "estimated_annual_costs": "201",
+    "_tupleId": "11",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vattenfall",
+    "contract_name": "Groen uit Nederland Vast en VastePrijsGas 3 jaar",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "107,8836",
+        "variable_per_m3": "1,3591"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8836",
+        "piek_per_kwh": "0,3885",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "201",
+    "_tupleId": "12",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vattenfall",
+    "contract_name": "Groen uit Nederland Vast 1 jaar (niveau HVR-A) en VastePrijsGas 1 jaar (niveau A)",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,8320",
+        "variable_per_m3": "1,2681"
+      },
+      "electricity": {
+        "fixed_yearly": "131,8416",
+        "piek_per_kwh": "0,3094",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "173",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vattenfall",
+    "contract_name": "Groen uit Nederland Vast en VastePrijsGas 1 jaar (niveau A)",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,8320",
+        "variable_per_m3": "1,2681"
+      },
+      "electricity": {
+        "fixed_yearly": "95,8320",
+        "piek_per_kwh": "0,3579",
+        "dal_per_kwh": "0,3087"
+      }
+    },
+    "estimated_annual_costs": "176",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vattenfall",
+    "contract_name": "Groen uit Nederland Vast en VastePrijsGas 1 jaar (niveau A)",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,8320",
+        "variable_per_m3": "1,2681"
+      },
+      "electricity": {
+        "fixed_yearly": "95,8320",
+        "piek_per_kwh": "0,3336",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "176",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vattenfall",
+    "contract_name": "Groen uit Nederland en Gas",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "59,8224",
+        "variable_per_m3": "1,2975"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8836",
+        "piek_per_kwh": "0,3704",
+        "dal_per_kwh": "0,3216"
+      }
+    },
+    "estimated_annual_costs": "180",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vattenfall",
+    "contract_name": "Groen uit Nederland en Gas",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "59,8224",
+        "variable_per_m3": "1,2975"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8836",
+        "piek_per_kwh": "0,3463",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "180",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vattenfall",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "59,8224",
+        "variable_per_m3": "1,2975"
+      },
+      "electricity": {
+        "fixed_yearly": "131,8416",
+        "piek_per_kwh": "0,3663",
+        "dal_per_kwh": "0,3175"
+      }
+    },
+    "estimated_annual_costs": "181",
+    "_tupleId": "7",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vattenfall",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "59,8224",
+        "variable_per_m3": "1,2975"
+      },
+      "electricity": {
+        "fixed_yearly": "131,8416",
+        "piek_per_kwh": "0,3422",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "181",
+    "_tupleId": "8",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vattenfall",
+    "contract_name": "Groen uit Nederland Vast en VastePrijsGas 1 jaar",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "95,8320",
+        "variable_per_m3": "1,3262"
+      },
+      "electricity": {
+        "fixed_yearly": "107,8836",
+        "piek_per_kwh": "0,3665",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "191",
+    "_tupleId": "9",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Ventum",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,9950",
+        "variable_per_m3": "1,4375"
+      },
+      "electricity": {
+        "fixed_yearly": "71,9950",
+        "piek_per_kwh": "0,3945",
+        "dal_per_kwh": "0,3945"
+      }
+    },
+    "estimated_annual_costs": "204",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Ventum",
+    "contract_name": "Ventum Flexibel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,9950",
+        "variable_per_m3": "1,4375"
+      },
+      "electricity": {
+        "fixed_yearly": "71,9950",
+        "piek_per_kwh": "0,3945",
+        "dal_per_kwh": "0,3945"
+      }
+    },
+    "estimated_annual_costs": "204",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Ventum",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,9950",
+        "variable_per_m3": "1,4375"
+      },
+      "electricity": {
+        "fixed_yearly": "71,9950",
+        "piek_per_kwh": "0,3945",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "204",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Ventum",
+    "contract_name": "Ventum Flexibel",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "71,9950",
+        "variable_per_m3": "1,4375"
+      },
+      "electricity": {
+        "fixed_yearly": "71,9950",
+        "piek_per_kwh": "0,3945",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "204",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vrijopnaam",
+    "contract_name": "Variabel Energiezuinig contract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,9966",
+        "variable_per_m3": "1,2710"
+      },
+      "electricity": {
+        "fixed_yearly": "77,9966",
+        "piek_per_kwh": "0,3644",
+        "dal_per_kwh": "0,3422"
+      }
+    },
+    "estimated_annual_costs": "178",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vrijopnaam",
+    "contract_name": "Variabel Energiezuinig contract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,9966",
+        "variable_per_m3": "1,2710"
+      },
+      "electricity": {
+        "fixed_yearly": "77,9966",
+        "piek_per_kwh": "0,3603",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "180",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vrijopnaam",
+    "contract_name": "Variabel contract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,9966",
+        "variable_per_m3": "1,2988"
+      },
+      "electricity": {
+        "fixed_yearly": "77,9966",
+        "piek_per_kwh": "0,3766",
+        "dal_per_kwh": "0,3544"
+      }
+    },
+    "estimated_annual_costs": "184",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vrijopnaam",
+    "contract_name": "Variabel contract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,9966",
+        "variable_per_m3": "1,2988"
+      },
+      "electricity": {
+        "fixed_yearly": "77,9966",
+        "piek_per_kwh": "0,3725",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "186",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vrijopnaam",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,9966",
+        "variable_per_m3": "1,4620"
+      },
+      "electricity": {
+        "fixed_yearly": "77,9966",
+        "piek_per_kwh": "0,5505",
+        "dal_per_kwh": "0,5136"
+      }
+    },
+    "estimated_annual_costs": "244",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Vrijopnaam",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "77,9966",
+        "variable_per_m3": "1,4620"
+      },
+      "electricity": {
+        "fixed_yearly": "77,9966",
+        "piek_per_kwh": "0,5438",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "247",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "WoonEnergie",
+    "contract_name": "WoonEnergie Sales 1 jaar stroom",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "37,5001",
+        "variable_per_m3": "1,3211"
+      },
+      "electricity": {
+        "fixed_yearly": "37,5001",
+        "piek_per_kwh": "0,3677",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "180",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "WoonEnergie",
+    "contract_name": "WoonEnergie Sales 1 jaar stroom",
+    "contract_duration": "Vast (1 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "37,5001",
+        "variable_per_m3": "1,3211"
+      },
+      "electricity": {
+        "fixed_yearly": "37,5001",
+        "piek_per_kwh": "0,3999",
+        "dal_per_kwh": "0,3564"
+      }
+    },
+    "estimated_annual_costs": "183",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "WoonEnergie",
+    "contract_name": "WoonEnergie Sales 3 jaar stroom",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "37,5001",
+        "variable_per_m3": "1,3274"
+      },
+      "electricity": {
+        "fixed_yearly": "37,5001",
+        "piek_per_kwh": "0,3935",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "188",
+    "_tupleId": "3",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "WoonEnergie",
+    "contract_name": "WoonEnergie Sales 3 jaar stroom",
+    "contract_duration": "Vast (3 jaar)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "37,5001",
+        "variable_per_m3": "1,3274"
+      },
+      "electricity": {
+        "fixed_yearly": "37,5001",
+        "piek_per_kwh": "0,3935",
+        "dal_per_kwh": "0,3935"
+      }
+    },
+    "estimated_annual_costs": "188",
+    "_tupleId": "4",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "WoonEnergie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "37,5001",
+        "variable_per_m3": "1,5000"
+      },
+      "electricity": {
+        "fixed_yearly": "37,5001",
+        "piek_per_kwh": "0,3944",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "205",
+    "_tupleId": "5",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "WoonEnergie",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "double",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "37,5001",
+        "variable_per_m3": "1,5000"
+      },
+      "electricity": {
+        "fixed_yearly": "37,5001",
+        "piek_per_kwh": "0,4430",
+        "dal_per_kwh": "0,3890"
+      }
+    },
+    "estimated_annual_costs": "210",
+    "_tupleId": "6",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Zonneplan",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "75,0000",
+        "variable_per_m3": "3,9807"
+      },
+      "electricity": {
+        "fixed_yearly": "75,0000",
+        "piek_per_kwh": "0,9995",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "609",
+    "_tupleId": "1",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  },
+  {
+    "provider": "Zonneplan",
+    "contract_name": "Modelcontract",
+    "contract_duration": "Variabel (onbepaald)",
+    "meter_type": "single",
+    "tariffs": {
+      "gas": {
+        "fixed_yearly": "359,9992",
+        "variable_per_m3": "3,9807"
+      },
+      "electricity": {
+        "fixed_yearly": "359,9992",
+        "piek_per_kwh": "0,9995",
+        "dal_per_kwh": null
+      }
+    },
+    "estimated_annual_costs": "657",
+    "_tupleId": "2",
+    "_month_idx": "september 2023",
+    "_session_id": "65E24C89220F4C5290A34CDA9A4FCE65-0:0"
+  }
+]
