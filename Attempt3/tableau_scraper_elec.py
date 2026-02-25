@@ -42,9 +42,10 @@ def get_year_from_month_name(month_name: str) -> int:
 
 
 def create_year_directories(base_path: Path) -> None:
-    """Create year directories: 2023/, 2024/, 2025/, 2026/."""
+    """Create year directories: Electricity/2023/, Electricity/2024/, Electricity/2025/, Electricity/2026/."""
+    electricity_base = base_path / "Electricity"
     for year in [2023, 2024, 2025, 2026]:
-        year_dir = base_path / str(year)
+        year_dir = electricity_base / str(year)
         year_dir.mkdir(parents=True, exist_ok=True)
 
 
@@ -463,7 +464,7 @@ async def scrape_provider_contracts(page, base_url: str, provider_name: str, pro
     select_url = f"{base_url}/tabsrv/select-region-no-return-server"
     tooltip_url = f"{base_url}/tabsrv/render-tooltip-server"
     
-    X_CLICK = 140
+    X_CLICK = 200
     Y_POSITIONS = list(range(0, 4001, 30))  # Scan every 30 pixels from 0 to 4000
     
     async def scan_y_position(y_pos):
@@ -793,6 +794,16 @@ async def scrape_with_playwright_async(month_filter: int = None, month_range: tu
             
             year = get_year_from_month_name(month_name)
             
+            # First, set electricity filter (Parameter 4, idx 2)
+            elec_url = f"{base_url}/tabdoc/set-parameter-value-from-index"
+            elec_payload = {
+                "parameterName": "[Parameters].[Parameter 4]",
+                "idx": "2",
+                "telemetryCommandId": "wb4y"
+            }
+            status, _ = await post_multipart(page, elec_url, elec_payload, required_headers)
+            await asyncio.sleep(0.1)
+            
             # Set month parameter
             month_url = f"{base_url}/tabdoc/set-parameter-value-from-index"
             month_payload = {
@@ -824,8 +835,8 @@ async def scrape_with_playwright_async(month_filter: int = None, month_range: tu
             # Store results for this month
             month_results[month_name] = all_contracts
             
-            # Save contracts for this month to year-specific folder
-            year_dir = output_base / str(year)
+            # Save contracts for this month to Electricity/year-specific folder
+            year_dir = output_base / "Electricity" / str(year)
             output_path = year_dir / f"contracts_{month_name}.json"
             
             with open(output_path, "w", encoding="utf-8") as f:
