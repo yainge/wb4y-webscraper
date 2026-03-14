@@ -1,0 +1,32 @@
+{
+  "provider": "Frank Energie",
+  "contract": "with_solar",
+  "name": "Dynamisch (beter met zonnepanelen)",
+  "description": "Dynamic tariff optimized for customers with solar panels",
+  "tariff_parameters": {
+    "import_margin": 0.0182,
+    "feedin_rate": 0.0182,
+    "energy_tax": 0.088,
+    "vat_rate": 0.20999999999999996,
+    "fixed_costs_monthly": 7.25
+  },
+  "data_summary": {
+    "records": 35029,
+    "timestamp_range": {
+      "start": "2025-01-01T00:15:00+00:00",
+      "end": "2025-12-31T23:45:00+00:00"
+    },
+    "import_tariff_stats": {
+      "min": -0.29499800000000004,
+      "max": 0.7619006999999999,
+      "mean": 0.23406495754945902,
+      "unit": "EUR/kWh"
+    },
+    "feedin_tariff": 0.0182,
+    "unit": "EUR/kWh"
+  },
+  "metadata": {
+    "generated_at": "2026-03-14T12:07:25.482349",
+    "source": "merged script: generate_contract_timeseries.py"
+  }
+}
