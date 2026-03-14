@@ -1,0 +1,63 @@
+{
+  "provider": "Frank Energie",
+  "tariff_type": "Dynamic",
+  "currency": "EUR",
+  "unit_electricity": "kWh",
+  "unit_gas": "m³",
+  "unit_monthly": "month",
+  "fixed_costs": {
+    "monthly_without_solar": 7.00,
+    "monthly_with_solar": 7.25
+  },
+  "scenarios": [
+    {
+      "name": "Dynamisch (beter zonder zonnepanelen)",
+      "scenario_id": "without_solar",
+      "description": "Dynamic tariff optimized for customers without solar panels",
+      "fixed_costs_monthly": 7.00,
+      "electricity_purchase": {
+        "rate_per_kwh": 0.0182,
+        "description": "Inkoopvergoeding stroom"
+      },
+      "electricity_feedin": {
+        "rate_per_kwh": -0.0127,
+        "description": "Inkoopvergoeding teruglevering (penalty/negative)"
+      },
+      "gas_purchase": {
+        "rate_per_m3": 0.799,
+        "description": "Inkoopvergoeding gas"
+      }
+    },
+    {
+      "name": "Dynamisch (beter met zonnepanelen)",
+      "scenario_id": "with_solar",
+      "description": "Dynamic tariff optimized for customers with solar panels",
+      "fixed_costs_monthly": 7.25,
+      "electricity_purchase": {
+        "rate_per_kwh": 0.0182,
+        "description": "Inkoopvergoeding stroom"
+      },
+      "electricity_feedin": {
+        "rate_per_kwh": 0.0182,
+        "description": "Inkoopvergoeding teruglevering (equal to purchase rate)"
+      },
+      "gas_purchase": {
+        "rate_per_m3": 0.799,
+        "description": "Inkoopvergoeding gas"
+      }
+    }
+  ],
+  "key_differences": {
+    "monthly_cost_increase_with_solar": 0.25,
+    "feedin_difference": {
+      "without_solar": -0.0127,
+      "with_solar": 0.0182,
+      "improvement": 0.0309
+    }
+  },
+  "metadata": {
+    "created_date": "2026-03-14",
+    "notes": "Frank Energie offers two dynamic tariff options: one without solar panels support (with negative feed-in compensation), and one with solar panels support (with matching buy/sell rates).",
+    "margin_notes": "These are the tariff rates/margins from Frank Energie. To get total consumer cost, combine with ENTSOE market prices and applicable taxes."
+  }
+}
