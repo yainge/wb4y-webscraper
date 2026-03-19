@@ -1,0 +1,119 @@
+{
+  "_description": "Contract duration patterns (time indications) used across Dutch energy providers",
+  "_usage": "Use these patterns to identify and extract the duration portion of contract names",
+  
+  "duration_patterns": {
+    "1_jaar": {
+      "indicators": ["1 jaar", "1 Jaar"],
+      "months": 12,
+      "providers": ["Budget Energie", "Cleanenergy", "Coolblue Energie", "Energiedirect.nl", "Essent", "Greenchoice", "Greenchoice Zakelijk", "Innova Energie", "Kikker Energie", "Noord Energie", "Om | nieuwe energie", "Vandebron", "VanHelder", "UnitedConsumers"]
+    },
+    "2_jaar": {
+      "indicators": ["2 jaar", "2 Jaar"],
+      "months": 24,
+      "providers": ["Cleanenergy", "Coolblue Energie", "Energiedirect.nl", "Greenchoice", "Greenchoice Zakelijk", "Innova Energie", "Kikker Energie", "Noord Energie", "Vandebron", "VanHelder"]
+    },
+    "3_jaar": {
+      "indicators": ["3 jaar", "3 Jaar"],
+      "months": 36,
+      "providers": ["AllureNRG", "Budget Energie", "Cleanenergy", "Coolblue Energie", "Energiedirect.nl", "Essent", "Eneco", "Greenchoice", "Greenchoice Zakelijk", "Innova Energie", "Kikker Energie", "Noord Energie", "OXXIO", "Vandebron", "VanHelder", "UnitedConsumers"]
+    },
+    "4_jaar": {
+      "indicators": ["4 jaar"],
+      "months": 48,
+      "providers": ["Cleanenergy", "Innova Energie"]
+    },
+    "5_jaar": {
+      "indicators": ["5 jaar"],
+      "months": 60,
+      "providers": ["Coolblue Energie"]
+    },
+    "6_maanden": {
+      "indicators": ["6 maanden"],
+      "months": 6,
+      "providers": ["Energiebesteding VastZeker", "Hezelaer Energy"]
+    },
+    "halfjaar": {
+      "indicators": ["halfjaar", "Halfjaar", "half jaar"],
+      "months": 6,
+      "providers": ["Coolblue Energie", "Kikker Energie"]
+    },
+    "kwartaal": {
+      "indicators": ["kwartaal", "Kwartaal"],
+      "months": 3,
+      "providers": ["Coolblue Energie"]
+    },
+    "vaste_leveringsprijs_1_jaar": {
+      "indicators": ["vaste leveringsprijs (1 jaar)"],
+      "months": 12,
+      "note": "DELTA Energie format for fixed 1-year pricing",
+      "providers": ["DELTA energie"]
+    },
+    "vaste_leveringsprijs_3_jaar": {
+      "indicators": ["vaste leveringsprijs (3 jaar)"],
+      "months": 36,
+      "note": "DELTA Energie format for fixed 3-year pricing",
+      "providers": ["DELTA energie"]
+    },
+    "variabele_leveringsprijs": {
+      "indicators": ["variabele leveringsprijs"],
+      "months": null,
+      "note": "DELTA Energie format for variable/flexible pricing",
+      "providers": ["DELTA energie"]
+    },
+    "vaste_prijs_1_jaar": {
+      "indicators": ["Vaste Prijs 1 jaar"],
+      "months": 12,
+      "note": "Fixed price for 1 year - typical for Essent and Energiedirect.nl",
+      "providers": ["Energiedirect.nl", "Essent"]
+    },
+    "vaste_prijs_2_jaar": {
+      "indicators": ["Vaste Prijs 2 jaar"],
+      "months": 24,
+      "note": "Fixed price for 2 years",
+      "providers": ["Energiedirect.nl", "Essent"]
+    },
+    "vaste_prijs_3_jaar": {
+      "indicators": ["Vaste Prijs 3 jaar"],
+      "months": 36,
+      "note": "Fixed price for 3 years",
+      "providers": ["Energiedirect.nl", "Essent"]
+    },
+    "onbepaalde_tijd_variabel": {
+      "indicators": ["onbepaalde tijd variabel"],
+      "months": null,
+      "note": "Indefinite variable contract",
+      "providers": ["Energiedirect.nl"]
+    },    "frank_energie_months": {
+      "indicators": ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "months": null,
+      "note": "Frank Energie uses month abbreviations; stored separately in snapshot metadata",
+      "providers": ["Frank Energie"],
+      "extraction_note": "Drop month+year from contract name, use only base + type"
+    },    "onbepaald": {
+      "indicators": ["onbepaald", "onbepaalde tijd", "variabel", "Variabel"],
+      "months": null,
+      "note": "Indefinite/flexible duration",
+      "providers": ["AllureNRG", "Cleanenergy", "Coolblue Energie", "DELTA energie", "Energiedirect.nl", "Eneco", "Essent", "Energyhouse", "Energie.VanOns", "Frank energie", "Greenchoice", "Hezelaer Energy", "Innova Energie", "Kikker Energie", "OXXIO", "Powerpeers", "Pure Energie", "UnitedConsumers", "Vandebron"]
+    }
+  },
+  
+  "status_modifiers": {
+    "vast": {
+      "meaning": "Fixed/firm price",
+      "providers": ["All providers"]
+    },
+    "variabel": {
+      "meaning": "Variable/flexible price",
+      "providers": ["All providers"]
+    },
+    "zeker": {
+      "meaning": "Certain/guaranteed (typically Coolblue, Essent, OXXIO)",
+      "providers": ["Coolblue Energie", "Essent", "OXXIO"]
+    },
+    "verlenging": {
+      "meaning": "Renewal/extension term",
+      "providers": ["Budget Energie", "Cleanenergy"]
+    }
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "_metadata": {
+    "description": "Quick lookup tables and integration templates for feed-in tariff ingestion",
+    "purpose": "Support rapid lookup and calculation in ingest_tariffs.py",
+    "usage_pattern": "Import and use lookup tables to get tariff info quickly"
+  },
+
+  "provider_tariff_summary": {
+    "by_calculation_method": {
+      "fixed_rate_per_kwh": [
+        {
+          "provider": "Eneco",
+          "rates": {"1_jaar": 0.146, "3_jaar": 0.182, "variabel": 0.142},
+          "example_cost_5000kwh": {"1_jaar": 730, "3_jaar": 910, "variabel": 710}
+        },
+        {
+          "provider": "Oxxio",
+          "rates": {"1_jaar": 0.149, "3_jaar": 0.152, "variabel": 0.152},
+          "example_cost_5000kwh": {"1_jaar_variabel": 745, "3_jaar": 760}
+        },
+        {
+          "provider": "Greenchoice",
+          "rates": {"1_jaar": 0.146, "2_3_jaar_variabel": 0.155},
+          "example_cost_5000kwh": {"1_jaar": 730, "2_3_jaar_variabel": 775}
+        },
+        {
+          "provider": "Vrijopnaam",
+          "rates": {"all_durations": 0.129},
+          "example_cost_5000kwh": 645
+        },
+        {
+          "provider": "Clean Energy",
+          "rates": {"all_durations": 0.140},
+          "example_cost_5000kwh": 700
+        },
+        {
+          "provider": "Innova Energie (fixed)",
+          "rates": {"fixed": 0.133, "dynamic": 0.025},
+          "example_cost_5000kwh": {"fixed": 665, "dynamic": 125}
+        }
+      ],
+
+      "tiered_staffels": [
+        {
+          "provider": "Essent / Energiedirect",
+          "tiers_at_key_levels": {
+            "1000_kwh": 146.28,
+            "3000_kwh": 373.80,
+            "5000_kwh": 633.84,
+            "10000_kwh": 1283.76
+          }
+        },
+        {
+          "provider": "Vattenfall",
+          "tiers_at_key_levels": {
+            "1000_kwh": 149.04,
+            "3000_kwh": 471.00,
+            "5000_kwh": 698.04,
+            "10000_kwh": 1031.04
+          }
+        },
+        {
+          "provider": "Vandebron",
+          "tiers_at_key_levels": {
+            "1000_kwh": 140.04,
+            "3000_kwh": 500.04,
+            "5000_kwh": 780.00,
+            "10000_kwh": 1580.04
+          }
+        },
+        {
+          "provider": "Budget Energie",
+          "tiers_at_key_levels": {
+            "1000_kwh": 120.00,
+            "3000_kwh": 258.00,
+            "5000_kwh": 672.00,
+            "10000_kwh": 1416.00
+          }
+        },
+        {
+          "provider": "Delta Energie",
+          "tiers_at_key_levels": {
+            "1000_kwh": 135.00,
+            "3000_kwh": 412.08,
+            "5000_kwh": 674.76,
+            "10000_kwh": 1237.00
+          }
+        },
+        {
+          "provider": "United Consumers",
+          "tiers_at_key_levels": {
+            "1000_kwh": 149.52,
+            "3000_kwh": 379.56,
+            "5000_kwh": 552.00,
+            "10000_kwh": 179.79
+          }
+        },
+        {
+          "provider": "Powerpeers",
+          "tiers_at_key_levels": {
+            "1000_kwh": 0.00,
+            "2000_kwh": 270.00,
+            "5000_kwh": 759.96,
+            "10000_kwh": 1520.04
+          }
+        },
+        {
+          "provider": "Mega",
+          "tiers_at_key_levels": {
+            "1000_kwh": 75.96,
+            "3000_kwh": 390.00,
+            "5000_kwh": 708.00,
+            "10000_kwh": 1332.96
+          }
+        },
+        {
+          "provider": "Pure Energie",
+          "tiers_at_key_levels": {
+            "1000_kwh": 257.40,
+            "3000_kwh": 534.60,
+            "5000_kwh": 802.80,
+            "10000_kwh": 1708.80
+          }
+        },
+        {
+          "provider": "OM Energie",
+          "tiers_at_key_levels": {
+            "1000_kwh": 0.00,
+            "2000_kwh": 272.28,
+            "5000_kwh": 574.80,
+            "10000_kwh": 1179.72
+          }
+        },
+        {
+          "provider": "Energie VanOns",
+          "tiers_at_key_levels": {
+            "1000_kwh": 0.00,
+            "2000_kwh": 299.40,
+            "5000_kwh": 632.16,
+            "10000_kwh": 1297.68
+          }
+        }
+      ],
+
+      "fixed_fee_plus_variable": [
+        {
+          "provider": "Engie",
+          "fixed_fee_monthly": 4.89,
+          "variable_rate_per_kwh": 0.115,
+          "calculation": "(€4.89 * 12) + (kwh * 0.115)",
+          "example_cost_5000kwh": 633.68
+        }
+      ]
+    },
+
+    "by_provider_coverage": {
+      "both_fixed_and_dynamic": [
+        {
+          "provider": "Budget Energie",
+          "fixed_method": "tiered_staffels",
+          "dynamic_method": "no_charge_no_compensation",
+          "dynamic_handling": "Neither compensated nor charged for surplus"
+        },
+        {
+          "provider": "Coolblue Energie",
+          "fixed_method": "higher_fixed_rate",
+          "dynamic_method": "no_charge_no_compensation",
+          "dynamic_handling": "No separate charges; costs in base fee"
+        },
+        {
+          "provider": "Innova Energie",
+          "fixed_method": "fixed_rate_per_kwh (€0.133)",
+          "dynamic_method": "fixed_rate_per_kwh (€0.025)",
+          "dynamic_handling": "Pays procurement charge on all feed-in"
+        },
+        {
+          "provider": "Pure Energie",
+          "fixed_method": "tiered_staffels",
+          "dynamic_method": "fixed_rate_per_kwh",
+          "dynamic_handling": "Pays €0.0370/kWh procurement charge"
+        },
+        {
+          "provider": "Eneco",
+          "fixed_method": "fixed_rate_per_kwh (varies by duration)",
+          "dynamic_method": "no_charge_on_surplus",
+          "dynamic_handling": "Pays €0.0292/kWh only on annual overage"
+        },
+        {
+          "provider": "Energiedirect",
+          "fixed_method": "tiered_staffels (shared with Essent)",
+          "dynamic_method": "no_charge_on_surplus",
+          "dynamic_handling": "Pays €0.0205/kWh only on annual overage"
+        },
+        {
+          "provider": "Essent",
+          "fixed_method": "tiered_staffels",
+          "dynamic_method": "no_charge_on_surplus",
+          "dynamic_handling": "Pays €0.0253/kWh only on annual overage"
+        },
+        {
+          "provider": "Vattenfall",
+          "fixed_method": "tiered_staffels",
+          "dynamic_method": "no_charge_on_surplus",
+          "dynamic_handling": "Pays €0.0255/kWh only on annual overage"
+        },
+        {
+          "provider": "VandeBron",
+          "fixed_method": "tiered_staffels",
+          "dynamic_method": "no_charge_on_surplus",
+          "dynamic_handling": "Pays €0.0136/kWh only on annual overage"
+        }
+      ],
+
+      "fixed_only": [
+        "Oxxio",
+        "Greenchoice",
+        "Delta Energie",
+        "Engie",
+        "United Consumers",
+        "Powerpeers",
+        "Mega",
+        "OM Energie",
+        "Energie VanOns",
+        "Vrijopnaam",
+        "Clean Energy"
+      ],
+
+      "dynamic_only": [
+        {
+          "provider": "Zonneplan",
+          "method": "receive_full_compensation",
+          "rate": "€0.0200/kWh + Zonnebonus"
+        },
+        {
+          "provider": "Frank Energie",
+          "method": "receive_full_compensation",
+          "rate": "€0.0182/kWh"
+        },
+        {
+          "provider": "EasyEnergy",
+          "method": "pay_procurement_charge",
+          "rate": "€0.0218/kWh (pay)"
+        },
+        {
+          "provider": "NextEnergy",
+          "method": "pay_procurement_charge",
+          "rate": "€0.0219/kWh (pay)"
+        },
+        {
+          "provider": "Innova",
+          "method": "pay_procurement_charge",
+          "rate": "€0.0306/kWh (pay)"
+        },
+        {
+          "provider": "Tibber",
+          "method": "pay_on_surplus_only",
+          "rate": "€0.0248/kWh on overage"
+        },
+        {
+          "provider": "EnergyZero",
+          "method": "no_charge_no_compensation",
+          "rate": "No extra charge"
+        },
+        {
+          "provider": "ANWB Energie",
+          "method": "no_charge_no_compensation",
+          "rate": "No extra charge"
+        }
+      ]
+    }
+  },
+
+  "lookup_helpers": {
+    "estimate_feedin_cost": {
+      "description": "Function template to estimate annual feed-in cost given provider, duration, and annual kWh",
+      "pseudocode": "function estimate_feedin_cost(provider_id, contract_duration, annual_kwh_estimate):\n  if provider_id in FIXED_RATE_PROVIDERS:\n    rate = get_rate_for_duration(provider_id, contract_duration)\n    return annual_kwh_estimate * rate\n  elif provider_id in TIERED_PROVIDERS:\n    tier = find_tier(provider_id, annual_kwh_estimate)\n    return tier['cost_per_year_eur']\n  elif provider_id == 'engie':\n    return (4.89 * 12) + (annual_kwh_estimate * 0.115)\n  else:\n    return None",
+      "implementation_in_python": [
+        "from feed_in_tariffs import FIXED_RATE_PROVIDERS, TIERED_PROVIDERS, PROVIDER_RATES",
+        "",
+        "def estimate_feedin_cost(provider_id, contract_duration, annual_kwh):",
+        "    if provider_id in ['eneco', 'oxxio', 'greenchoice', 'vrijopnaam', 'clean_energy']:",
+        "        if provider_id in FIXED_RATE_PROVIDERS:",
+        "            rate = PROVIDER_RATES[provider_id].get(contract_duration, 0)",
+        "            return round(annual_kwh * rate, 2)",
+        "    elif provider_id in TIERED_PROVIDERS:",
+        "        for tier in TIERED_PROVIDERS[provider_id]['tiers']:",
+        "            if tier['kwh_min'] <= annual_kwh <= (tier['kwh_max'] or float('inf')):",
+        "                return tier['cost_per_year_eur']",
+        "    elif provider_id == 'engie':",
+        "        return round((4.89 * 12) + (annual_kwh * 0.115), 2)",
+        "    return None"
+      ]
+    },
+
+    "get_dynamic_handling": {
+      "description": "Look up how a provider handles feed-in compensation/charges for dynamic contracts",
+      "lookup_table": {
+        "receive_full_compensation": {"providers": ["Zonneplan", "Frank Energie"], "customer_outcome": "POSITIVE"},
+        "pay_procurement_charge": {"providers": ["EasyEnergy", "NextEnergy", "Pure Energie", "Innova"], "customer_outcome": "NEGATIVE"},
+        "pay_on_surplus_only": {"providers": ["Energiedirect", "VandeBron", "Essent", "Vattenfall", "Eneco", "Tibber"], "customer_outcome": "NEUTRAL"},
+        "no_charge_no_compensation": {"providers": ["Budget Energie", "Coolblue Energie", "EnergyZero", "ANWB Energie"], "customer_outcome": "NEUTRAL"}
+      }
+    },
+
+    "find_contract_duration_tier": {
+      "description": "Map contract duration string to rate or tier lookup key",
+      "mappings": {
+        "1_jaar": ["1 jaar", "1-year", "1 year", "1yr"],
+        "3_jaar": ["3 jaar", "3-year", "3 year", "3yr"],
+        "2_jaar": ["2 jaar", "2-year", "2 year", "2yr"],
+        "variabel": ["variabel", "variable", "variabele", "floating"],
+        "vast": ["vast", "fixed", "vaste"]
+      }
+    }
+  },
+
+  "integration_sql_patterns": {
+    "enrich_contracts_with_feedin": "UPDATE contracts SET feed_in_cost_estimate_eur = estimate_feedin_cost(provider_id, contract_duration, 3000) WHERE contract_type IN ('fixed', 'variable') AND solar_installation = true",
+
+    "rank_providers_by_feedin_cost": "SELECT provider_id, AVG(estimated_cost) as avg_feedin_cost FROM estimated_feedin_costs GROUP BY provider_id ORDER BY estimated_cost ASC",
+
+    "identify_dynamic_best_for_solar": "SELECT provider_id, dynamic_handling FROM provider_index WHERE has_dynamic_contracts = true ORDER BY CASE WHEN dynamic_handling = 'receive_full_compensation' THEN 1 WHEN dynamic_handling = 'pay_on_surplus_only' THEN 2 WHEN dynamic_handling = 'no_charge_no_compensation' THEN 3 ELSE 4 END"
+  },
+
+  "example_calculation_scenarios": {
+    "scenario_1_small_solar": {
+      "description": "Homeowner with small solar installation",
+      "annual_kwh": 1500,
+      "providers_comparison": [
+        {"provider": "Eneco (variable)", "cost": 213.00},
+        {"provider": "Vattenfall (1yr)", "cost": 149.04},
+        {"provider": "Budget Energie", "cost": 120.00},
+        {"provider": "Pure Energie", "cost": 340.20}
+      ],
+      "recommendation": "Budget Energie or Vattenfall cheapest for small excess"
+    },
+
+    "scenario_2_medium_solar": {
+      "description": "Homeowner with medium solar installation",
+      "annual_kwh": 4000,
+      "providers_comparison": [
+        {"provider": "Eneco (variable)", "cost": 568.00},
+        {"provider": "Vattenfall (1yr)", "cost": 564.96},
+        {"provider": "Budget Energie", "cost": 378.00},
+        {"provider": "Vandebron (1yr)", "cost": 581.28},
+        {"provider": "Vrijopnaam", "cost": 516.00}
+      ],
+      "recommendation": "Budget Energie best value; Vrijopnaam simplest (flat rate)"
+    },
+
+    "scenario_3_large_solar": {
+      "description": "Business with large solar installation",
+      "annual_kwh": 12000,
+      "providers_comparison": [
+        {"provider": "Eneco (variable)", "cost": 1704.00},
+        {"provider": "Vattenfall (1yr)", "cost": 1296.96},
+        {"provider": "Budget Energie", "cost": 1764.00},
+        {"provider": "Vandebron (1yr)", "cost": "2000+ (needs PDF)"},
+        {"provider": "Vrijopnaam", "cost": 1548.00}
+      ],
+      "recommendation": "Vattenfall very competitive for large volumes"
+    },
+
+    "scenario_4_dynamic_small_user": {
+      "description": "Small solar + dynamic contract preference",
+      "annual_kwh": 1000,
+      "consumption": 2500,
+      "surplus": 1000,
+      "providers_comparison": [
+        {"provider": "Zonneplan", "type": "receive_compensation", "cost": -18.20, "note": "You earn"},
+        {"provider": "Frank Energie", "type": "receive_compensation", "cost": -18.20, "note": "You earn"},
+        {"provider": "EasyEnergy", "type": "pay_charge", "cost": 21.80, "note": "You pay on all"},
+        {"provider": "Tibber", "type": "pay_on_surplus", "cost": 24.80, "note": "You pay only on surplus"},
+        {"provider": "Coolblue Energie", "type": "no_charge", "cost": 0.00, "note": "Neutral"}
+      ],
+      "recommendation": "Zonneplan or Frank Energie best for maximizing earnings"
+    }
+  },
+
+  "import_statements": {
+    "json_import": "import json; with open('feed_in_tariffs.json') as f: tariffs = json.load(f)",
+    "integration_approach": "Use feed_in_tariff_methods.json as calculation reference; feed_in_tariffs.json as data source",
+    "minimal_integration": [
+      "Add column: feed_in_cost_annual_eur (calculated)",
+      "Add column: feed_in_method (from provider_index)",
+      "Add column: feed_in_has_separate_costs (boolean)",
+      "Optional: feed_in_rate_per_kwh (for later fine-tuning)"
+    ]
+  }
+}

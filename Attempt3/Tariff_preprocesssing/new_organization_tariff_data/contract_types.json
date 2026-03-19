@@ -1,0 +1,242 @@
+{
+  "_description": "Contract type and duration categorization across Dutch energy providers",
+  "_usage": "Use to classify and store contract_type and contract_duration separately in storage",
+  "_note": "contract_type = pricing model (vast, variabel, zeker); contract_duration = years/months",
+  
+  "contract_types": {
+    "vast": {
+      "description": "Fixed price contract - price guaranteed for contract term",
+      "variations": ["Vast", "vast"],
+      "providers": ["Budget Energie", "Cleanenergy", "Essent", "Energiedirect.nl", "Greenchoice", "Innova Energie", "Kikker Energie", "Noord Energie", "Vadebron", "VanHelder"],
+      "pricing_model": "fixed"
+    },
+    
+    "vaste_prijs": {
+      "description": "Fixed price - alternative naming convention (typically with year suffix)",
+      "variations": ["Vaste Prijs", "Vaste prijs", "vaste prijs"],
+      "examples": ["Vaste Prijs 1 jaar", "Vaste Prijs 2 jaar", "Vaste Prijs 3 jaar"],
+      "providers": ["Energiedirect.nl", "Essent", "AllureNRG"],
+      "pricing_model": "fixed"
+    },
+    
+    "variabel": {
+      "description": "Variable price contract - price adjusts with market",
+      "variations": ["Variabel", "variabel"],
+      "providers": ["Budget Energie", "Cleanenergy", "Coolblue Energie", "DELTA energie", "Energiedirect.nl", "Eneco", "Essent", "Frank energie", "Greenchoice", "Kikker Energie", "Pure Energie"],
+      "pricing_model": "variable"
+    },
+    
+    "variabele_prijs": {
+      "description": "Variable price - alternative naming",
+      "variations": ["variabele prijs", "Variabele Prijs"],
+      "providers": ["AllureNRG"],
+      "pricing_model": "variable"
+    },
+    
+    "vaste_leveringsprijs": {
+      "description": "Fixed delivery price - DELTA Energie naming convention",
+      "variations": ["vaste leveringsprijs"],
+      "examples": ["vaste leveringsprijs (1 jaar)", "vaste leveringsprijs (3 jaar)"],
+      "providers": ["DELTA energie"],
+      "pricing_model": "fixed",
+      "note": "Includes duration in parentheses"
+    },
+    
+    "variabele_leveringsprijs": {
+      "description": "Variable delivery price - DELTA Energie naming convention",
+      "variations": ["variabele leveringsprijs"],
+      "providers": ["DELTA energie"],
+      "pricing_model": "variable",
+      "note": "Flexible/indefinite duration"
+    },
+    
+    "onbepaalde_tijd_variabel": {
+      "description": "Indefinite/flexible duration variable contract",
+      "variations": ["onbepaalde tijd variabel"],
+      "providers": ["Energiedirect.nl"],
+      "pricing_model": "variable",
+      "duration": "indefinite"
+    },
+    
+    "zeker": {
+      "description": "Certain/guaranteed price - Essent/OXXIO branding",
+      "variations": ["Zeker", "zeker"],
+      "providers": ["Essent", "OXXIO", "Coolblue Energie"],
+      "pricing_model": "fixed",
+      "note": "Typically combined with duration (1 jaar, 3 jaar)"
+    },
+    
+    "zekerheids_garantie": {
+      "description": "Certainty guarantee - Essent specific contract type",
+      "variations": ["ZekerheidsGarantie"],
+      "providers": ["Essent"],
+      "base_type": "fixed",
+      "note": "Often combined with variants (A, B, C, Plus, Compleet, Voordeel, etc.)"
+    }
+  },
+  
+  "contract_durations": {
+    "1_jaar": {
+      "months": 12,
+      "display": "1 jaar",
+      "indicators": ["1 jaar", "1 Jaar"],
+      "providers": ["Most fixed-price providers"]
+    },
+    "2_jaar": {
+      "months": 24,
+      "display": "2 jaar",
+      "indicators": ["2 jaar", "2 Jaar"],
+      "providers": ["Selected providers"]
+    },
+    "3_jaar": {
+      "months": 36,
+      "display": "3 jaar",
+      "indicators": ["3 jaar", "3 Jaar"],
+      "providers": ["Most fixed-price providers"]
+    },
+    "4_jaar": {
+      "months": 48,
+      "display": "4 jaar",
+      "indicators": ["4 jaar"],
+      "providers": ["Cleanenergy", "Innova Energie"]
+    },
+    "5_jaar": {
+      "months": 60,
+      "display": "5 jaar",
+      "indicators": ["5 jaar"],
+      "providers": ["Coolblue Energie"]
+    },
+    "6_maanden": {
+      "months": 6,
+      "display": "6 maanden",
+      "indicators": ["6 maanden"],
+      "providers": ["Hezelaer Energy", "Coolblue Energie"]
+    },
+    "halfjaar": {
+      "months": 6,
+      "display": "halfjaar",
+      "indicators": ["halfjaar", "Halfjaar"],
+      "providers": ["Coolblue Energie", "Kikker Energie"]
+    },
+    "kwartaal": {
+      "months": 3,
+      "display": "kwartaal",
+      "indicators": ["kwartaal", "Kwartaal"],
+      "providers": ["Coolblue Energie"]
+    },
+    "indefinite": {
+      "months": null,
+      "display": "Indefinite",
+      "indicators": ["onbepaald", "onbepaalde tijd", "flexibel"],
+      "providers": ["Variable price providers"]
+    }
+  },
+  
+  "provider_type_patterns": {
+    "Energiedirect.nl": {
+      "bases": ["Groene Stroom en Gas", "Vast Groene Stroom en Gas AltijdVoordeel"],
+      "contract_types": ["Vast (fixed)", "onbepaalde tijd variabel (indefinite variable)"],
+      "specific_durations": ["Vaste Prijs 1 jaar", "Vaste Prijs 2 jaar", "Vaste Prijs 3 jaar"],
+      "variants": ["ACQ", "AFL", "A", "Energiecollectief", "Klant", "P", "Plus", "Actie"]
+    },
+    "Essent": {
+      "bases": ["Groene Stroom (NL) en Gas"],
+      "contract_types": ["Variabel (variable)", "ZekerheidsGarantie (fixed with guarantee)", "Zeker & Vrij"],
+      "specific_durations": ["Vast", "Vaste Prijs", "1 jaar", "3 jaar"],
+      "variants": ["ACQ", "AFL", "Zeker & Vrij", "A", "B", "C", "F", "P", "RB", "Actie", "Plus", "Compleet", "Klant", "Voordeel"]
+    },
+    "DELTA energie": {
+      "bases": ["DELTA Groene Stroom en/of DELTA Gas", "DELTA Groene Actiestroom en/of DELTA Actiegas", "DELTA Puur Zeeuws Groen en/of DELTA MixGroen Gas"],
+      "contract_types": ["vaste leveringsprijs (fixed delivery price)", "variabele leveringsprijs (variable delivery price)"],
+      "specific_durations": ["vaste leveringsprijs (1 jaar)", "vaste leveringsprijs (3 jaar)"],
+      "variants": ["(a)", "(b)", "(c)", "(e)"]
+    },
+    "Frank Energie": {
+      "bases": ["Frank Energie"],
+      "contract_types": ["1 jaar vast", "Variabel"],
+      "note": "Month/year indicators (Apr 2025, etc.) are stored separately in snapshot metadata",
+      "month_indicators": ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "variants": []
+    },
+    "Greenchoice": {
+      "bases": ["100% Nederlandse Wind", "Groenbezig", "Groen&Vrij Wind en Zon", "Nederlandse Windstroom", "Slimgroen", "Zonnestroom", "Zorgeloos Energie", "Collectief"],
+      "contract_types": ["vast (fixed)", "variabel (variable)", "flexibel (flexible)"],
+      "specific_durations": ["1 jaar", "2 jaar", "3 jaar"],
+      "discount_codes": ["150", "200", "210", "250", "300", "350", "400", "500"],
+      "variants": ["Korting", "met Korting", "Start", "Collectief", "via Univé"],
+      "note": "Numeric codes (150, 200, etc.) represent discount/pricing tiers, stored as variants"
+    },
+    "Greenchoice Zakelijk": {
+      "bases": ["100% NL Wind", "Groen & Vrij", "Groen&Vrij"],
+      "contract_types": ["vast (fixed)", "variabel (variable)"],
+      "specific_durations": ["1 jaar", "3 jaar"],
+      "variants": ["Vergelijkers", "voor Echte Bakkers", "collectief", "start", "Loyaliteitsbonus", "A", "B", "C", "D", "F", "L", "P", "S"],
+      "note": "Zakelijk channel - business/corporate contracts"
+    },
+    "Hezelaer Energy": {
+      "bases": ["Gezinsenergie"],
+      "contract_types": ["MaandFlex (variable)", "VastZeker (fixed)"],
+      "specific_durations": ["1 jaar", "3 jaar", "6 maanden"],
+      "variants": ["TinQE", "Energiebesteding"],
+      "note": "Multiple base patterns with contract type embedded in name"
+    },
+    "Mega": {
+      "bases": ["Mega"],
+      "contract_types": ["VEH", "Variabel"],
+      "specific_durations": ["1 jaar", "2 jaar"],
+      "numeric_codes": ["194", "200", "266", "484", "496", "532", "540", "589,70", "592", "680", "698", "84", "85"],
+      "note": "Monthly modifiers (December, November, etc.) should be removed from contract_name. Numeric codes and VEH are variants."
+    },
+    "Noord Energie": {
+      "bases": ["Noord Energie", "Zuid Energie", "Yebbo"],
+      "contract_types": ["vast (fixed)", "variabel (variable)"],
+      "specific_durations": ["1 jaar", "2 jaar", "3 jaar"],
+      "variants": ["Actie", "Online", "particulier"],
+      "note": "Three distinct base brands under same provider organization"
+    },
+    "Om | nieuwe energie": {
+      "bases": ["Flex", "Variabel"],
+      "contract_types": ["1 jaar vast", "flexibel"],
+      "specific_durations": ["1 jaar"],
+      "month_codes": ["202506", "202507", "202508", "202509", "202510", "202511", "202512"],
+      "note": "Date codes (202506, etc.) represent month snapshots and should be removed from contract_name, stored in snapshot_month"
+    },
+    "Powerpeers": {
+      "bases": ["Samen Groen", "100% Groen Gas", "25% Groen Gas"],
+      "contract_types": ["maandelijks wisselend (monthly variable)"],
+      "variants": ["VP1", "VP2", "VP2-B", "VP3"],
+      "note": "VP codes are variant indicators for pricing or contract tiers"
+    },
+    "Pure Energie": {
+      "bases": ["Pure Energie", "Vast Consument", "Verlenging"],
+      "contract_types": ["vast (fixed)", "variabel (variable)"],
+      "specific_durations": ["1 jaar", "2 jaar", "3 jaar"],
+      "variants": ["Plus", "Netto Terugleveren", "Consument"],
+      "note": "Multiple base patterns with package variants"
+    },
+    "UnitedConsumers": {
+      "bases": ["Wind mee"],
+      "contract_types": ["vaste prijs (fixed)", "variabel (variable)"],
+      "specific_durations": ["1 jaar", "3 jaar", "onbepaalde tijd"],
+      "variants": ["Regiokorting", "Stapelkorting"],
+      "variant_modifiers": ["Delta", "ENGIE", "Eneco", "Essent", "Vattenfall"],
+      "note": "Discount types (Regiokorting, Stapelkorting) with provider-specific modifiers"
+    },
+    "Eneco": {
+      "electricity_base": "HollandseWind & Zon",
+      "gas_bases": ["CO2-GecompenseerdGas", "Gas"],
+      "contract_types": ["VastePrijs (fixed price)", "VariabelePrijs (variable price)", "VasteLooptijd (fixed period)", "Zeker (certainty)", "Variabel (variable)", "Actie (promotion)", "MKB (business)"],
+      "specific_durations": ["1 jaar", "3 jaar"],
+      "variants": ["Actie", "MKB", "VoordeelMomenten"],
+      "note": "Bundle contracts (electricity + gas). Structure: Eneco [elec_base] [duration] [type] & Eneco [gas_base] [duration] [type]. Each component can have independent type/duration."
+    },
+    "OXXIO": {
+      "electricity_bases": ["Nederlandse Windstroom", "Europese Windstroom", "LosVast", "Sales Oxxio.nl"],
+      "gas_bases": ["CO2-gecompenseerd Gas", "Gas"],
+      "contract_types": ["Zeker (fixed)", "Variabel (variable)", "LosVast (flexible)"],
+      "specific_durations": ["1 jaar", "3 jaar", "Flexibel"],
+      "variants": ["Tel"],
+      "note": "Bundle contracts (electricity + gas). Format: Oxxio [elec_base] [contract_type] [duration] & Oxxio [gas_base] [contract_type] [duration]. LosVast = flexible period or type."
+    }
+  }
+}

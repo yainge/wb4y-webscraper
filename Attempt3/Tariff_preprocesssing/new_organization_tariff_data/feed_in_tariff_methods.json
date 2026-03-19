@@ -1,0 +1,385 @@
+{
+  "_metadata": {
+    "description": "Feed-in tariff calculation helper and provider index for integration with ingest_tariffs.py",
+    "last_updated": "2025-12-23",
+    "purpose": "Support lookup queries and tariff calculations",
+    "integration_target": "ingest_tariffs.py feed-in cost enrichment logic"
+  },
+
+  "provider_index": {
+    "essent": {
+      "provider_id": "essent",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": false,
+      "calculation_method": "tiered_staffels",
+      "dynamic_handling": "per_surplus_only",
+      "pricing_note": "Shared scale with Energiedirect"
+    },
+
+    "energiedirect": {
+      "provider_id": "energiedirect",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": true,
+      "calculation_method": "tiered_staffels",
+      "dynamic_handling": "per_surplus_only",
+      "dynamic_surplus_charge_eur_per_kwh": 0.0205,
+      "pricing_note": "Shared scale with Essent for fixed/variable"
+    },
+
+    "eneco": {
+      "provider_id": "eneco",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": true,
+      "calculation_method": "fixed_rate_per_kwh",
+      "dynamic_handling": "per_surplus_only",
+      "dynamic_surplus_charge_eur_per_kwh": 0.0292,
+      "fixed_rates_eur_per_kwh": {
+        "1_jaar": 0.146,
+        "3_jaar": 0.182,
+        "variabel": 0.142
+      }
+    },
+
+    "oxxio": {
+      "provider_id": "oxxio",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": false,
+      "calculation_method": "fixed_rate_per_kwh",
+      "fixed_rates_eur_per_kwh": {
+        "1_jaar": 0.149,
+        "3_jaar": 0.152,
+        "variabel": 0.152
+      }
+    },
+
+    "vattenfall": {
+      "provider_id": "vattenfall",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": true,
+      "calculation_method": "tiered_staffels",
+      "dynamic_handling": "per_surplus_only",
+      "dynamic_surplus_charge_eur_per_kwh": 0.0255,
+      "pricing_note": "Effective from July 1, 2024"
+    },
+
+    "vandebron": {
+      "provider_id": "vandebron",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": true,
+      "calculation_method": "tiered_staffels",
+      "dynamic_handling": "per_surplus_only",
+      "dynamic_surplus_charge_eur_per_kwh": 0.0136
+    },
+
+    "budget_energie": {
+      "provider_id": "budget_energie",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": true,
+      "calculation_method": "tiered_staffels",
+      "dynamic_handling": "no_charge_no_compensation",
+      "pricing_note": "Dynamic: neither pays nor receives compensation"
+    },
+
+    "greenchoice": {
+      "provider_id": "greenchoice",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": false,
+      "calculation_method": "fixed_rate_per_kwh",
+      "fixed_rates_eur_per_kwh": {
+        "1_jaar": 0.146,
+        "2_jaar_3_jaar_variabel": 0.155
+      }
+    },
+
+    "delta_energie": {
+      "provider_id": "delta_energie",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": false,
+      "calculation_method": "tiered_staffels"
+    },
+
+    "engie": {
+      "provider_id": "engie",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": false,
+      "calculation_method": "fixed_fee_plus_variable_rate",
+      "pricing_note": "Calculated as: (€4.89/month) + (€0.115 per kWh)"
+    },
+
+    "united_consumers": {
+      "provider_id": "united_consumers",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": false,
+      "calculation_method": "tiered_staffels"
+    },
+
+    "innova_energie": {
+      "provider_id": "innova_energie",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": false,
+      "has_dynamic_contracts": true,
+      "calculation_method": "fixed_rate_per_kwh",
+      "dynamic_handling": "pay_procurement_charge",
+      "fixed_rate_eur_per_kwh": 0.133,
+      "dynamic_procurement_charge_eur_per_kwh": 0.0306
+    },
+
+    "powerpeers": {
+      "provider_id": "powerpeers",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": false,
+      "calculation_method": "tiered_staffels"
+    },
+
+    "mega": {
+      "provider_id": "mega",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": false,
+      "calculation_method": "tiered_staffels"
+    },
+
+    "coolblue_energie": {
+      "provider_id": "coolblue_energie",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": false,
+      "has_dynamic_contracts": true,
+      "calculation_method": "higher_fixed_rate",
+      "pricing_note": "Costs embedded in higher fixed supply rates; dynamic: no charge, no compensation",
+      "dynamic_handling": "no_charge_no_compensation"
+    },
+
+    "pure_energie": {
+      "provider_id": "pure_energie",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": true,
+      "calculation_method": "tiered_staffels",
+      "dynamic_handling": "pay_procurement_charge",
+      "dynamic_procurement_charge_eur_per_kwh": 0.0370
+    },
+
+    "om_energie": {
+      "provider_id": "om_energie",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": false,
+      "calculation_method": "tiered_staffels"
+    },
+
+    "energie_vanons": {
+      "provider_id": "energie_vanons",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": false,
+      "calculation_method": "tiered_staffels"
+    },
+
+    "vrijopnaam": {
+      "provider_id": "vrijopnaam",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": false,
+      "calculation_method": "fixed_rate_per_kwh",
+      "rate_eur_per_kwh": 0.129
+    },
+
+    "clean_energy": {
+      "provider_id": "clean_energy",
+      "has_fixed_contracts": true,
+      "has_variable_contracts": true,
+      "has_dynamic_contracts": false,
+      "calculation_method": "fixed_rate_per_kwh",
+      "rate_eur_per_kwh": 0.140
+    },
+
+    "zonneplan": {
+      "provider_id": "zonneplan",
+      "has_fixed_contracts": false,
+      "has_variable_contracts": false,
+      "has_dynamic_contracts": true,
+      "calculation_method": "fixed_rate_per_kwh",
+      "dynamic_handling": "receive_full_compensation",
+      "dynamic_compensation_eur_per_kwh": 0.0200,
+      "note": "No feed-in costs; includes Zonnebonus"
+    },
+
+    "frank_energie": {
+      "provider_id": "frank_energie",
+      "has_fixed_contracts": false,
+      "has_variable_contracts": false,
+      "has_dynamic_contracts": true,
+      "calculation_method": "fixed_rate_per_kwh",
+      "dynamic_handling": "receive_full_compensation",
+      "dynamic_compensation_eur_per_kwh": 0.0182
+    },
+
+    "easy_energy": {
+      "provider_id": "easy_energy",
+      "has_fixed_contracts": false,
+      "has_variable_contracts": false,
+      "has_dynamic_contracts": true,
+      "calculation_method": "fixed_rate_per_kwh",
+      "dynamic_handling": "pay_procurement_charge",
+      "dynamic_procurement_charge_eur_per_kwh": 0.0218
+    },
+
+    "next_energy": {
+      "provider_id": "next_energy",
+      "has_fixed_contracts": false,
+      "has_variable_contracts": false,
+      "has_dynamic_contracts": true,
+      "calculation_method": "fixed_rate_per_kwh",
+      "dynamic_handling": "pay_procurement_charge",
+      "dynamic_procurement_charge_eur_per_kwh": 0.0219
+    },
+
+    "innova": {
+      "provider_id": "innova",
+      "has_fixed_contracts": false,
+      "has_variable_contracts": false,
+      "has_dynamic_contracts": true,
+      "calculation_method": "fixed_rate_per_kwh",
+      "dynamic_handling": "pay_procurement_charge",
+      "dynamic_procurement_charge_eur_per_kwh": 0.0306,
+      "note": "Dynamic-only version of Innova Energie"
+    },
+
+    "tibber": {
+      "provider_id": "tibber",
+      "has_fixed_contracts": false,
+      "has_variable_contracts": false,
+      "has_dynamic_contracts": true,
+      "calculation_method": "fixed_rate_per_kwh",
+      "dynamic_handling": "per_surplus_only",
+      "dynamic_surplus_charge_eur_per_kwh": 0.0248
+    },
+
+    "energy_zero": {
+      "provider_id": "energy_zero",
+      "has_fixed_contracts": false,
+      "has_variable_contracts": false,
+      "has_dynamic_contracts": true,
+      "calculation_method": "none",
+      "dynamic_handling": "no_charge_no_compensation",
+      "note": "Dynamic-only provider"
+    },
+
+    "anwb_energie": {
+      "provider_id": "anwb_energie",
+      "has_fixed_contracts": false,
+      "has_variable_contracts": false,
+      "has_dynamic_contracts": true,
+      "calculation_method": "none",
+      "dynamic_handling": "no_charge_no_compensation",
+      "note": "Dynamic-only provider"
+    }
+  },
+
+  "calculation_guides": {
+    "tiered_staffels": {
+      "description": "Customer's annual feed-in volume determines which tier applies; cost = tier bracket cost",
+      "implementation": "Find tier where kwh_min <= annual_kwh <= kwh_max; return cost_per_year_eur or (cost_per_month_eur * 12)",
+      "example": "5000 kWh at Essent: Falls in 4751-5000 tier → €633.84/year"
+    },
+
+    "fixed_rate_per_kwh": {
+      "description": "Simple multiplication: annual_kwh × rate_per_kwh = total_annual_cost",
+      "implementation": "cost_eur = annual_kwh × rate_per_kwh",
+      "note": "Rate varies by contract duration for some providers (Eneco, Greenchoice, Oxxio)",
+      "example": "5000 kWh at Eneco 1-year contract: 5000 × 0.146 = €730/year"
+    },
+
+    "fixed_fee_plus_variable_rate": {
+      "description": "Monthly fixed fee + per-kWh variable rate",
+      "implementation": "total_cost = (fixed_fee_per_month × 12) + (annual_kwh × variable_rate_per_kwh)",
+      "example": "5000 kWh at Engie: (€4.89 × 12) + (5000 × €0.115) = €58.68 + €575 = €633.68/year"
+    },
+
+    "higher_fixed_rate": {
+      "description": "Feed-in costs incorporated into higher monthly supply fee (not separately itemized)",
+      "implementation": "No separate calculation; included in base contract pricing. Use example data to estimate impact.",
+      "example": "Coolblue Energie ~1800 kWh solar → €280/year extra vs non-solar customers (€114/year baseline)"
+    }
+  },
+
+  "dynamic_contract_strategies": {
+    "receive_full_compensation": {
+      "strategy": "RECEIVE",
+      "description": "Hourly feed-in price = hourly consumption price",
+      "customer_outcome": "Receives maximum compensation",
+      "providers": ["Zonneplan", "Frank Energie"],
+      "calculation": "No additional charges; compensation = market hourly rate"
+    },
+
+    "pay_procurement_charge": {
+      "strategy": "PAY",
+      "description": "Customer must pay procurement charge (inkoopvergoeding) on ALL feed-in kWh",
+      "customer_outcome": "Negative: pays extra on every kWh fed back",
+      "providers": ["EasyEnergy", "NextEnergy", "Pure Energie", "Innova"],
+      "calculation": "For each kWh fed in, subtract procurement_charge from potential earnings"
+    },
+
+    "pay_on_surplus_only": {
+      "strategy": "PAY_SURPLUS",
+      "description": "Customer pays procurement charge ONLY on annual surplus (feed-in minus consumption)",
+      "customer_outcome": "Better: only charged on net overproduction",
+      "providers": ["Energiedirect", "VandeBron", "Essent", "Vattenfall", "Eneco", "Tibber"],
+      "calculation": "annual_surplus = max(0, annual_feedin - annual_consumption); charge = annual_surplus × rate"
+    },
+
+    "no_charge_no_compensation": {
+      "strategy": "NEUTRAL",
+      "description": "No procurement charge paid, no compensation received on excess",
+      "customer_outcome": "Neutral: receives market price for what you consume, nothing extra for surplus",
+      "providers": ["Budget Energie", "Coolblue Energie", "EnergyZero", "ANWB Energie"],
+      "calculation": "For consumption: full market price + inkoopvergoeding. For surplus: only market price (no inkoopvergoeding)"
+    }
+  },
+
+  "integration_recommendations": {
+    "storage_location": "Append feed_in_tariff_period and feed_in_cost columns to contracts.parquet",
+    "lookup_key_fixed_variable": "provider_id + contract_duration + meter_type",
+    "lookup_key_dynamic": "provider_id + dynamic_strategy",
+    "calculation_trigger": "When contract_type IN ['fixed', 'variable', 'dynamic'] AND has_solar_panels = true",
+    "enrichment_fields": [
+      "feed_in_calculation_method",
+      "feed_in_cost_annual_eur_estimate",
+      "feed_in_cost_per_kwh_eur",
+      "feed_in_cost_tiered_or_fixed",
+      "dynamic_compensation_or_charge_eur_per_kwh"
+    ],
+    "validation_checks": [
+      "Ensure contract_duration matches provider's tariff structure",
+      "Verify provider_id exists in provider_index",
+      "For dynamic contracts, confirm dynamic_handling field populated",
+      "Validate calculated costs against example lookups in feed_in_tariffs.json"
+    ],
+    "estimation_based_on_kwh": {
+      "low_solar": "0-1000 kWh/year → Use 500 kWh examples",
+      "medium_solar": "1000-5000 kWh/year → Use 2000-3000 kWh examples",
+      "high_solar": "5000+ kWh/year → Use 5000-10000 kWh examples",
+      "unsure": "Default to 3000 kWh median"
+    }
+  },
+
+  "quality_notes": {
+    "data_currency": "All prices effective as of December 23, 2025",
+    "provider_coverage": "24 providers + variants covered (fixed/variable contracts: 18 primary, dynamic: 6+ strategies)",
+    "pricing_confidence": "High - scraped from official provider tariff pages",
+    "missing_data": "Some providers (e.g., Vandebron) have tiers extending beyond 10,000 kWh available on PDF; captured up to 10,000 kWh",
+    "redundancy_note": "Some providers appear in multiple categories (e.g., Eneco in both fixed/variable AND dynamic), distinguished by contract_type"
+  }
+}
