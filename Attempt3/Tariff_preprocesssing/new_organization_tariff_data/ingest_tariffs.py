@@ -870,7 +870,7 @@ def transform_contract(
         
         # Variable components (usage tariffs)
         if meter_type == "single":
-            # Single meter: use piek_per_kwh as the single tariff
+            # Single meter: use piek_per_kwh as peak (only one rate available)
             piek = elec_tariffs.get("piek_per_kwh")
             if piek is not None and piek != "":
                 try:
@@ -882,7 +882,7 @@ def transform_contract(
                         snapshot_month=snapshot_month.yyyy_mm,
                         commodity="electricity",
                         direction="import",
-                        tariff_band="single",
+                        tariff_band="peak",
                         period=period,
                         rate=rate,
                         unit="kWh",
@@ -952,7 +952,7 @@ def transform_contract(
             except ValueError as e:
                 logger.warning(f"Could not parse gas fixed_yearly '{fixed_yearly}': {e}")
         
-        # Variable component (usage tariff)
+        # Variable component (usage tariff) - gas always uses single tariff (no peak/offpeak)
         variable_per_m3 = gas_tariffs.get("variable_per_m3")
         if variable_per_m3 is not None and variable_per_m3 != "":
             try:
@@ -964,7 +964,7 @@ def transform_contract(
                     snapshot_month=snapshot_month.yyyy_mm,
                     commodity="gas",
                     direction="import",
-                    tariff_band="single",
+                    tariff_band="peak",
                     period=period,
                     rate=rate,
                     unit="m3",
@@ -1133,6 +1133,7 @@ def get_contracts_schema() -> pa.Schema:
         pa.field("provider_id", pa.string()),
         pa.field("provider_name", pa.string()),
         pa.field("contract_name", pa.string()),  # Base name without variant
+        pa.field("contract_name_base", pa.string()),  # Further simplified: product prefix and duration removed
         pa.field("variant", pa.string(), nullable=True),  # Extracted variant (A, B, BAT, etc.) or None
         pa.field("contract_name_slug", pa.string()),  # URL-safe slug for deduplication
         pa.field("contract_type", pa.string()),  # "fixed" or "variable"
