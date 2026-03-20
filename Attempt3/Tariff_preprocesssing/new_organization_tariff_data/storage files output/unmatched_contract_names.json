@@ -1,0 +1,1804 @@
+{
+  "generated_at": "2026-03-20T14:51:34Z",
+  "input_root": "C:\\Users\\20203525\\Documents\\2025 2026\\WB4U\\wb4y-webscraper\\Attempt3\\2025",
+  "year_filter": null,
+  "total_unmatched_records": 1278,
+  "provider_count": 19,
+  "providers": {
+    "Coolblue Energie": [
+      {
+        "raw_contract_name": "Direct voordeel",
+        "count": 10,
+        "contract_name_no_variant": "Direct",
+        "contract_base_name": "Direct",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      }
+    ],
+    "Eneco Zakelijk": [
+      {
+        "raw_contract_name": "Variabel leveringstarief",
+        "count": 12,
+        "contract_name_no_variant": "Variabel leveringstarief",
+        "contract_base_name": "leveringstarief",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      }
+    ],
+    "Energie.VanOns": [
+      {
+        "raw_contract_name": "Coöperatief contract",
+        "count": 24,
+        "contract_name_no_variant": "Coöperatief contract",
+        "contract_base_name": "Coöperatief contract",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      }
+    ],
+    "Energiek": [
+      {
+        "raw_contract_name": "Energiek Variabel",
+        "count": 30,
+        "contract_name_no_variant": "Energiek Variabel",
+        "contract_base_name": "Energiek",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      }
+    ],
+    "Greenchoice": [
+      {
+        "raw_contract_name": "Nederlands Groen 2 jaar + 300 euro Korting",
+        "count": 2,
+        "contract_name_no_variant": "Nederlands Groen 2 jaar + 300 euro",
+        "contract_base_name": "Nederlands Groen",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-10"
+        ],
+        "source_files": [
+          "contracts_oktober 2025.json"
+        ]
+      }
+    ],
+    "Groenpand": [
+      {
+        "raw_contract_name": "Groenpand Nederlandse Groene stroom & CO2 gecompenseerd gas",
+        "count": 22,
+        "contract_name_no_variant": "Groenpand Nederlandse Groene stroom & CO2 gecompenseerd gas",
+        "contract_base_name": "Groenpand Nederlandse Groene stroom & CO2 gecompenseerd gas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Groenpand Nederlandse Groene stroom & Groen gas",
+        "count": 22,
+        "contract_name_no_variant": "Groenpand Nederlandse Groene stroom & Groen gas",
+        "contract_base_name": "Groenpand Nederlandse Groene stroom & Groen gas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      }
+    ],
+    "Hezelaer Energy": [
+      {
+        "raw_contract_name": "Energiebesteding Variabel",
+        "count": 30,
+        "contract_name_no_variant": "Energiebesteding Variabel",
+        "contract_base_name": "Energiebesteding",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "AfnameVast 1 jaar",
+        "count": 20,
+        "contract_name_no_variant": "AfnameVast 1 jaar",
+        "contract_base_name": "AfnameVast",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03"
+        ],
+        "source_files": [
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_maart 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Gezinsenergie 1 jaar vast",
+        "count": 20,
+        "contract_name_no_variant": "Gezinsenergie 1 jaar vast",
+        "contract_base_name": "Gezinsenergie",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_maart 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Gezinsenergie 3 jaar vast",
+        "count": 15,
+        "contract_name_no_variant": "Gezinsenergie 3 jaar vast",
+        "contract_base_name": "Gezinsenergie",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_maart 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Gezinsenergie Variabel",
+        "count": 15,
+        "contract_name_no_variant": "Gezinsenergie Variabel",
+        "contract_base_name": "Gezinsenergie",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Energiebesteding MaandFlex",
+        "count": 14,
+        "contract_name_no_variant": "Energiebesteding MaandFlex",
+        "contract_base_name": "Energiebesteding MaandFlex",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Gezinsenergie MaandFlex",
+        "count": 14,
+        "contract_name_no_variant": "Gezinsenergie MaandFlex",
+        "contract_base_name": "Gezinsenergie MaandFlex",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "AfnameVast 3 jaar",
+        "count": 10,
+        "contract_name_no_variant": "AfnameVast 3 jaar",
+        "contract_base_name": "AfnameVast",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03"
+        ],
+        "source_files": [
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_maart 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "AfnameVast 2 jaar",
+        "count": 8,
+        "contract_name_no_variant": "AfnameVast 2 jaar",
+        "contract_base_name": "AfnameVast",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02"
+        ],
+        "source_files": [
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Energiebesteding 1 jaar vast",
+        "count": 4,
+        "contract_name_no_variant": "Energiebesteding 1 jaar vast",
+        "contract_base_name": "Energiebesteding",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-04"
+        ],
+        "source_files": [
+          "contracts_april 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Energiebesteding 3 jaar vast",
+        "count": 4,
+        "contract_name_no_variant": "Energiebesteding 3 jaar vast",
+        "contract_base_name": "Energiebesteding",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-04"
+        ],
+        "source_files": [
+          "contracts_april 2025.json"
+        ]
+      }
+    ],
+    "Innova Energie": [
+      {
+        "raw_contract_name": "Gas 3 jaar vast / Elektriciteit 3 jaar vast groen",
+        "count": 101,
+        "contract_name_no_variant": "Gas 3 jaar vast / Elektriciteit 3 jaar vast groen",
+        "contract_base_name": "Gas / Elektriciteit groen",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Gas 1 jaar vast / Elektriciteit 1 jaar vast groen",
+        "count": 74,
+        "contract_name_no_variant": "Gas 1 jaar vast / Elektriciteit 1 jaar vast groen",
+        "contract_base_name": "Gas / Elektriciteit groen",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Gas 2 jaar vast / Elektriciteit 2 jaar vast groen",
+        "count": 50,
+        "contract_name_no_variant": "Gas 2 jaar vast / Elektriciteit 2 jaar vast groen",
+        "contract_base_name": "Gas / Elektriciteit groen",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Gas variabel / Elektriciteit variabel groen",
+        "count": 24,
+        "contract_name_no_variant": "Gas variabel / Elektriciteit variabel groen",
+        "contract_base_name": "Gas / Elektriciteit groen",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Gas 4 jaar vast / Elektriciteit 4 jaar vast groen",
+        "count": 12,
+        "contract_name_no_variant": "Gas 4 jaar vast / Elektriciteit 4 jaar vast groen",
+        "contract_base_name": "Gas / Elektriciteit groen",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json"
+        ]
+      }
+    ],
+    "Kikker Energie": [
+      {
+        "raw_contract_name": "Dynamiq Energy Services Vast particulier",
+        "count": 4,
+        "contract_name_no_variant": "Dynamiq Energy Services Vast particulier",
+        "contract_base_name": "Dynamiq Energy Services particulier",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_december 2025.json",
+          "contracts_november 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Polisa Energy Vast particulier",
+        "count": 4,
+        "contract_name_no_variant": "Polisa Energy Vast particulier",
+        "contract_base_name": "Polisa Energy particulier",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_december 2025.json",
+          "contracts_november 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "SamSam Energie Vast particulier",
+        "count": 4,
+        "contract_name_no_variant": "SamSam Energie Vast particulier",
+        "contract_base_name": "SamSam Energie particulier",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_december 2025.json",
+          "contracts_november 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Dynamiq Energy Services Wattzorgeloos particulier",
+        "count": 2,
+        "contract_name_no_variant": "Dynamiq Energy Services Wattzorgeloos particulier",
+        "contract_base_name": "Dynamiq Energy Services Wattzorgeloos particulier",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_december 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "KUKO Energy Wattzorgeloos particulier",
+        "count": 2,
+        "contract_name_no_variant": "KUKO Energy Wattzorgeloos particulier",
+        "contract_base_name": "KUKO Energy Wattzorgeloos particulier",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_december 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Keurmerk Energie Wattzorgeloos business & particulier",
+        "count": 2,
+        "contract_name_no_variant": "Keurmerk Energie Wattzorgeloos business & particulier",
+        "contract_base_name": "Keurmerk Energie Wattzorgeloos business & particulier",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_december 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "SamSam Energie Wattzorgeloos particulier",
+        "count": 2,
+        "contract_name_no_variant": "SamSam Energie Wattzorgeloos particulier",
+        "contract_base_name": "SamSam Energie Wattzorgeloos particulier",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_december 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Polisa Energy Wattzorgeloos particulier",
+        "count": 1,
+        "contract_name_no_variant": "Polisa Energy Wattzorgeloos particulier",
+        "contract_base_name": "Polisa Energy Wattzorgeloos particulier",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_december 2025.json"
+        ]
+      }
+    ],
+    "Noord Energie": [
+      {
+        "raw_contract_name": "Zuid Energie 1 jaar vast particulier",
+        "count": 16,
+        "contract_name_no_variant": "Zuid Energie 1 jaar vast particulier",
+        "contract_base_name": "Zuid Energie particulier",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Zuid Energie 3 jaar vast particulier",
+        "count": 16,
+        "contract_name_no_variant": "Zuid Energie 3 jaar vast particulier",
+        "contract_base_name": "Zuid Energie particulier",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Yebbo 1 jaar vast",
+        "count": 2,
+        "contract_name_no_variant": "Yebbo 1 jaar vast",
+        "contract_base_name": "Yebbo",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01"
+        ],
+        "source_files": [
+          "contracts_januari 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Yebbo Variabel",
+        "count": 2,
+        "contract_name_no_variant": "Yebbo Variabel",
+        "contract_base_name": "Yebbo",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01"
+        ],
+        "source_files": [
+          "contracts_januari 2025.json"
+        ]
+      }
+    ],
+    "Om nieuwe energie": [
+      {
+        "raw_contract_name": "Flex",
+        "count": 6,
+        "contract_name_no_variant": "Flex",
+        "contract_base_name": "Flex",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03"
+        ],
+        "source_files": [
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_maart 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Flex 202506",
+        "count": 2,
+        "contract_name_no_variant": "Flex",
+        "contract_base_name": "Flex",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-06"
+        ],
+        "source_files": [
+          "contracts_juni 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Flex 202507",
+        "count": 2,
+        "contract_name_no_variant": "Flex",
+        "contract_base_name": "Flex",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-07"
+        ],
+        "source_files": [
+          "contracts_juli 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Flex 202508",
+        "count": 2,
+        "contract_name_no_variant": "Flex",
+        "contract_base_name": "Flex",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-08"
+        ],
+        "source_files": [
+          "contracts_augustus 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Flex 202509",
+        "count": 2,
+        "contract_name_no_variant": "Flex",
+        "contract_base_name": "Flex",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-09"
+        ],
+        "source_files": [
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Flex 202510",
+        "count": 2,
+        "contract_name_no_variant": "Flex",
+        "contract_base_name": "Flex",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-10"
+        ],
+        "source_files": [
+          "contracts_oktober 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Flex 202511",
+        "count": 2,
+        "contract_name_no_variant": "Flex",
+        "contract_base_name": "Flex",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-11"
+        ],
+        "source_files": [
+          "contracts_november 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Flex 202512",
+        "count": 2,
+        "contract_name_no_variant": "Flex",
+        "contract_base_name": "Flex",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_december 2025.json"
+        ]
+      }
+    ],
+    "Powerpeers": [
+      {
+        "raw_contract_name": "Samen Groen VP1",
+        "count": 48,
+        "contract_name_no_variant": "Samen Groen",
+        "contract_base_name": "Samen Groen",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Samen Groen VP2",
+        "count": 13,
+        "contract_name_no_variant": "Samen Groen",
+        "contract_base_name": "Samen Groen",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Samen Groen VP3",
+        "count": 10,
+        "contract_name_no_variant": "Samen Groen",
+        "contract_base_name": "Samen Groen",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-10",
+          "2025-11"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Variabel & 100% Groen Gas",
+        "count": 9,
+        "contract_name_no_variant": "Variabel & 100% Groen Gas",
+        "contract_base_name": "& 100% Groen Gas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Variabel & 25% Groen Gas",
+        "count": 6,
+        "contract_name_no_variant": "Variabel & 25% Groen Gas",
+        "contract_base_name": "& 25% Groen Gas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-07",
+          "2025-08",
+          "2025-09"
+        ],
+        "source_files": [
+          "contracts_augustus 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Maandelijks Wisselend",
+        "count": 3,
+        "contract_name_no_variant": "Maandelijks Wisselend",
+        "contract_base_name": "Wisselend",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_december 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Samen Groen VP2-B",
+        "count": 1,
+        "contract_name_no_variant": "Samen Groen",
+        "contract_base_name": "Samen Groen",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-03"
+        ],
+        "source_files": [
+          "contracts_maart 2025.json"
+        ]
+      }
+    ],
+    "Pure Energie": [
+      {
+        "raw_contract_name": "Verlenging Consument",
+        "count": 28,
+        "contract_name_no_variant": "Verlenging Consument",
+        "contract_base_name": "Verlenging Consument",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Vast Consument",
+        "count": 24,
+        "contract_name_no_variant": "Vast Consument",
+        "contract_base_name": "Consument",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Vast Consument 100% groen gas",
+        "count": 24,
+        "contract_name_no_variant": "Vast Consument 100% groen gas",
+        "contract_base_name": "Consument 100% groen gas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Vast Consument 25% groen gas",
+        "count": 24,
+        "contract_name_no_variant": "Vast Consument 25% groen gas",
+        "contract_base_name": "Consument 25% groen gas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      }
+    ],
+    "VanHelder": [
+      {
+        "raw_contract_name": "Gezinsenergie Flexibel",
+        "count": 2,
+        "contract_name_no_variant": "Gezinsenergie Flexibel",
+        "contract_base_name": "Gezinsenergie Flexibel",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01"
+        ],
+        "source_files": [
+          "contracts_januari 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Gezinsenergie Flexibel met TL",
+        "count": 2,
+        "contract_name_no_variant": "Gezinsenergie Flexibel met",
+        "contract_base_name": "Gezinsenergie Flexibel met",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01"
+        ],
+        "source_files": [
+          "contracts_januari 2025.json"
+        ]
+      }
+    ],
+    "Vandebron": [
+      {
+        "raw_contract_name": "Variabel Contract",
+        "count": 28,
+        "contract_name_no_variant": "Variabel Contract",
+        "contract_base_name": "Contract",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "1 Jaar Vast Contract",
+        "count": 24,
+        "contract_name_no_variant": "1 Jaar Vast Contract",
+        "contract_base_name": "Contract",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "2 Jaar Vast Contract",
+        "count": 24,
+        "contract_name_no_variant": "2 Jaar Vast Contract",
+        "contract_base_name": "Contract",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "3 Jaar Vast Contract",
+        "count": 24,
+        "contract_name_no_variant": "3 Jaar Vast Contract",
+        "contract_base_name": "Contract",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      }
+    ],
+    "Vattenfall": [
+      {
+        "raw_contract_name": "Groen uit Nederland &Gas",
+        "count": 53,
+        "contract_name_no_variant": "Groen uit Nederland &Gas",
+        "contract_base_name": "Groen uit Nederland &Gas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Groen uit Nederland &MixGroen Gas",
+        "count": 40,
+        "contract_name_no_variant": "Groen uit Nederland &MixGroen Gas",
+        "contract_base_name": "Groen uit Nederland &MixGroen Gas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Groen uit Nederland &PuurGroen Gas",
+        "count": 40,
+        "contract_name_no_variant": "Groen uit Nederland &PuurGroen Gas",
+        "contract_base_name": "Groen uit Nederland &PuurGroen Gas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Stroom &Gas",
+        "count": 40,
+        "contract_name_no_variant": "Stroom &Gas",
+        "contract_base_name": "Stroom &Gas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Groen uit Nederland &Gas met CO2-compensatie",
+        "count": 39,
+        "contract_name_no_variant": "Groen uit Nederland &Gas met CO2-compensatie",
+        "contract_base_name": "Groen uit Nederland &Gas met CO2-compensatie",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "BudgetStroom & BudgetGas",
+        "count": 16,
+        "contract_name_no_variant": "BudgetStroom & BudgetGas",
+        "contract_base_name": "BudgetStroom & BudgetGas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Stroom ActieprijsGas Actieprijs",
+        "count": 16,
+        "contract_name_no_variant": "Stroom ActieprijsGas Actieprijs",
+        "contract_base_name": "Stroom ActieprijsGas Actieprijs",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json"
+        ]
+      }
+    ],
+    "Ventum": [
+      {
+        "raw_contract_name": "VT Flexibel",
+        "count": 24,
+        "contract_name_no_variant": "VT Flexibel",
+        "contract_base_name": "VT Flexibel",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      }
+    ],
+    "Vrijopnaam": [
+      {
+        "raw_contract_name": "1 jaar vast ZonZeker",
+        "count": 22,
+        "contract_name_no_variant": "1 jaar vast ZonZeker",
+        "contract_base_name": "ZonZeker",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Variabel Energiezuinig maandtarief",
+        "count": 22,
+        "contract_name_no_variant": "Variabel Energiezuinig maandtarief",
+        "contract_base_name": "Energiezuinig maandtarief",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "variabel maandtarief",
+        "count": 22,
+        "contract_name_no_variant": "variabel maandtarief",
+        "contract_base_name": "maandtarief",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juli 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_november 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "Variabel energiezuinig maandtarief",
+        "count": 20,
+        "contract_name_no_variant": "Variabel energiezuinig maandtarief",
+        "contract_base_name": "energiezuinig maandtarief",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_augustus 2025.json",
+          "contracts_december 2025.json",
+          "contracts_februari 2025.json",
+          "contracts_januari 2025.json",
+          "contracts_juni 2025.json",
+          "contracts_maart 2025.json",
+          "contracts_mei 2025.json",
+          "contracts_oktober 2025.json",
+          "contracts_september 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "1 jaar VoordeelVast",
+        "count": 4,
+        "contract_name_no_variant": "1 jaar VoordeelVast",
+        "contract_base_name": "VoordeelVast",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-04",
+          "2025-06"
+        ],
+        "source_files": [
+          "contracts_april 2025.json",
+          "contracts_juni 2025.json"
+        ]
+      }
+    ],
+    "WoonEnergie": [
+      {
+        "raw_contract_name": "WoonEnergie Renewal Stroom & WoonEnergie Gas",
+        "count": 6,
+        "contract_name_no_variant": "WoonEnergie Renewal Stroom & WoonEnergie Gas",
+        "contract_base_name": "WoonEnergie Renewal Stroom & WoonEnergie Gas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_december 2025.json",
+          "contracts_november 2025.json"
+        ]
+      },
+      {
+        "raw_contract_name": "WoonEnergie Stroom & WoonEnergie Renewal Gas",
+        "count": 6,
+        "contract_name_no_variant": "WoonEnergie Stroom & WoonEnergie Renewal Gas",
+        "contract_base_name": "WoonEnergie Stroom & WoonEnergie Renewal Gas",
+        "normalization_rule": "generic_cleanup",
+        "snapshot_months": [
+          "2025-11",
+          "2025-12"
+        ],
+        "source_files": [
+          "contracts_december 2025.json",
+          "contracts_november 2025.json"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "_description": "Recommended contract name bases per provider - the core product names to keep after removing duration, type, and variants",
+  "_usage": "Use these bases to replace/normalize contract names. The 'primary_bases' are high-confidence core product names. Apply in order of specificity (most specific patterns first).",
+  "_note": "Based on analysis of contracts.json, contract_variants.json, contract_durations.json, and contract_types.json",
+  
+  "AllureNRG": {
+    "description": "Solar-focused provider",
+    "primary_bases": [
+      "Modelcontract",
+      "Variabel",
+      "Variabele Prijs",
+      "Vaste Prijs"
+    ],
+    "notes": "Contract distinguishes solar (met zonnepanelen) vs non-solar; keep base without this distinction"
+  },
+
+  "ANWB Energie": {
+    "description": "ANWB member energy brand",
+    "primary_bases": [
+      "Modelcontract"
+    ],
+    "notes": "Limited offerings"
+  },
+
+  "Audax Renewables": {
+    "description": "Renewable energy provider",
+    "primary_bases": [
+      "Modelcontract"
+    ],
+    "notes": "Limited offerings"
+  },
+
+  "Budget Energie": {
+    "description": "Budget-focused provider",
+    "primary_bases": [
+      "Groene Stroom en Aardgas",
+      "Nederlandse Wind Stroom en CO2-gecompenseerd Gas"
+    ],
+    "notes": "Remove duration (1/2/3 jaar), type (Vast/Variabel), customer segment (Verlenging), and letter codes (A/B/C/E/etc)"
+  },
+
+  "Cleanenergy": {
+    "description": "Clean energy specialist",
+    "primary_bases": [
+      "Clean Energy"
+    ],
+    "notes": "Customer segment adds specificity (Huishoudelijk/Particulier/Consument/MKB/Zakelijk) - keep these. Remove duration, type, variants (Actie/Welkom/Loyaliteitsbonus), and channel markers"
+  },
+
+  "Coolblue Energie": {
+    "description": "Coolblue logistics + energy",
+    "primary_bases": [
+      "Zeker",
+      "Direct voordeel",
+      "Minder energie"
+    ],
+    "notes": "Coolblue uses distinct product names as bases. Remove duration (1/2/3/5 jaar, halfjaar, etc), type (Zeker, variabel), partners (Ziggo, ING), and variants"
+  },
+
+  "DELTA energie": {
+    "description": "Dynamic contract provider",
+    "primary_bases": [
+      "DELTA Groene Stroom en/of DELTA Gas",
+      "DELTA Groene Actiestroom en/of DELTA Actiegas",
+      "DELTA Puur Zeeuws Groen en/of DELTA MixGroen Gas"
+    ],
+    "notes": "Uses parenthetical duration format: vaste leveringsprijs (1 jaar) - remove the parenthetical part"
+  },
+
+  "Energiedirect.nl": {
+    "description": "Direct energy sales",
+    "primary_bases": [
+      "Groene Stroom en Gas variabel",
+      "Groene Stroom en Gas AltijdVoordeel Vast"
+    ],
+    "notes": "May have multiple product lines. Remove duration, type, variants, and single letter codes"
+  },
+
+  "Eneco": {
+    "description": "Major Dutch utility",
+    "primary_bases": [
+      "Eneco",
+      "Groene Stroom",
+      "Essent Klant",
+      "Particulier",
+      "Zakelijk"
+    ],
+    "notes": "Large portfolio. Customer segment (Particulier/Zakelijk) may be meaningful. Remove duration, type, segment markers (Verlenging/Werving), variants"
+  },
+
+  "Energeticos": {
+    "description": "Energy comparison/aggregator",
+    "primary_bases": [
+      "Modelcontract"
+    ],
+    "notes": "Limited or reference offerings"
+  },
+
+  "Essent": {
+    "description": "Major Dutch supplier",
+    "primary_bases": [
+      "Groene Stroom en Aardgas",
+      "ZekerheidsGarantie Groene Stroom (NL) en Gas"
+    ],
+    "notes": "Product types may include Essent Klant, Zakelijk - capture as distinct bases if meaningful, otherwise normalize to primary base. Remove duration, type, variants"
+  },
+
+  "Frank energie": {
+    "description": "Family-focused energy",
+    "primary_bases": [
+      "Frank Energie 1 jaar vast",
+      "Frank Energie Variabel"
+    ],
+    "notes": "Limited known offerings"
+  },
+
+  "Greenchoice": {
+    "description": "Sustainable energy provider",
+    "primary_bases": [
+      "1 jaar vast",
+      "100% Nederlandse Wind",
+      "Groenbezig",
+      "Groen&Vrij Wind en Zon",
+      "Zorgeloos Energie tot 1-1-2027"
+    ],
+    "notes": "Package types (Plus/Compleet/Start) may be meaningful product differentiators. Remove duration, pricing tiers (150/200/250/etc), variants, loyalty bonuses"
+  },
+
+  "Greenchoice Zakelijk": {
+    "description": "Greenchoice business segment",
+    "primary_bases": [
+      "Zakelijk",
+      "Groene Stroom",
+      "Groene Stroom en Aardgas"
+    ],
+    "notes": "B2B offerings. Remove duration, type, customer segment markers, variants"
+  },
+
+  "Hezelaer Energy": {
+    "description": "Hezelaer region provider",
+    "primary_bases": [
+      "Hezelaer Energy",
+      "Groene Stroom"
+    ],
+    "notes": "Regional provider, may have limited offerings"
+  },
+
+  "Hosted Energy": {
+    "description": "White-label energy",
+    "primary_bases": [
+      "Hosted Energy",
+      "Greenchoice"
+    ],
+    "notes": "Possibly reselling or white-label products"
+  },
+
+  "Innova Energie": {
+    "description": "Innova brand energy",
+    "primary_bases": [
+      "Innova Energie",
+      "Groene Stroom"
+    ],
+    "notes": "Limited portfolio expected"
+  },
+
+  "Kikker Energie": {
+    "description": "Kikker (small operator)",
+    "primary_bases": [
+      "Kikker Energie",
+      "Groene Stroom"
+    ],
+    "notes": "Small provider, limited offerings"
+  },
+
+  "Mega": {
+    "description": "Budget/discount provider",
+    "primary_bases": [
+      "Mega",
+      "Groene Stroom"
+    ],
+    "notes": "Known for numeric pricing tiers (84, 85, 194, etc) - these are variants, not bases. Remove them along with duration/type"
+  },
+
+  "Noord Energie": {
+    "description": "Northern region provider",
+    "primary_bases": [
+      "Noord Energie",
+      "Groene Stroom"
+    ],
+    "notes": "Regional provider"
+  },
+
+  "Om | nieuwe energie": {
+    "description": "Cooperative/new energy model",
+    "primary_bases": [
+      "Om nieuwe energie",
+      "Groene Stroom"
+    ],
+    "notes": "Cooperative structure"
+  },
+
+  "OXXIO": {
+    "description": "OXXIO brand",
+    "primary_bases": [
+      "OXXIO",
+      "Groene Stroom"
+    ],
+    "notes": "Check for package variants (Plus/Compleet)"
+  },
+
+  "Pure Energie": {
+    "description": "Pure brand energy",
+    "primary_bases": [
+      "Pure Energie",
+      "Pure Groene Stroom"
+    ],
+    "notes": "Limited offerings"
+  },
+
+  "Vandebron": {
+    "description": "Direct-to-renewables model",
+    "primary_bases": [
+      "Vandebron",
+      "Groene Stroom"
+    ],
+    "notes": "Peer-to-peer/direct model"
+  },
+
+  "VanHelder": {
+    "description": "VanHelder brand",
+    "primary_bases": [
+      "VanHelder",
+      "Groene Stroom"
+    ],
+    "notes": "Limited portfolio"
+  },
+
+  "UnitedConsumers": {
+    "description": "Consumer collective brand",
+    "primary_bases": [
+      "UnitedConsumers",
+      "Groene Stroom"
+    ],
+    "notes": "Cooperative model"
+  },
+
+  "Vergelijkers": {
+    "description": "Energy comparison platforms",
+    "primary_bases": [
+      "Modelcontract"
+    ],
+    "notes": "Comparison-based offerings"
+  },
+
+  "_implementation_guidance": {
+    "step_1_identify_provider": "Extract provider name from contract metadata",
+    "step_2_look_up_bases": "Get primary_bases list from this file for the provider",
+    "step_3_match_contract": "Check if contract name starts with any primary_base",
+    "step_4_extract_base": "If match found, use matched base. If no match, fall back to extract_contract_name_base()",
+    "step_5_normalize": "Store both raw contract_name and normalized contract_name_base",
+    "fallback_strategy": "If provider not in this file, use extract_contract_name_base() as before",
+    "priority_order": "Check longest/most specific bases first (e.g., 'Clean Energy Huishoudelijk' before 'Clean Energy')"
+  }
+}
