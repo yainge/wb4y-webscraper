@@ -36,6 +36,11 @@ import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+FEEDIN_DIR = SCRIPT_DIR / "feedin tariffs"
+if str(FEEDIN_DIR) not in sys.path:
+    sys.path.insert(0, str(FEEDIN_DIR))
+
 from feed_in_lookup import (
     load_feed_in_tariffs,
     normalize_provider_name,
@@ -1275,16 +1280,27 @@ def get_feedin_tiers_schema() -> pa.Schema:
 # MAIN INGESTION PIPELINE
 # ============================================================================
 
-def scan_input_files(input_root: Path) -> List[Path]:
+def scan_input_files(input_root: Path, years: Optional[List[int]] = None) -> List[Path]:
     """
     Recursively scan input directory for contract JSON files.
     
     Looks for files matching pattern: contracts_*.json
     """
-    files = []
+    files: List[Path] = []
+
+    if years:
+        for year in years:
+            year_dir = input_root / str(year)
+            if not year_dir.exists():
+                logger.warning(f"Year directory does not exist, skipping: {year_dir}")
+                continue
+            files.extend(sorted(year_dir.rglob("contracts_*.json")))
+        logger.info(f"Found {len(files)} contract JSON files in {input_root} for years {sorted(years)}")
+        return sorted(files)
+
     for json_file in input_root.rglob("contracts_*.json"):
         files.append(json_file)
-    
+
     logger.info(f"Found {len(files)} contract JSON files in {input_root}")
     return sorted(files)
 
@@ -1292,6 +1308,7 @@ def scan_input_files(input_root: Path) -> List[Path]:
 def ingest_all_contracts(
     input_root: Path,
     output_root: Path,
+    years: Optional[List[int]] = None,
 ) -> Dict[str, int]:
     """
     Main ingestion pipeline: read all JSON files, transform, write parquet.
@@ -1307,7 +1324,7 @@ def ingest_all_contracts(
     output_root.mkdir(parents=True, exist_ok=True)
     
     # Collect all input files
-    json_files = scan_input_files(input_root)
+    json_files = scan_input_files(input_root, years=years)
     if not json_files:
         logger.warning(f"No contract JSON files found in {input_root}")
         return {"processed": 0, "skipped": 0, "errors": 0}
@@ -1512,6 +1529,13 @@ def main() -> int:
         action="store_true",
         help="Enable debug logging",
     )
+    parser.add_argument(
+        "--years",
+        type=int,
+        nargs="+",
+        default=None,
+        help="Optional year folders to ingest under --input-root, e.g. --years 2025 2026",
+    )
     
     args = parser.parse_args()
     
@@ -1524,6 +1548,8 @@ def main() -> int:
     logger.info("=" * 70)
     logger.info(f"Input root:  {args.input_root.absolute()}")
     logger.info(f"Output root: {args.output_root.absolute()}")
+    if args.years:
+        logger.info(f"Year filter: {sorted(args.years)}")
     logger.info("")
     
     # Load feed-in tariff data at startup
@@ -1548,7 +1574,7 @@ def main() -> int:
         return 1
     
     try:
-        stats = ingest_all_contracts(args.input_root, args.output_root)
+        stats = ingest_all_contracts(args.input_root, args.output_root, years=args.years)
         print_summary(stats)
         logger.info("=" * 70)
         logger.info("Ingestion complete!")
