@@ -19,7 +19,7 @@ import sys
 import unicodedata
 from collections import defaultdict
 from dataclasses import asdict, dataclass, field
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from decimal import Decimal
 from pathlib import Path
 from typing import Any, DefaultDict, Dict, List, Optional, Tuple
@@ -1004,8 +1004,19 @@ def get_fees_schema() -> pa.Schema:
     )
 
 
-def scan_input_files(input_root: Path, year: Optional[int] = None) -> List[Path]:
+def scan_input_files(input_root: Path, year: Optional[int] = None, years: Optional[List[int]] = None) -> List[Path]:
     input_root = Path(input_root)
+
+    if years:
+        files: List[Path] = []
+        for selected_year in sorted(set(years)):
+            year_dir = input_root / str(selected_year)
+            if not year_dir.exists():
+                logger.warning("Year directory does not exist, skipping: %s", year_dir)
+                continue
+            files.extend(sorted(year_dir.glob("contracts_*.json")))
+        logger.info("Found %s contract files in %s for years %s", len(files), input_root, sorted(set(years)))
+        return files
 
     if year is not None:
         year_dir = input_root / str(year)
@@ -1038,6 +1049,7 @@ def build_unmatched_review_payload(
     unmatched_records: DefaultDict[str, DefaultDict[str, Dict[str, Any]]],
     input_root: Path,
     year: Optional[int],
+    years: Optional[List[int]],
 ) -> Dict[str, Any]:
     providers: Dict[str, List[Dict[str, Any]]] = {}
     total = 0
@@ -1062,9 +1074,10 @@ def build_unmatched_review_payload(
         providers[provider_name] = provider_entries
 
     return {
-        "generated_at": datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z"),
+        "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
         "input_root": str(Path(input_root).resolve()),
         "year_filter": year,
+        "years_filter": sorted(set(years)) if years else None,
         "total_unmatched_records": total,
         "provider_count": len(providers),
         "providers": providers,
@@ -1076,19 +1089,25 @@ def write_unmatched_review_json(
     unmatched_records: DefaultDict[str, DefaultDict[str, Dict[str, Any]]],
     input_root: Path,
     year: Optional[int],
+    years: Optional[List[int]],
 ) -> None:
-    payload = build_unmatched_review_payload(unmatched_records, input_root, year)
+    payload = build_unmatched_review_payload(unmatched_records, input_root, year, years)
     output_path = Path(output_root) / "unmatched_contract_names.json"
     with open(output_path, "w", encoding="utf-8") as handle:
         json.dump(payload, handle, indent=2, ensure_ascii=False)
     logger.info("Wrote unmatched contract review to %s", output_path)
 
 
-def ingest_all_contracts(input_root: Path, output_root: Path, year: Optional[int]) -> Dict[str, int]:
+def ingest_all_contracts(
+    input_root: Path,
+    output_root: Path,
+    year: Optional[int],
+    years: Optional[List[int]] = None,
+) -> Dict[str, int]:
     output_root = Path(output_root)
     output_root.mkdir(parents=True, exist_ok=True)
 
-    json_files = scan_input_files(input_root, year=year)
+    json_files = scan_input_files(input_root, year=year, years=years)
     if not json_files:
         logger.warning("No contract JSON files found for %s", input_root)
         return {"processed": 0, "skipped": 0, "errors": 0}
@@ -1199,7 +1218,7 @@ def ingest_all_contracts(input_root: Path, output_root: Path, year: Optional[int
         dedup_keys=["fee_key"],
     )
 
-    write_unmatched_review_json(output_root, unmatched_records, input_root, year)
+    write_unmatched_review_json(output_root, unmatched_records, input_root, year, years)
     return stats
 
 
@@ -1240,6 +1259,13 @@ def main() -> int:
         help="Optional explicit year filter when --input-root points to a broader root.",
     )
     parser.add_argument(
+        "--years",
+        type=int,
+        nargs="+",
+        default=None,
+        help="Optional explicit list of year folders, e.g. --years 2025 2026",
+    )
+    parser.add_argument(
         "--verbose",
         action="store_true",
         help="Enable debug logging.",
@@ -1260,9 +1286,11 @@ def main() -> int:
     logger.info("Output root: %s", args.output_root.resolve())
     if args.year is not None:
         logger.info("Year filter: %s", args.year)
+    if args.years:
+        logger.info("Years filter: %s", sorted(set(args.years)))
 
     try:
-        stats = ingest_all_contracts(args.input_root, args.output_root, args.year)
+        stats = ingest_all_contracts(args.input_root, args.output_root, args.year, args.years)
     except Exception as exc:
         logger.error("Fatal error during ingestion: %s", exc, exc_info=True)
         return 1

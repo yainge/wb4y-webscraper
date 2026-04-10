@@ -6,7 +6,7 @@ import sys
 import argparse
 import time
 from pathlib import Path
-from bs4 import BeautifulSoup
+from html.parser import HTMLParser
 
 # Force UTF-8 output on Windows
 if sys.platform == 'win32':
@@ -77,16 +77,52 @@ def encode_multipart(fields: dict) -> tuple:
     return body_bytes, content_type
 
 
+class TooltipTableParser(HTMLParser):
+    """Minimal HTML table parser for Tableau tooltip content."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.in_tr = False
+        self.in_td = False
+        self.current_cell_parts = []
+        self.current_row = []
+        self.rows = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "tr":
+            self.in_tr = True
+            self.current_row = []
+        elif tag == "td" and self.in_tr:
+            self.in_td = True
+            self.current_cell_parts = []
+
+    def handle_endtag(self, tag):
+        if tag == "td" and self.in_td:
+            cell_text = " ".join(part.strip() for part in self.current_cell_parts if part.strip())
+            self.current_row.append(cell_text.strip())
+            self.current_cell_parts = []
+            self.in_td = False
+        elif tag == "tr" and self.in_tr:
+            if self.current_row:
+                self.rows.append(self.current_row)
+            self.current_row = []
+            self.in_tr = False
+
+    def handle_data(self, data):
+        if self.in_td:
+            self.current_cell_parts.append(data)
+
+
 def parse_tooltip_table(raw_text: str) -> dict:
     """Parse tooltip HTML table into a dict. Extracts euro currency values."""
     html = raw_text.replace("\\\"", "\"").replace("\\\\/", "/")
-    soup = BeautifulSoup(html, "html.parser")
+    parser = TooltipTableParser()
+    parser.feed(html)
     out = {}
-    for tr in soup.find_all("tr"):
-        tds = tr.find_all("td")
-        if len(tds) >= 2:
-            label = tds[0].get_text(" ", strip=True).rstrip(":").strip()
-            value = tds[-1].get_text(" ", strip=True).strip()
+    for row in parser.rows:
+        if len(row) >= 2:
+            label = row[0].rstrip(":").strip()
+            value = row[-1].strip()
             if label and value:
                 # Extract euro values: "€ 0,2153" -> "0,2153"
                 if "€" in value:
@@ -914,4 +950,3 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-
