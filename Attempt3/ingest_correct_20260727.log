@@ -1,0 +1,41 @@
+﻿2026-07-27 18:59:47 [INFO] __main__: Loaded contract_name_bases.json for 27 providers
+2026-07-27 18:59:47 [INFO] __main__: ======================================================================
+2026-07-27 18:59:47 [INFO] __main__: Tariff Ingestion Pipeline
+2026-07-27 18:59:47 [INFO] __main__: ======================================================================
+2026-07-27 18:59:47 [INFO] __main__: Input root:  C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3
+2026-07-27 18:59:47 [INFO] __main__: Output root: C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\Tariff_preprocesssing\new_organization_tariff_data\storage files output
+2026-07-27 18:59:47 [INFO] __main__: Years filter: [2026]
+2026-07-27 18:59:47 [INFO] __main__: Found 7 contract files in C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3 for years [2026]
+2026-07-27 18:59:47 [INFO] __main__: Processing C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\2026\contracts_april 2026.json
+2026-07-27 18:59:47 [INFO] __main__: Processing C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\2026\contracts_februari 2026.json
+2026-07-27 18:59:47 [INFO] __main__: Processing C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\2026\contracts_januari 2026.json
+2026-07-27 18:59:47 [INFO] __main__: Processing C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\2026\contracts_juli 2026.json
+2026-07-27 18:59:47 [INFO] __main__: Processing C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\2026\contracts_juni 2026.json
+2026-07-27 18:59:48 [INFO] __main__: Processing C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\2026\contracts_maart 2026.json
+2026-07-27 18:59:48 [INFO] __main__: Processing C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\2026\contracts_mei 2026.json
+2026-07-27 18:59:48 [INFO] __main__: Deduplicated contracts_fixed.parquet: 8017 -> 6136 rows
+2026-07-27 18:59:48 [INFO] __main__: Wrote 6136 rows to C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\Tariff_preprocesssing\new_organization_tariff_data\storage files output\contracts_fixed.parquet
+2026-07-27 18:59:48 [INFO] __main__: Deduplicated contracts_variable.parquet: 5751 -> 4145 rows
+2026-07-27 18:59:48 [INFO] __main__: Wrote 4145 rows to C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\Tariff_preprocesssing\new_organization_tariff_data\storage files output\contracts_variable.parquet
+2026-07-27 18:59:48 [INFO] __main__: Deduplicated fixed_usage.parquet: 19785 -> 15116 rows
+2026-07-27 18:59:48 [INFO] __main__: Wrote 15116 rows to C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\Tariff_preprocesssing\new_organization_tariff_data\storage files output\fixed_usage.parquet
+2026-07-27 18:59:48 [INFO] __main__: Deduplicated variable_usage.parquet: 14233 -> 10248 rows
+2026-07-27 18:59:48 [INFO] __main__: Wrote 10248 rows to C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\Tariff_preprocesssing\new_organization_tariff_data\storage files output\variable_usage.parquet
+2026-07-27 18:59:49 [INFO] __main__: Deduplicated fixed_fees.parquet: 16034 -> 12272 rows
+2026-07-27 18:59:49 [INFO] __main__: Wrote 12272 rows to C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\Tariff_preprocesssing\new_organization_tariff_data\storage files output\fixed_fees.parquet
+2026-07-27 18:59:49 [INFO] __main__: Deduplicated variable_fees.parquet: 11502 -> 8290 rows
+2026-07-27 18:59:49 [INFO] __main__: Wrote 8290 rows to C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\Tariff_preprocesssing\new_organization_tariff_data\storage files output\variable_fees.parquet
+2026-07-27 18:59:49 [INFO] __main__: Wrote unmatched contract review to C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\Tariff_preprocesssing\new_organization_tariff_data\storage files output\unmatched_contract_names.json
+2026-07-27 18:59:49 [INFO] __main__: ======================================================================
+2026-07-27 18:59:49 [INFO] __main__: SUMMARY
+2026-07-27 18:59:49 [INFO] __main__: ======================================================================
+2026-07-27 18:59:49 [INFO] __main__: Records processed:  5925
+2026-07-27 18:59:49 [INFO] __main__: Records skipped:    0
+2026-07-27 18:59:49 [INFO] __main__: Processing errors:  0
+2026-07-27 18:59:49 [INFO] __main__: contracts_fixed.parquet:    6136
+2026-07-27 18:59:49 [INFO] __main__: contracts_variable.parquet: 4145
+2026-07-27 18:59:49 [INFO] __main__: fixed_usage.parquet:        15116
+2026-07-27 18:59:49 [INFO] __main__: variable_usage.parquet:     10248
+2026-07-27 18:59:49 [INFO] __main__: fixed_fees.parquet:         12272
+2026-07-27 18:59:49 [INFO] __main__: variable_fees.parquet:      8290
+2026-07-27 18:59:49 [INFO] __main__: Ingestion complete

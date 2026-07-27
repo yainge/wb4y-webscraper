@@ -1,0 +1,2537 @@
+﻿Launching Playwright tariff scraper...
+
+Mode: Processing month 2 only
+
+Loading Tableau dashboard...
+[OK] Bootstrap URL: https://public.tableau.com/vizql/w/MonitorConsumentenmarktEnergie/v/Variabeleenvastecontracten/bootstrapSession/sessions/E8BF00DF8A1045A59AA46D9365ED9132-0:0
+[OK] Bootstrap status: 200
+Waiting for bootstrap session...
+Triggering VizQL commands to capture headers...
+
+DEBUG command url: https://public.tableau.com/vizql/w/MonitorConsumentenmarktEnergie/v/Variabeleenvastecontracten/sessions/E8BF00DF8A1045A59AA46D9365ED9132-0:0/commands/tabdoc/set-active-zone
+DEBUG header keys: ['accept', 'content-type', 'global-session-header', 'referer', 'sec-ch-ua', 'sec-ch-ua-mobile', 'sec-ch-ua-platform', 'user-agent', 'x-b3-sampled', 'x-b3-spanid', 'x-b3-traceid', 'x-requested-with', 'x-tableau-version', 'x-tsi-active-tab']
+DEBUG global-session-header: MTAuNzguMTQwLjc3OjgwODA=
+DEBUG x-tableau-version: 2026.2
+DEBUG x-tsi-active-tab: Variabele%20en%20vaste%20contracten
+
+[OK] Captured GSH=MTAuNzguMTQw... x-tableau-version=2026.2
+
+[OK] Command headers ready on attempt 1
+[OK] Session ID: E8BF00DF8A1045A59AA46D9365ED9132-0:0
+
+============================================================
+Processing 42 months with 58 providers each
+============================================================
+
+Processing 1 month(s) with 58 providers each
+
+============================================================
+Month: mei 2026 (ID: 2)
+============================================================
+  clear_all status: 200
+
+Provider: All in Power (index 0)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for All in Power
+  deselect status: 200
+
+Provider: AllureNRG (index 1)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+[OK] Discovered 8 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Vaste Prijs 3 jaar (single)
+  [OK] tuple_id=2: Vaste Prijs 2 jaar (met zonnepanelen) (single)
+  [OK] tuple_id=3: Vaste Prijs 1 jaar (met zonnepanelen) (single)
+  [OK] tuple_id=4: Modelcontract (single)
+  [OK] tuple_id=5: Vaste Prijs 2 jaar (single)
+  [OK] tuple_id=6: Vaste Prijs 1 jaar (single)
+  [OK] tuple_id=7: Variabele Prijs (single)
+  [OK] tuple_id=8: Modelcontract (single)
+[OK] 8 contracts fetched for AllureNRG
+  deselect status: 200
+
+Provider: ANWB Energie (index 2)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+[OK] Discovered 2 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (single)
+  [OK] tuple_id=2: Modelcontract (single)
+[OK] 2 contracts fetched for ANWB Energie
+  deselect status: 200
+
+Provider: Audax Renewables (index 3)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+[OK] Discovered 14 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (double)
+  [OK] tuple_id=10: Modelcontract (double)
+  [OK] tuple_id=11: Modelcontract (single)
+  [OK] tuple_id=12: Modelcontract (single)
+  [OK] tuple_id=13: Modelcontract (single)
+  [OK] tuple_id=14: Modelcontract (single)
+  [OK] tuple_id=2: Modelcontract (single)
+  [OK] tuple_id=3: Modelcontract (double)
+  [OK] tuple_id=4: Modelcontract (double)
+  [OK] tuple_id=5: Modelcontract (double)
+  [OK] tuple_id=6: Modelcontract (double)
+  [OK] tuple_id=7: Modelcontract (single)
+  [OK] tuple_id=8: Modelcontract (double)
+  [OK] tuple_id=9: Modelcontract (single)
+[OK] 14 contracts fetched for Audax Renewables
+  deselect status: 200
+
+Provider: Budget Energie (index 4)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+[OK] Discovered 20 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Groene Stroom en Aardgas 2 Jaar Vast B (single)
+  [OK] tuple_id=10: Groene Stroom en Aardgas Variabel A (double)
+  [OK] tuple_id=11: Groene Stroom en Aardgas Variabel A (single)
+  [OK] tuple_id=12: Groene Stroom en Aardgas 1 Jaar Vast E (single)
+  [OK] tuple_id=13: Groene Stroom en Aardgas 3 Jaar Vast D (single)
+  [OK] tuple_id=14: Groene Stroom en Aardgas 2 Jaar Vast E (single)
+  [OK] tuple_id=15: Groene Stroom en Aardgas 3 Jaar Vast E (single)
+  [OK] tuple_id=16: Groene Stroom en Aardgas Variabel E (double)
+  [OK] tuple_id=17: Groene Stroom en Aardgas Variabel E (single)
+  [OK] tuple_id=18: Modelcontract (double)
+  [OK] tuple_id=19: Modelcontract (single)
+  [OK] tuple_id=2: Groene Stroom en Aardgas 3 Jaar Vast A (single)
+  [OK] tuple_id=20: Modelcontract (single)
+  [OK] tuple_id=3: Groene Stroom en Aardgas 3 Jaar Vast B (single)
+  [OK] tuple_id=4: Groene stroom en Aardgas 1 jaar Vast C (single)
+  [OK] tuple_id=5: Groene stroom en Aardgas 2 jaar Vast C (single)
+  [OK] tuple_id=6: Groene Stroom en Aardgas 1 Jaar Vast A (single)
+  [OK] tuple_id=7: Groene stroom en Aardgas 3 jaar Vast C (single)
+  [OK] tuple_id=8: Groene Stroom en Aardgas 1 Jaar Vast B (single)
+  [OK] tuple_id=9: Nederlandse Wind Stroom en CO2-gecompenseerd Gas Vast 1 Jaar B (single)
+[OK] 20 contracts fetched for Budget Energie
+  deselect status: 200
+
+Provider: Cleanenergy (index 5)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+  y=780: Discovered tuple_id=21
+  y=810: Discovered tuple_id=22
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=900: Discovered tuple_id=24
+[OK] Discovered 24 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Clean Energy Huishoudelijk variabel (single)
+  [OK] tuple_id=10: Clean Energy Particulier 1-jaar vast Verlenging (single)
+  [OK] tuple_id=11: Clean Energy Huishoudelijk 3-jaar vast (double)
+  [OK] tuple_id=12: Clean Energy Huishoudelijk 3-jaar vast (single)
+  [OK] tuple_id=13: Clean Energy Huishoudelijk 2-jaar vast (double)
+  [OK] tuple_id=14: Clean Energy Huishoudelijk 2-jaar vast (single)
+  [OK] tuple_id=15: Clean Energy Huishoudelijk 1-jaar vast (double)
+  [OK] tuple_id=16: Clean Energy Huishoudelijk 1-jaar vast (single)
+  [OK] tuple_id=17: Clean Energy Particulier 2-jaar vast Verlenging (double)
+  [OK] tuple_id=18: Clean Energy Particulier 2-jaar vast Verlenging (single)
+  [OK] tuple_id=19: Clean Energy Consument 1-jaar vast (double)
+  [OK] tuple_id=2: Clean Energy Huishoudelijk variabel (double)
+  [OK] tuple_id=20: Clean Energy Consument 1-jaar vast (single)
+  [OK] tuple_id=21: Modelcontract (double)
+  [OK] tuple_id=22: Modelcontract (single)
+  [OK] tuple_id=23: Modelcontract (single)
+  [OK] tuple_id=24: Modelcontract (double)
+  [OK] tuple_id=3: Clean Energy Particulier 3-jaar vast (double)
+  [OK] tuple_id=4: Clean Energy Particulier 3-jaar vast (double)
+  [OK] tuple_id=5: Clean Energy Particulier 3-jaar vast (single)
+  [OK] tuple_id=6: Clean Energy Particulier 3-jaar vast (single)
+  [OK] tuple_id=7: Clean Energy Particulier 3-jaar vast Verlenging (double)
+  [OK] tuple_id=8: Clean Energy Particulier 3-jaar vast Verlenging (single)
+  [OK] tuple_id=9: Clean Energy Particulier 1-jaar vast Verlenging (double)
+[OK] 24 contracts fetched for Cleanenergy
+  deselect status: 200
+
+Provider: CNS (index 6)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+[OK] Discovered 2 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (single)
+  [OK] tuple_id=2: Modelcontract (single)
+[OK] 2 contracts fetched for CNS
+  deselect status: 200
+
+Provider: Coolblue Energie (index 7)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+  y=780: Discovered tuple_id=21
+  y=810: Discovered tuple_id=22
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=900: Discovered tuple_id=24
+[OK] Discovered 24 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: 3 jaar Vast (double)
+  [OK] tuple_id=10: 3 jaar Vast (single)
+  [OK] tuple_id=11: 2 jaar Vast (double)
+  [OK] tuple_id=12: 2 jaar Vast (single)
+  [OK] tuple_id=13: 1 jaar Vast (double)
+  [OK] tuple_id=14: 3 jaar Vast (double)
+  [OK] tuple_id=15: 3 jaar Vast (single)
+  [OK] tuple_id=16: 1 jaar Vast (single)
+  [OK] tuple_id=17: 1 jaar Vast (double)
+  [OK] tuple_id=18: 1 jaar Vast (single)
+  [OK] tuple_id=19: Variabel (double)
+  [OK] tuple_id=2: 3 jaar Vast (single)
+  [OK] tuple_id=20: Variabel (single)
+  [OK] tuple_id=21: 1 jaar Vast (single)
+  [OK] tuple_id=22: 1 jaar Vast (double)
+  [OK] tuple_id=23: Modelcontract (single)
+  [OK] tuple_id=24: Modelcontract (double)
+  [OK] tuple_id=3: 2 jaar Vast (double)
+  [OK] tuple_id=4: 2 jaar Vast (single)
+  [OK] tuple_id=5: 1 jaar Vast (double)
+  [OK] tuple_id=6: Modelcontract (double)
+  [OK] tuple_id=7: 3 jaar Vast (double)
+  [OK] tuple_id=8: Modelcontract (single)
+  [OK] tuple_id=9: 1 jaar Vast (single)
+[OK] 24 contracts fetched for Coolblue Energie
+  deselect status: 200
+
+Provider: DELTA energie (index 8)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+  y=780: Discovered tuple_id=21
+  y=810: Discovered tuple_id=22
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=900: Discovered tuple_id=24
+  y=930: Discovered tuple_id=25
+  y=960: Discovered tuple_id=26
+[OK] Discovered 26 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: DELTA Groene Actiestroom en/of DELTA Actiegas, variabele leveringsprijs (single)
+  [OK] tuple_id=10: Modelcontract (single)
+  [OK] tuple_id=11: DELTA Puur Zeeuws Groen en/of DELTA MixGroen Gas, variabele leveringsprijs (single)
+  [OK] tuple_id=12: DELTA Puur Zeeuws Groen en/of DELTA MixGroen Gas, variabele leveringsprijs (double)
+  [OK] tuple_id=13: DELTA Groene Actiestroom, vaste leveringsprijs (3 jaar) en/of DELTA Actiegas, vaste leveringsprijs (3 jaar) (single)
+  [OK] tuple_id=14: DELTA Groene Actiestroom, vaste leveringsprijs (3 jaar) en/of DELTA Actiegas, vaste leveringsprijs (3 jaar) (double)
+  [OK] tuple_id=15: DELTA Groene Stroom, vaste leveringsprijs (3 jaar) en/of DELTA Gas, vaste leveringsprijs (3 jaar) (double)
+  [OK] tuple_id=16: DELTA Groene Stroom, vaste leveringsprijs (3 jaar) en/of DELTA Gas, vaste leveringsprijs (3 jaar) (single)
+  [OK] tuple_id=17: DELTA Groene Stroom, vaste leveringsprijs (1 jaar) en/of DELTA Gas, vaste leveringsprijs (1 jaar) (double)
+  [OK] tuple_id=18: DELTA Groene Stroom, vaste leveringsprijs (1 jaar) en/of DELTA Gas, vaste leveringsprijs (1 jaar) (single)
+  [OK] tuple_id=19: DELTA Puur Zeeuws Groen, vaste leveringsprijs (3 jaar) en/of DELTA MixGroen Gas, vaste leveringsprijs (3 jaar) (single)
+  [OK] tuple_id=2: DELTA Groene Actiestroom en/of DELTA Actiegas, variabele leveringsprijs (double)
+  [OK] tuple_id=20: DELTA Puur Zeeuws Groen, vaste leveringsprijs (3 jaar) en/of DELTA MixGroen Gas, vaste leveringsprijs (3 jaar) (double)
+  [OK] tuple_id=21: Modelcontract (single)
+  [OK] tuple_id=22: Modelcontract (double)
+  [OK] tuple_id=23: DELTA Puur Zeeuws Groen, vaste leveringsprijs (1 jaar) en/of DELTA MixGroen Gas, vaste leveringsprijs (1 jaar) (double)
+  [OK] tuple_id=24: DELTA Puur Zeeuws Groen, vaste leveringsprijs (1 jaar) en/of DELTA MixGroen Gas, vaste leveringsprijs (1 jaar) (single)
+  [OK] tuple_id=25: Modelcontract (single)
+  [OK] tuple_id=26: Modelcontract (double)
+  [OK] tuple_id=3: DELTA Groene Stroom en/of DELTA Gas, variabele leveringsprijs (e) (double)
+  [OK] tuple_id=4: DELTA Groene Stroom en/of DELTA Gas, variabele leveringsprijs (double)
+  [OK] tuple_id=5: DELTA Groene Stroom en/of DELTA Gas, variabele leveringsprijs (e) (single)
+  [OK] tuple_id=6: DELTA Groene Stroom en/of DELTA Gas, variabele leveringsprijs (single)
+  [OK] tuple_id=7: DELTA Groene Actiestroom, vaste leveringsprijs (1 jaar) en/of DELTA Actiegas, vaste leveringsprijs (1 jaar) (double)
+  [OK] tuple_id=8: DELTA Groene Actiestroom, vaste leveringsprijs (1 jaar) en/of DELTA Actiegas, vaste leveringsprijs (1 jaar) (single)
+  [OK] tuple_id=9: Modelcontract (double)
+[OK] 26 contracts fetched for DELTA energie
+  deselect status: 200
+
+Provider: DGB energie (index 9)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for DGB energie
+  deselect status: 200
+
+Provider: DigiWatt Energie (index 10)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for DigiWatt Energie
+  deselect status: 200
+
+Provider: DVEP Energie (index 11)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for DVEP Energie
+  deselect status: 200
+
+Provider: EasyEnergy (index 12)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+[OK] Discovered 2 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (single)
+  [OK] tuple_id=2: Modelcontract (single)
+[OK] 2 contracts fetched for EasyEnergy
+  deselect status: 200
+
+Provider: ELIX (index 13)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+[OK] Discovered 3 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=2: Modelcontract (double)
+  [OK] tuple_id=3: Modelcontract (double)
+  [OK] tuple_id=4: Modelcontract (single)
+[OK] 3 contracts fetched for ELIX
+  deselect status: 200
+
+Provider: Eneco (index 14)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+  y=780: Discovered tuple_id=21
+  y=810: Discovered tuple_id=22
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=960: Discovered tuple_id=26
+  y=1020: Discovered tuple_id=27
+  y=1050: Discovered tuple_id=28
+  y=1080: Discovered tuple_id=29
+  y=1110: Discovered tuple_id=30
+  y=1140: Discovered tuple_id=31
+  y=1170: Discovered tuple_id=31
+  y=1200: Discovered tuple_id=32
+  y=1260: Discovered tuple_id=34
+  y=1290: Discovered tuple_id=34
+  y=1320: Discovered tuple_id=35
+  y=1350: Discovered tuple_id=36
+  y=1470: Discovered tuple_id=39
+  y=1500: Discovered tuple_id=40
+[OK] Discovered 35 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Eneco HollandseWind & Zon Variabel & Eneco Gas Variabel (single)
+  [OK] tuple_id=10: Eneco HollandseWind & Zon Actie 1 jaar & Eneco Gas Actie 1 jaar (double)
+  [OK] tuple_id=11: Eneco HollandseWind & Zon Actie 1 jaar & Eneco Gas Actie 1 jaar (single)
+  [OK] tuple_id=12: Eneco HollandseWind & Zon 1 jaar & Eneco Gas 1 jaar (single)
+  [OK] tuple_id=13: Eneco VoordeelMomenten HollandseWind & Zon 1 jaar & Eneco Gas 1 jaar (double)
+  [OK] tuple_id=14: Eneco HollandseWind & Zon Variabel & Eneco Gas Variabel (single)
+  [OK] tuple_id=15: Eneco HollandseWind & Zon Variabel & Eneco Gas Variabel (double)
+  [OK] tuple_id=16: Eneco HollandseWind & Zon Actie 1 jaar & Eneco Gas Actie 1 jaar (double)
+  [OK] tuple_id=17: Eneco HollandseWind & Zon 1 jaar & Eneco Gas 1 jaar (double)
+  [OK] tuple_id=18: Eneco HollandseWind & Zon Actie 1 jaar & Eneco Gas Actie 1 jaar (single)
+  [OK] tuple_id=19: Eneco HollandseWind & Zon 1 jaar & Eneco Gas 1 jaar (single)
+  [OK] tuple_id=2: Eneco HollandseWind & Zon Variabel & Eneco Gas Variabel (double)
+  [OK] tuple_id=20: Eneco VoordeelMomenten HollandseWind & Zon 1 jaar & Eneco Gas 1 jaar (double)
+  [OK] tuple_id=21: Modelcontract (double)
+  [OK] tuple_id=22: Modelcontract (single)
+  [OK] tuple_id=23: Eneco VoordeelMomenten HollandseWind & Zon 1 jaar & Eneco Gas Zeker 1 jaar (double)
+  [OK] tuple_id=26: Eneco HollandseWind & Zon 3 jaar VasteLooptijd & Eneco Gas 3 jaar VasteLooptijd (double)
+  [OK] tuple_id=27: Eneco HollandseWind & Zon 3 jaar VasteLooptijd & Eneco Gas 3 jaar VasteLooptijd (single)
+  [OK] tuple_id=28: Modelcontract (double)
+  [OK] tuple_id=29: Modelcontract (single)
+  [OK] tuple_id=3: Eneco HollandseWind & Zon Variabel & Eneco CO2-GecompenseerdGas Variabel (single)
+  [OK] tuple_id=30: Eneco VoordeelMomenten HollandseWind & Zon 1 jaar & Eneco Gas Zeker 1 jaar (double)
+  [OK] tuple_id=31: Eneco HollandseWind & Zon 1 jaar VasteLooptijd & Eneco Gas 1 jaar VasteLooptijd (double)
+  [OK] tuple_id=32: Eneco HollandseWind & Zon 1 jaar VasteLooptijd & Eneco Gas 1 jaar VasteLooptijd (single)
+  [OK] tuple_id=34: Eneco HollandseWind & Zon Zeker 1 jaar & Eneco Gas Zeker 1 jaar (single)
+  [OK] tuple_id=35: Eneco HollandseWind & Zon 1 jaar VasteLooptijd & Eneco Gas 1 jaar VasteLooptijd (double)
+  [OK] tuple_id=36: Eneco HollandseWind & Zon 1 jaar VasteLooptijd & Eneco Gas 1 jaar VasteLooptijd (single)
+  [OK] tuple_id=39: Eneco VoordeelMomenten HollandseWind & Zon 1 jaar & Eneco Gas 1 jaar (single)
+  [OK] tuple_id=4: Eneco HollandseWind & Zon Variabel & Eneco CO2-GecompenseerdGas Variabel (double)
+  [OK] tuple_id=40: Eneco HollandseWind & Zon VariabelePrijs & Eneco Gas VariabelePrijs (double)
+  [OK] tuple_id=5: Eneco HollandseWind & Zon 1 jaar Voordeel & Eneco Gas 1 jaar Voordeel (double)
+  [OK] tuple_id=6: Eneco HollandseWind & Zon 1 jaar Voordeel & Eneco Gas 1 jaar Voordeel (single)
+  [OK] tuple_id=7: Eneco HollandseWind & Zon 1 jaar Voordeel & Eneco Gas 1 jaar Voordeel (double)
+  [OK] tuple_id=8: Eneco HollandseWind & Zon 1 jaar Voordeel & Eneco Gas 1 jaar Voordeel (single)
+  [OK] tuple_id=9: Eneco HollandseWind & Zon 1 jaar & Eneco Gas 1 jaar (double)
+[OK] 35 contracts fetched for Eneco
+  deselect status: 200
+
+Provider: Eneco Zakelijk (index 15)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+[OK] Discovered 1 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Variabel leveringstarief (double)
+[OK] 1 contracts fetched for Eneco Zakelijk
+  deselect status: 200
+
+Provider: Energie.VanOns (index 16)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+[OK] Discovered 6 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Coöperatief contract (double)
+  [OK] tuple_id=2: Coöperatief contract (single)
+  [OK] tuple_id=3: Variabel (single)
+  [OK] tuple_id=4: Variabel (double)
+  [OK] tuple_id=5: Modelcontract (double)
+  [OK] tuple_id=6: Modelcontract (single)
+[OK] 6 contracts fetched for Energie.VanOns
+  deselect status: 200
+
+Provider: Energiedirect.nl (index 17)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+  y=780: Discovered tuple_id=21
+  y=810: Discovered tuple_id=22
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=900: Discovered tuple_id=24
+  y=930: Discovered tuple_id=25
+  y=960: Discovered tuple_id=26
+  y=990: Discovered tuple_id=27
+  y=1020: Discovered tuple_id=27
+  y=1050: Discovered tuple_id=28
+  y=1080: Discovered tuple_id=29
+  y=1110: Discovered tuple_id=30
+  y=1140: Discovered tuple_id=31
+  y=1170: Discovered tuple_id=31
+  y=1200: Discovered tuple_id=32
+  y=1230: Discovered tuple_id=33
+  y=1260: Discovered tuple_id=34
+  y=1290: Discovered tuple_id=34
+  y=1320: Discovered tuple_id=35
+  y=1350: Discovered tuple_id=36
+  y=1380: Discovered tuple_id=37
+  y=1410: Discovered tuple_id=38
+  y=1440: Discovered tuple_id=38
+  y=1470: Discovered tuple_id=39
+  y=1500: Discovered tuple_id=40
+  y=1530: Discovered tuple_id=41
+  y=1560: Discovered tuple_id=42
+  y=1590: Discovered tuple_id=42
+  y=1620: Discovered tuple_id=43
+  y=1650: Discovered tuple_id=44
+[OK] Discovered 44 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Vast Groene Stroom en Gas DirectVoordeel Actie 3 jaar (double)
+  [OK] tuple_id=10: Vast Groene Stroom en Gas DirectVoordeel 2 jaar (single)
+  [OK] tuple_id=11: Vast Groene Stroom en Gas DirectVoordeel 1 jaar (double)
+  [OK] tuple_id=12: Vast Groene Stroom en Gas DirectVoordeel 1 jaar (single)
+  [OK] tuple_id=13: Groene Stroom en Gas onbepaalde tijd variabel (double)
+  [OK] tuple_id=14: Groene Stroom en Gas onbepaalde tijd variabel (single)
+  [OK] tuple_id=15: Vast Groene Stroom en Gas AltijdVoordeel 3 jaar (double)
+  [OK] tuple_id=16: Vast Groene Stroom en Gas AltijdVoordeel 3 jaar (single)
+  [OK] tuple_id=17: Vast Groene Stroom en Gas AltijdVoordeel 2 jaar (double)
+  [OK] tuple_id=18: Vast Groene Stroom en Gas AltijdVoordeel 2 jaar (single)
+  [OK] tuple_id=19: Vast Groene Stroom en Gas AltijdVoordeel 1 jaar (double)
+  [OK] tuple_id=2: Vast Groene Stroom en Gas DirectVoordeel Actie 3 jaar (single)
+  [OK] tuple_id=20: Vast Groene Stroom en Gas AltijdVoordeel 1 jaar (single)
+  [OK] tuple_id=21: Groene Stroom en Gas AFL onbepaalde tijd variabel (double)
+  [OK] tuple_id=22: Modelcontract (double)
+  [OK] tuple_id=23: Groene Stroom en Gas AFL onbepaalde tijd variabel (single)
+  [OK] tuple_id=24: Modelcontract (single)
+  [OK] tuple_id=25: Vast Groene Stroom en Gas AltijdVoordeel Vast 3 jaar (double)
+  [OK] tuple_id=26: Vast Groene Stroom en Gas AltijdVoordeel Vast 3 jaar (single)
+  [OK] tuple_id=27: Vast Groene Stroom en Gas AltijdVoordeel Vast 2 jaar (double)
+  [OK] tuple_id=28: Vast Groene Stroom en Gas AltijdVoordeel Vast 2 jaar (single)
+  [OK] tuple_id=29: Groene Stroom en Gas ACQ onbepaalde tijd variabel (double)
+  [OK] tuple_id=3: Vast Groene Stroom en Gas DirectVoordeel Actie 2 jaar (double)
+  [OK] tuple_id=30: Groene Stroom en Gas ACQ onbepaalde tijd variabel (single)
+  [OK] tuple_id=31: Vast Groene Stroom en Gas AltijdVoordeel Vast 1 jaar (double)
+  [OK] tuple_id=32: Vast Groene Stroom en Gas AltijdVoordeel Vast 1 jaar (single)
+  [OK] tuple_id=33: Vast Groene Stroom en Gas AltijdVoordeel Vaste Prijs 3 jaar (double)
+  [OK] tuple_id=34: Vast Groene Stroom en Gas AltijdVoordeel Vaste Prijs 3 jaar (single)
+  [OK] tuple_id=35: Vast Groene Stroom en Gas AltijdVoordeel Vaste Prijs 2 jaar (double)
+  [OK] tuple_id=36: Vast Groene Stroom en Gas AltijdVoordeel Vaste Prijs 2 jaar (single)
+  [OK] tuple_id=37: Modelcontract (double)
+  [OK] tuple_id=38: Vast Groene Stroom en Gas AltijdVoordeel Vaste Prijs 1 jaar (double)
+  [OK] tuple_id=39: Vast Groene Stroom en Gas AltijdVoordeel Vaste Prijs 1 jaar (single)
+  [OK] tuple_id=4: Vast Groene Stroom en Gas DirectVoordeel Actie 2 jaar (single)
+  [OK] tuple_id=40: Modelcontract (single)
+  [OK] tuple_id=41: Modelcontract (double)
+  [OK] tuple_id=42: Modelcontract (single)
+  [OK] tuple_id=43: Modelcontract (double)
+  [OK] tuple_id=44: Modelcontract (single)
+  [OK] tuple_id=5: Vast Groene Stroom en Gas DirectVoordeel Actie 1 jaar (double)
+  [OK] tuple_id=6: Vast Groene Stroom en Gas DirectVoordeel Actie 1 jaar (single)
+  [OK] tuple_id=7: Vast Groene Stroom en Gas DirectVoordeel 3 jaar (double)
+  [OK] tuple_id=8: Vast Groene Stroom en Gas DirectVoordeel 3 jaar (single)
+  [OK] tuple_id=9: Vast Groene Stroom en Gas DirectVoordeel 2 jaar (double)
+[OK] 44 contracts fetched for Energiedirect.nl
+  deselect status: 200
+
+Provider: Energiek (index 18)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+[OK] Discovered 8 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (double)
+  [OK] tuple_id=2: Modelcontract (single)
+  [OK] tuple_id=3: Modelcontract (double)
+  [OK] tuple_id=4: Modelcontract (single)
+  [OK] tuple_id=5: Energiek Variabel (single)
+  [OK] tuple_id=6: Energiek Variabel (double)
+  [OK] tuple_id=7: Modelcontract (single)
+  [OK] tuple_id=8: Modelcontract (double)
+[OK] 8 contracts fetched for Energiek
+  deselect status: 200
+
+Provider: Energyhouse (index 19)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+[OK] Discovered 5 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (double)
+  [OK] tuple_id=2: Modelcontract (single)
+  [OK] tuple_id=3: Variabel (single)
+  [OK] tuple_id=4: Modelcontract (single)
+  [OK] tuple_id=5: Modelcontract (single)
+[OK] 5 contracts fetched for Energyhouse
+  deselect status: 200
+
+Provider: Energyzero (index 20)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+[OK] Discovered 4 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (double)
+  [OK] tuple_id=2: Modelcontract (single)
+  [OK] tuple_id=3: Modelcontract (double)
+  [OK] tuple_id=4: Modelcontract (single)
+[OK] 4 contracts fetched for Energyzero
+  deselect status: 200
+
+Provider: Engie retail (index 21)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for Engie retail
+  deselect status: 200
+
+Provider: Essent (index 22)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+  y=780: Discovered tuple_id=21
+  y=810: Discovered tuple_id=22
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=900: Discovered tuple_id=24
+  y=930: Discovered tuple_id=25
+  y=960: Discovered tuple_id=26
+  y=990: Discovered tuple_id=27
+  y=1020: Discovered tuple_id=27
+  y=1050: Discovered tuple_id=28
+  y=1080: Discovered tuple_id=29
+  y=1110: Discovered tuple_id=30
+  y=1140: Discovered tuple_id=31
+  y=1170: Discovered tuple_id=31
+  y=1200: Discovered tuple_id=32
+  y=1230: Discovered tuple_id=33
+  y=1260: Discovered tuple_id=34
+  y=1290: Discovered tuple_id=34
+  y=1320: Discovered tuple_id=35
+  y=1350: Discovered tuple_id=36
+  y=1380: Discovered tuple_id=37
+  y=1410: Discovered tuple_id=38
+  y=1440: Discovered tuple_id=38
+  y=1470: Discovered tuple_id=39
+  y=1500: Discovered tuple_id=40
+  y=1530: Discovered tuple_id=41
+  y=1560: Discovered tuple_id=42
+  y=1590: Discovered tuple_id=42
+  y=1620: Discovered tuple_id=43
+  y=1650: Discovered tuple_id=44
+  y=1680: Discovered tuple_id=45
+  y=1710: Discovered tuple_id=46
+  y=1740: Discovered tuple_id=46
+  y=1770: Discovered tuple_id=47
+  y=1800: Discovered tuple_id=48
+  y=1830: Discovered tuple_id=49
+  y=1860: Discovered tuple_id=49
+  y=1890: Discovered tuple_id=50
+  y=1920: Discovered tuple_id=51
+  y=1950: Discovered tuple_id=52
+  y=1980: Discovered tuple_id=53
+  y=2010: Discovered tuple_id=53
+  y=2040: Discovered tuple_id=54
+  y=2070: Discovered tuple_id=55
+  y=2100: Discovered tuple_id=56
+  y=2130: Discovered tuple_id=57
+  y=2160: Discovered tuple_id=57
+  y=2190: Discovered tuple_id=58
+  y=2220: Discovered tuple_id=59
+  y=2250: Discovered tuple_id=60
+  y=2280: Discovered tuple_id=61
+  y=2310: Discovered tuple_id=61
+  y=2340: Discovered tuple_id=62
+  y=2370: Discovered tuple_id=63
+  y=2400: Discovered tuple_id=64
+  y=2430: Discovered tuple_id=64
+  y=2460: Discovered tuple_id=65
+  y=2490: Discovered tuple_id=66
+  y=2520: Discovered tuple_id=67
+  y=2550: Discovered tuple_id=68
+  y=2580: Discovered tuple_id=68
+  y=2610: Discovered tuple_id=69
+  y=2640: Discovered tuple_id=70
+  y=2670: Discovered tuple_id=71
+  y=2700: Discovered tuple_id=72
+  y=2730: Discovered tuple_id=72
+  y=2760: Discovered tuple_id=73
+  y=2790: Discovered tuple_id=74
+  y=2820: Discovered tuple_id=75
+  y=2850: Discovered tuple_id=76
+  y=2880: Discovered tuple_id=76
+  y=2910: Discovered tuple_id=77
+  y=2940: Discovered tuple_id=78
+  y=2970: Discovered tuple_id=79
+  y=3000: Discovered tuple_id=79
+  y=3030: Discovered tuple_id=80
+  y=3060: Discovered tuple_id=81
+  y=3090: Discovered tuple_id=82
+  y=3120: Discovered tuple_id=83
+  y=3150: Discovered tuple_id=83
+  y=3180: Discovered tuple_id=84
+  y=3210: Discovered tuple_id=85
+  y=3240: Discovered tuple_id=86
+  y=3270: Discovered tuple_id=87
+  y=3300: Discovered tuple_id=87
+  y=3330: Discovered tuple_id=88
+  y=3360: Discovered tuple_id=89
+  y=3390: Discovered tuple_id=90
+  y=3420: Discovered tuple_id=91
+  y=3450: Discovered tuple_id=91
+  y=3480: Discovered tuple_id=92
+  y=3510: Discovered tuple_id=93
+  y=3540: Discovered tuple_id=94
+  y=3570: Discovered tuple_id=94
+  y=3600: Discovered tuple_id=95
+  y=3630: Discovered tuple_id=96
+  y=3660: Discovered tuple_id=97
+  y=3690: Discovered tuple_id=98
+  y=3720: Discovered tuple_id=98
+  y=3750: Discovered tuple_id=99
+[OK] Discovered 99 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (double)
+  [OK] tuple_id=10: Modelcontract (double)
+  [OK] tuple_id=11: ENGIE Open (double)
+  [OK] tuple_id=12: ENGIE opgewekt 3 jaar (double)
+  [OK] tuple_id=13: ENGIE opgewekt 3 jaar (single)
+  [OK] tuple_id=14: ENGIE opgewekt 3 jaar (single)
+  [OK] tuple_id=15: ENGIE opgewekt 3 jaar (double)
+  [OK] tuple_id=16: ENGIE Open (single)
+  [OK] tuple_id=17: ENGIE Open (double)
+  [OK] tuple_id=18: ENGIE Open (double)
+  [OK] tuple_id=19: ENGIE Open (single)
+  [OK] tuple_id=2: ENGIE Open (double)
+  [OK] tuple_id=20: Modelcontract (double)
+  [OK] tuple_id=21: ENGIE opgewekt 1 jaar (single)
+  [OK] tuple_id=22: Modelcontract (single)
+  [OK] tuple_id=23: ENGIE opgewekt 1 jaar (double)
+  [OK] tuple_id=24: ENGIE Open (single)
+  [OK] tuple_id=25: ENGIE Open (double)
+  [OK] tuple_id=26: Modelcontract (double)
+  [OK] tuple_id=27: Modelcontract (single)
+  [OK] tuple_id=28: Modelcontract (single)
+  [OK] tuple_id=29: Modelcontract (double)
+  [OK] tuple_id=3: ENGIE Open (single)
+  [OK] tuple_id=30: ENGIE opgewekt 1 jaar (double)
+  [OK] tuple_id=31: ENGIE opgewekt 1 jaar (single)
+  [OK] tuple_id=32: Modelcontract (single)
+  [OK] tuple_id=33: ENGIE Open (single)
+  [OK] tuple_id=34: Modelcontract (double)
+  [OK] tuple_id=35: ENGIE Open (double)
+  [OK] tuple_id=36: ENGIE opgewekt 3 jaar (single)
+  [OK] tuple_id=37: ENGIE opgewekt 3 jaar (double)
+  [OK] tuple_id=38: ENGIE opgewekt 3 jaar (single)
+  [OK] tuple_id=39: ENGIE opgewekt 3 jaar (double)
+  [OK] tuple_id=4: Modelcontract (single)
+  [OK] tuple_id=40: ENGIE opgewekt 3 jaar (single)
+  [OK] tuple_id=41: ENGIE opgewekt 3 jaar (double)
+  [OK] tuple_id=42: ENGIE opgewekt 3 jaar (single)
+  [OK] tuple_id=43: ENGIE opgewekt 3 jaar (double)
+  [OK] tuple_id=44: ENGIE opgewekt 3 jaar (double)
+  [OK] tuple_id=45: ENGIE opgewekt 3 jaar (single)
+  [OK] tuple_id=46: ENGIE opgewekt 3 jaar (single)
+  [OK] tuple_id=47: ENGIE opgewekt 3 jaar (double)
+  [OK] tuple_id=48: ENGIE opgewekt 3 jaar (single)
+  [OK] tuple_id=49: ENGIE opgewekt 3 jaar (double)
+  [OK] tuple_id=5: ENGIE Open (double)
+  [OK] tuple_id=50: ENGIE opgewekt 1 jaar (double)
+  [OK] tuple_id=51: Modelcontract (single)
+  [OK] tuple_id=52: ENGIE opgewekt 1 jaar (single)
+  [OK] tuple_id=53: Modelcontract (double)
+  [OK] tuple_id=54: Modelcontract (double)
+  [OK] tuple_id=55: ENGIE opgewekt 1 jaar (double)
+  [OK] tuple_id=56: Modelcontract (single)
+  [OK] tuple_id=57: ENGIE opgewekt 1 jaar (single)
+  [OK] tuple_id=58: ENGIE opgewekt 1 jaar (single)
+  [OK] tuple_id=59: Modelcontract (single)
+  [OK] tuple_id=6: ENGIE Open (single)
+  [OK] tuple_id=60: Modelcontract (double)
+  [OK] tuple_id=61: ENGIE opgewekt 1 jaar (double)
+  [OK] tuple_id=62: ENGIE opgewekt 1 jaar (single)
+  [OK] tuple_id=63: Modelcontract (single)
+  [OK] tuple_id=64: Modelcontract (double)
+  [OK] tuple_id=65: ENGIE opgewekt 1 jaar (double)
+  [OK] tuple_id=66: ENGIE opgewekt 1 jaar (single)
+  [OK] tuple_id=67: Modelcontract (double)
+  [OK] tuple_id=68: Modelcontract (single)
+  [OK] tuple_id=69: ENGIE opgewekt 1 jaar (double)
+  [OK] tuple_id=7: ENGIE Open (single)
+  [OK] tuple_id=70: ENGIE opgewekt 1 jaar (single)
+  [OK] tuple_id=71: Modelcontract (double)
+  [OK] tuple_id=72: Modelcontract (single)
+  [OK] tuple_id=73: ENGIE opgewekt 1 jaar (double)
+  [OK] tuple_id=74: ENGIE opgewekt 3 jaar (double)
+  [OK] tuple_id=75: ENGIE opgewekt 3 jaar (single)
+  [OK] tuple_id=76: Modelcontract (double)
+  [OK] tuple_id=77: ENGIE opgewekt 1 jaar (double)
+  [OK] tuple_id=78: ENGIE opgewekt 1 jaar (single)
+  [OK] tuple_id=79: Modelcontract (single)
+  [OK] tuple_id=8: Modelcontract (single)
+  [OK] tuple_id=80: Modelcontract (single)
+  [OK] tuple_id=81: Modelcontract (double)
+  [OK] tuple_id=82: ENGIE opgewekt 1 jaar (double)
+  [OK] tuple_id=83: ENGIE opgewekt 1 jaar (single)
+  [OK] tuple_id=84: Modelcontract (double)
+  [OK] tuple_id=85: ENGIE Open (double)
+  [OK] tuple_id=86: ENGIE Open (single)
+  [OK] tuple_id=87: Modelcontract (single)
+  [OK] tuple_id=88: Modelcontract (single)
+  [OK] tuple_id=89: ENGIE Open (single)
+  [OK] tuple_id=9: ENGIE Open (double)
+  [OK] tuple_id=90: Modelcontract (double)
+  [OK] tuple_id=91: ENGIE Open (double)
+  [OK] tuple_id=92: ENGIE Open (single)
+  [OK] tuple_id=93: Modelcontract (double)
+  [OK] tuple_id=94: Modelcontract (single)
+  [OK] tuple_id=95: ENGIE Open (double)
+  [OK] tuple_id=96: ENGIE Open (double)
+  [OK] tuple_id=97: Modelcontract (double)
+  [OK] tuple_id=98: Modelcontract (single)
+  [OK] tuple_id=99: ENGIE Open (single)
+[OK] 99 contracts fetched for Essent
+  deselect status: 200
+
+Provider: Frank energie (index 23)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+  y=780: Discovered tuple_id=21
+  y=810: Discovered tuple_id=22
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=900: Discovered tuple_id=24
+  y=930: Discovered tuple_id=25
+  y=960: Discovered tuple_id=26
+  y=990: Discovered tuple_id=27
+  y=1020: Discovered tuple_id=27
+  y=1050: Discovered tuple_id=28
+  y=1080: Discovered tuple_id=29
+  y=1110: Discovered tuple_id=30
+  y=1140: Discovered tuple_id=31
+  y=1170: Discovered tuple_id=31
+  y=1200: Discovered tuple_id=32
+  y=1230: Discovered tuple_id=33
+  y=1260: Discovered tuple_id=34
+  y=1290: Discovered tuple_id=34
+  y=1320: Discovered tuple_id=35
+  y=1350: Discovered tuple_id=36
+  y=1380: Discovered tuple_id=37
+  y=1410: Discovered tuple_id=38
+  y=1440: Discovered tuple_id=38
+  y=1470: Discovered tuple_id=39
+  y=1500: Discovered tuple_id=40
+  y=1530: Discovered tuple_id=41
+  y=1560: Discovered tuple_id=42
+  y=1590: Discovered tuple_id=42
+  y=1620: Discovered tuple_id=43
+  y=1650: Discovered tuple_id=44
+  y=1680: Discovered tuple_id=45
+  y=1710: Discovered tuple_id=46
+  y=1740: Discovered tuple_id=46
+  y=1770: Discovered tuple_id=47
+  y=1800: Discovered tuple_id=48
+[OK] Discovered 48 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Groene Stroom en Gas Zeker & Vrij Flexibele looptijd (double)
+  [OK] tuple_id=10: ZekerheidsGarantie Actie Groene Stroom (NL) en Gas 1 jaar (single)
+  [OK] tuple_id=11: ZekerheidsGarantie Voordeel Groene Stroom (NL) en Gas 3 jaar (double)
+  [OK] tuple_id=12: ZekerheidsGarantie Voordeel Groene Stroom (NL) en Gas 3 jaar (single)
+  [OK] tuple_id=13: ZekerheidsGarantie Voordeel Groene Stroom (NL) en Gas 1 jaar (double)
+  [OK] tuple_id=14: ZekerheidsGarantie Voordeel Groene Stroom (NL) en Gas 1 jaar (single)
+  [OK] tuple_id=15: ZekerheidsGarantie Groene Stroom (NL) en Gas 3 jaar (double)
+  [OK] tuple_id=16: ZekerheidsGarantie Groene Stroom (NL) en Gas 3 jaar (single)
+  [OK] tuple_id=17: Groene Stroom NL en Gas Variabel AFL Flexibele looptijd (double)
+  [OK] tuple_id=18: Groene Stroom en Gas Variabel AFL Flexibele looptijd (double)
+  [OK] tuple_id=19: Groene Stroom NL en Gas Variabel AFL Flexibele looptijd (single)
+  [OK] tuple_id=2: Groene Stroom (NL) en Gas Variabel Flexibele looptijd (double)
+  [OK] tuple_id=20: Groene Stroom en Gas Variabel AFL Flexibele looptijd (single)
+  [OK] tuple_id=21: Groene Stroom en Gas Variabel ACQ Flexibele looptijd (double)
+  [OK] tuple_id=22: Groene Stroom en Gas Variabel ACQ Flexibele looptijd (single)
+  [OK] tuple_id=23: ZekerheidsGarantie Groene Stroom (NL) en Gas 1 jaar (double)
+  [OK] tuple_id=24: ZekerheidsGarantie Groene Stroom (NL) en Gas 1 jaar (single)
+  [OK] tuple_id=25: ZekerheidsGarantie Vast Groene Stroom (NL) en Gas 3 jaar (double)
+  [OK] tuple_id=26: ZekerheidsGarantie Vast Groene Stroom (NL) en Gas 3 jaar (single)
+  [OK] tuple_id=27: ZekerheidsGarantie Compleet Groene Stroom (NL) en Gas 3 jaar (double)
+  [OK] tuple_id=28: ZekerheidsGarantie Compleet Groene Stroom (NL) en Gas 3 jaar (single)
+  [OK] tuple_id=29: ZekerheidsGarantie Vast Groene Stroom (NL) en Gas 1 jaar (double)
+  [OK] tuple_id=3: Groene Stroom en Gas Zeker & Vrij Flexibele looptijd (single)
+  [OK] tuple_id=30: ZekerheidsGarantie Vast Groene Stroom (NL) en Gas 1 jaar (single)
+  [OK] tuple_id=31: ZekerheidsGarantie Vaste Prijs Groene Stroom (NL) en Gas 3 jaar (double)
+  [OK] tuple_id=32: ZekerheidsGarantie Vaste Prijs Groene Stroom (NL) en Gas 3 jaar (single)
+  [OK] tuple_id=33: ZekerheidsGarantie Compleet Groene Stroom (NL) en Gas 1 jaar (double)
+  [OK] tuple_id=34: ZekerheidsGarantie Compleet Groene Stroom (NL) en Gas 1 jaar (single)
+  [OK] tuple_id=35: Modelcontract (double)
+  [OK] tuple_id=36: Modelcontract (single)
+  [OK] tuple_id=37: ZekerheidsGarantie Compleet Klant Groene Stroom (NL) en Gas 3 jaar (double)
+  [OK] tuple_id=38: ZekerheidsGarantie Compleet Klant Groene Stroom (NL) en Gas 3 jaar (single)
+  [OK] tuple_id=39: Modelcontract (double)
+  [OK] tuple_id=4: Groene Stroom (NL) en Gas Variabel Flexibele looptijd (single)
+  [OK] tuple_id=40: ZekerheidsGarantie Vaste Prijs Groene Stroom (NL) en Gas 1 jaar (double)
+  [OK] tuple_id=41: Modelcontract (single)
+  [OK] tuple_id=42: ZekerheidsGarantie Vaste Prijs Groene Stroom (NL) en Gas 1 jaar (single)
+  [OK] tuple_id=43: Modelcontract (double)
+  [OK] tuple_id=44: Modelcontract (single)
+  [OK] tuple_id=45: Modelcontract (double)
+  [OK] tuple_id=46: Modelcontract (single)
+  [OK] tuple_id=47: ZekerheidsGarantie Compleet Klant Groene Stroom (NL) en Gas 1 jaar (double)
+  [OK] tuple_id=48: ZekerheidsGarantie Compleet Klant Groene Stroom (NL) en Gas 1 jaar (single)
+  [OK] tuple_id=5: ZekerheidsGarantie Actie Groene Stroom (NL) en Gas 3 jaar (double)
+  [OK] tuple_id=6: ZekerheidsGarantie Actie Groene Stroom (NL) en Gas 3 jaar (single)
+  [OK] tuple_id=7: Modelcontract (double)
+  [OK] tuple_id=8: Modelcontract (single)
+  [OK] tuple_id=9: ZekerheidsGarantie Actie Groene Stroom (NL) en Gas 1 jaar (double)
+[OK] 48 contracts fetched for Frank energie
+  deselect status: 200
+
+Provider: Greenchoice (index 24)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+[OK] Discovered 3 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Frank Energie Variabel Mei 2026 (single)
+  [OK] tuple_id=2: Modelcontract (single)
+  [OK] tuple_id=3: Modelcontract (single)
+[OK] 3 contracts fetched for Greenchoice
+  deselect status: 200
+
+Provider: Greenchoice Zakelijk (index 25)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+  y=780: Discovered tuple_id=21
+  y=810: Discovered tuple_id=22
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=900: Discovered tuple_id=24
+  y=930: Discovered tuple_id=25
+  y=960: Discovered tuple_id=26
+  y=990: Discovered tuple_id=27
+  y=1020: Discovered tuple_id=27
+  y=1050: Discovered tuple_id=28
+  y=1080: Discovered tuple_id=29
+  y=1110: Discovered tuple_id=30
+  y=1140: Discovered tuple_id=31
+  y=1170: Discovered tuple_id=31
+  y=1200: Discovered tuple_id=32
+  y=1230: Discovered tuple_id=33
+  y=1260: Discovered tuple_id=34
+  y=1290: Discovered tuple_id=34
+  y=1320: Discovered tuple_id=35
+  y=1350: Discovered tuple_id=36
+  y=1380: Discovered tuple_id=37
+  y=1410: Discovered tuple_id=38
+  y=1440: Discovered tuple_id=38
+  y=1470: Discovered tuple_id=39
+  y=1500: Discovered tuple_id=40
+  y=1530: Discovered tuple_id=41
+  y=1560: Discovered tuple_id=42
+  y=1590: Discovered tuple_id=42
+  y=1620: Discovered tuple_id=43
+  y=1650: Discovered tuple_id=44
+  y=1680: Discovered tuple_id=45
+  y=1710: Discovered tuple_id=46
+  y=1740: Discovered tuple_id=46
+  y=1770: Discovered tuple_id=47
+  y=1800: Discovered tuple_id=48
+  y=1830: Discovered tuple_id=49
+  y=1860: Discovered tuple_id=49
+  y=1890: Discovered tuple_id=50
+  y=1920: Discovered tuple_id=51
+  y=1950: Discovered tuple_id=52
+  y=1980: Discovered tuple_id=53
+  y=2010: Discovered tuple_id=53
+  y=2040: Discovered tuple_id=54
+  y=2070: Discovered tuple_id=55
+  y=2100: Discovered tuple_id=56
+  y=2130: Discovered tuple_id=57
+  y=2160: Discovered tuple_id=57
+  y=2190: Discovered tuple_id=58
+  y=2220: Discovered tuple_id=59
+  y=2250: Discovered tuple_id=60
+  y=2280: Discovered tuple_id=61
+  y=2310: Discovered tuple_id=61
+  y=2340: Discovered tuple_id=62
+  y=2370: Discovered tuple_id=63
+  y=2400: Discovered tuple_id=64
+  y=2430: Discovered tuple_id=64
+  y=2460: Discovered tuple_id=65
+  y=2490: Discovered tuple_id=66
+  y=2520: Discovered tuple_id=67
+  y=2550: Discovered tuple_id=68
+  y=2580: Discovered tuple_id=68
+  y=2610: Discovered tuple_id=69
+  y=2640: Discovered tuple_id=70
+  y=2670: Discovered tuple_id=71
+  y=2700: Discovered tuple_id=72
+  y=2730: Discovered tuple_id=72
+  y=2760: Discovered tuple_id=73
+  y=2790: Discovered tuple_id=74
+  y=2820: Discovered tuple_id=75
+  y=2850: Discovered tuple_id=76
+  y=2880: Discovered tuple_id=76
+  y=2910: Discovered tuple_id=77
+  y=2940: Discovered tuple_id=78
+  y=2970: Discovered tuple_id=79
+  y=3000: Discovered tuple_id=79
+  y=3030: Discovered tuple_id=80
+  y=3060: Discovered tuple_id=81
+  y=3090: Discovered tuple_id=82
+  y=3120: Discovered tuple_id=83
+  y=3150: Discovered tuple_id=83
+  y=3180: Discovered tuple_id=84
+  y=3210: Discovered tuple_id=85
+  y=3240: Discovered tuple_id=86
+  y=3270: Discovered tuple_id=87
+  y=3300: Discovered tuple_id=87
+  y=3330: Discovered tuple_id=88
+  y=3360: Discovered tuple_id=89
+  y=3390: Discovered tuple_id=90
+  y=3420: Discovered tuple_id=91
+  y=3450: Discovered tuple_id=91
+  y=3480: Discovered tuple_id=92
+  y=3510: Discovered tuple_id=93
+  y=3540: Discovered tuple_id=94
+  y=3570: Discovered tuple_id=94
+  y=3600: Discovered tuple_id=95
+  y=3630: Discovered tuple_id=96
+  y=3660: Discovered tuple_id=97
+  y=3690: Discovered tuple_id=98
+  y=3720: Discovered tuple_id=98
+  y=3750: Discovered tuple_id=99
+  y=3780: Discovered tuple_id=100
+  y=3810: Discovered tuple_id=101
+  y=3840: Discovered tuple_id=102
+  y=3870: Discovered tuple_id=102
+[OK] Discovered 102 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Collectief (single)
+  [OK] tuple_id=10: Groen&Vrij Wind en Zon Start (single)
+  [OK] tuple_id=100: Modelcontract (double)
+  [OK] tuple_id=101: Modelcontract (single)
+  [OK] tuple_id=102: Modelcontract (double)
+  [OK] tuple_id=11: Groen&Vrij Wind en Zon Start (double)
+  [OK] tuple_id=12: Nederlandse Windstroom Variabel (double)
+  [OK] tuple_id=13: Variabel met Korting (double)
+  [OK] tuple_id=14: Groen&Vrij Wind en Zon (double)
+  [OK] tuple_id=15: Collectief 2 jaar (single)
+  [OK] tuple_id=16: Collectief 2 jaar (double)
+  [OK] tuple_id=17: Groenbezig tot 1-1-2028 (single)
+  [OK] tuple_id=18: Groenbezig tot 1-1-2028 (double)
+  [OK] tuple_id=19: Collectief 1 jaar (single)
+  [OK] tuple_id=2: Collectief (double)
+  [OK] tuple_id=20: Collectief 1 jaar (double)
+  [OK] tuple_id=21: Wind uit Nederland CoBo 1 jaar met Korting (single)
+  [OK] tuple_id=22: Groengarantie Wind 1 jaar CoBo met Korting (single)
+  [OK] tuple_id=23: Wind uit Nederland CoBo 1 jaar met Korting (double)
+  [OK] tuple_id=24: Groengarantie Wind 1 jaar CoBo met Korting (double)
+  [OK] tuple_id=25: Collectief 2 jaar (single)
+  [OK] tuple_id=26: Collectief 2 jaar (double)
+  [OK] tuple_id=27: Nederlandse Windstroom tot 1-1-2028 (single)
+  [OK] tuple_id=28: Groenbezig 2 jaar (single)
+  [OK] tuple_id=29: Nederlandse Windstroom tot 1-1-2028 (double)
+  [OK] tuple_id=3: Collectief (single)
+  [OK] tuple_id=30: Groenbezig 2 jaar (double)
+  [OK] tuple_id=31: Groenbezig 1 jaar (single)
+  [OK] tuple_id=32: Groenbezig 1 jaar (double)
+  [OK] tuple_id=33: 200 (single)
+  [OK] tuple_id=34: 200 (double)
+  [OK] tuple_id=35: Collectief 2 jaar (single)
+  [OK] tuple_id=36: Collectief 2 jaar (double)
+  [OK] tuple_id=37: 300 (single)
+  [OK] tuple_id=38: 250 (single)
+  [OK] tuple_id=39: 250 (double)
+  [OK] tuple_id=4: Collectief (double)
+  [OK] tuple_id=40: 300 (double)
+  [OK] tuple_id=41: Collectief 2 jaar (single)
+  [OK] tuple_id=42: 250 (single)
+  [OK] tuple_id=43: 350 (single)
+  [OK] tuple_id=44: 150 (single)
+  [OK] tuple_id=45: 210 (single)
+  [OK] tuple_id=46: 300 (single)
+  [OK] tuple_id=47: 200 (single)
+  [OK] tuple_id=48: Collectief 2 jaar (double)
+  [OK] tuple_id=49: 350 (double)
+  [OK] tuple_id=5: Collectief (single)
+  [OK] tuple_id=50: 200 (double)
+  [OK] tuple_id=51: 250 (double)
+  [OK] tuple_id=52: 150 (double)
+  [OK] tuple_id=53: 300 (double)
+  [OK] tuple_id=54: 210 (double)
+  [OK] tuple_id=55: Collectief 2 jaar (single)
+  [OK] tuple_id=56: Collectief 2 jaar (double)
+  [OK] tuple_id=57: 100% Nederlandse wind tot 1-1-2028 (single)
+  [OK] tuple_id=58: Collectief tot 1-1-2028 (single)
+  [OK] tuple_id=59: Collectief tot 1-1-2028 (double)
+  [OK] tuple_id=6: Collectief (double)
+  [OK] tuple_id=60: 100% Nederlandse wind tot 1-1-2028 (double)
+  [OK] tuple_id=61: Collectief 1 jaar (single)
+  [OK] tuple_id=62: Collectief 1 jaar (double)
+  [OK] tuple_id=63: Collectief 1 jaar (single)
+  [OK] tuple_id=64: Collectief 1 jaar (double)
+  [OK] tuple_id=65: Collectief 1 jaar (single)
+  [OK] tuple_id=66: Collectief 1 jaar (double)
+  [OK] tuple_id=67: Collectief 2 jaar (single)
+  [OK] tuple_id=68: Nederlandse Windstroom 2 jaar (single)
+  [OK] tuple_id=69: Nederlandse Windstroom 2 jaar (double)
+  [OK] tuple_id=7: Variabel met Korting (single)
+  [OK] tuple_id=70: Collectief 2 jaar (double)
+  [OK] tuple_id=71: 100% Nederlandse wind 2 jaar (single)
+  [OK] tuple_id=72: 100% Nederlandse wind 2 jaar (double)
+  [OK] tuple_id=73: Slimgroen 1 jaar (single)
+  [OK] tuple_id=74: Slimgroen 1 jaar (double)
+  [OK] tuple_id=75: Modelcontract (single)
+  [OK] tuple_id=76: Modelcontract (double)
+  [OK] tuple_id=77: Collectief 1 jaar (single)
+  [OK] tuple_id=78: Nederlandse Windstroom 1 jaar (single)
+  [OK] tuple_id=79: Collectief 1 jaar (double)
+  [OK] tuple_id=8: Groen&Vrij Wind en Zon (single)
+  [OK] tuple_id=80: Nederlandse Windstroom 1 jaar (double)
+  [OK] tuple_id=81: 250 (single)
+  [OK] tuple_id=82: Collectief 2 jaar (single)
+  [OK] tuple_id=83: Collectief 2 jaar (double)
+  [OK] tuple_id=84: 250 (double)
+  [OK] tuple_id=85: 100% Nederlandse wind 1 jaar (single)
+  [OK] tuple_id=86: 100% Nederlandse wind 1 jaar (double)
+  [OK] tuple_id=87: 150 (single)
+  [OK] tuple_id=88: 150 (double)
+  [OK] tuple_id=89: Collectief 1 jaar (single)
+  [OK] tuple_id=9: Nederlandse Windstroom Variabel (single)
+  [OK] tuple_id=90: Collectief 1 jaar (double)
+  [OK] tuple_id=91: Collectief 3 jaar (single)
+  [OK] tuple_id=92: 500 (single)
+  [OK] tuple_id=93: Collectief 3 jaar (double)
+  [OK] tuple_id=94: 500 (double)
+  [OK] tuple_id=95: Nederlandse Windstroom Variabel Start (single)
+  [OK] tuple_id=96: Variabel met Korting start (single)
+  [OK] tuple_id=97: Nederlandse Windstroom Variabel Start (double)
+  [OK] tuple_id=98: Variabel met Korting start (double)
+  [OK] tuple_id=99: Modelcontract (single)
+[OK] 102 contracts fetched for Greenchoice Zakelijk
+  deselect status: 200
+
+Provider: Groenpand (index 26)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+  y=780: Discovered tuple_id=21
+  y=810: Discovered tuple_id=22
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=900: Discovered tuple_id=24
+  y=930: Discovered tuple_id=25
+  y=960: Discovered tuple_id=26
+  y=990: Discovered tuple_id=27
+  y=1020: Discovered tuple_id=27
+  y=1050: Discovered tuple_id=28
+  y=1080: Discovered tuple_id=29
+  y=1110: Discovered tuple_id=30
+  y=1140: Discovered tuple_id=31
+  y=1170: Discovered tuple_id=31
+  y=1200: Discovered tuple_id=32
+  y=1230: Discovered tuple_id=33
+  y=1260: Discovered tuple_id=34
+  y=1290: Discovered tuple_id=34
+  y=1320: Discovered tuple_id=35
+  y=1350: Discovered tuple_id=36
+  y=1380: Discovered tuple_id=37
+  y=1410: Discovered tuple_id=38
+  y=1440: Discovered tuple_id=38
+  y=1470: Discovered tuple_id=39
+  y=1500: Discovered tuple_id=40
+  y=1530: Discovered tuple_id=41
+  y=1560: Discovered tuple_id=42
+  y=1590: Discovered tuple_id=42
+  y=1620: Discovered tuple_id=43
+  y=1650: Discovered tuple_id=44
+  y=1680: Discovered tuple_id=45
+  y=1710: Discovered tuple_id=46
+  y=1740: Discovered tuple_id=46
+  y=1770: Discovered tuple_id=47
+  y=1800: Discovered tuple_id=48
+[OK] Discovered 48 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Groen&Vrij zakelijk collectief (single)
+  [OK] tuple_id=10: 1 jaar vast 100% NL Wind Vergelijkers C (double)
+  [OK] tuple_id=11: 1 jaar vast 100% NL Wind Vergelijkers A (double)
+  [OK] tuple_id=12: 1 jaar vast 100% NL Wind Vergelijkers A (single)
+  [OK] tuple_id=13: 1 jaar vast 100% NL Wind Vergelijkers D (single)
+  [OK] tuple_id=14: 1 jaar vast 100% NL Wind Vergelijkers B (single)
+  [OK] tuple_id=15: 1 jaar vast 100% NL Wind Vergelijkers C (single)
+  [OK] tuple_id=16: 1 jaar vast 100% NL Wind Vergelijkers (single)
+  [OK] tuple_id=17: Greenchoice Zakelijk 100% NL Wind voor collectieven 1 jaar (double)
+  [OK] tuple_id=18: Greenchoice Zakelijk 100% NL Wind voor collectieven 1 jaar (single)
+  [OK] tuple_id=19: 3 jaar vast 100% NL Wind (C) (double)
+  [OK] tuple_id=2: Groen&Vrij zakelijk collectief (double)
+  [OK] tuple_id=20: 1 jaar vast 100% NL Wind verlengen (double)
+  [OK] tuple_id=21: 3 jaar vast 100% NL Wind (C) (single)
+  [OK] tuple_id=22: 3 jaar vast 100% NL Wind verlengen (double)
+  [OK] tuple_id=23: 1 jaar vast 100% NL Wind verlengen (single)
+  [OK] tuple_id=24: 3 jaar vast 100% NL Wind verlengen (single)
+  [OK] tuple_id=25: 1 jaar vast 100% NL Wind (double)
+  [OK] tuple_id=26: 3 jaar vast 100% NL Wind (double)
+  [OK] tuple_id=27: 1 jaar vast 100% NL Wind (single)
+  [OK] tuple_id=28: Greenchoice Zakelijk 100% NL Wind voor collectieven 3 jaar (double)
+  [OK] tuple_id=29: 3 jaar vast 100% NL Wind (single)
+  [OK] tuple_id=3: Groen&Vrij zakelijk start (single)
+  [OK] tuple_id=30: Greenchoice Zakelijk 100% NL Wind voor collectieven 3 jaar (single)
+  [OK] tuple_id=31: Greenchoice Zakelijk 100% NL Wind voor Sportverenigingen 1 jaar (double)
+  [OK] tuple_id=32: 3 jaar vast 100% NL Wind (P) (double)
+  [OK] tuple_id=33: Greenchoice Zakelijk 100% NL Wind voor Sportverenigingen 3 jaar (double)
+  [OK] tuple_id=34: Greenchoice Zakelijk 100% NL Wind voor Sportverenigingen 1 jaar (single)
+  [OK] tuple_id=35: 3 jaar vast 100% NL Wind (P) (single)
+  [OK] tuple_id=36: Greenchoice Zakelijk 100% NL Wind voor Sportverenigingen 3 jaar (single)
+  [OK] tuple_id=37: 3 jaar vast 100% NL Wind (A) (double)
+  [OK] tuple_id=38: 3 jaar vast 100% NL Wind (A) (single)
+  [OK] tuple_id=39: 3 jaar vast 100% NL Wind (B) (double)
+  [OK] tuple_id=4: Groen & Vrij (single)
+  [OK] tuple_id=40: 3 jaar vast 100% NL Wind (B) (single)
+  [OK] tuple_id=41: 1 jaar vast 100% NL Wind (F) (double)
+  [OK] tuple_id=42: 3 jaar vast 100% NL Wind (F) (double)
+  [OK] tuple_id=43: Modelcontract (double)
+  [OK] tuple_id=44: 1 jaar vast 100% NL Wind (F) (single)
+  [OK] tuple_id=45: 3 jaar vast 100% NL Wind (F) (single)
+  [OK] tuple_id=46: Modelcontract (single)
+  [OK] tuple_id=47: Modelcontract (double)
+  [OK] tuple_id=48: Modelcontract (single)
+  [OK] tuple_id=5: Groen & Vrij (double)
+  [OK] tuple_id=6: Groen&Vrij zakelijk start (double)
+  [OK] tuple_id=7: 1 jaar vast 100% NL Wind Vergelijkers B (double)
+  [OK] tuple_id=8: 1 jaar vast 100% NL Wind Vergelijkers D (double)
+  [OK] tuple_id=9: 1 jaar vast 100% NL Wind Vergelijkers (double)
+[OK] 48 contracts fetched for Groenpand
+  deselect status: 200
+
+Provider: Gulf Gas + Power (index 27)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+[OK] Discovered 8 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Groenpand Nederlandse Groene stroom & CO2 gecompenseerd gas (double)
+  [OK] tuple_id=2: Groenpand Nederlandse Groene stroom & CO2 gecompenseerd gas (single)
+  [OK] tuple_id=3: Groenpand Nederlandse Groene stroom & Groen gas (double)
+  [OK] tuple_id=4: Groenpand Nederlandse Groene stroom & Groen gas (single)
+  [OK] tuple_id=5: Modelcontract (double)
+  [OK] tuple_id=6: Modelcontract (double)
+  [OK] tuple_id=7: Modelcontract (single)
+  [OK] tuple_id=8: Modelcontract (single)
+[OK] 8 contracts fetched for Gulf Gas + Power
+  deselect status: 200
+
+Provider: HalloSTROOM (index 28)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for HalloSTROOM
+  deselect status: 200
+
+Provider: HEM (index 29)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for HEM
+  deselect status: 200
+
+Provider: Hezelaer Energy (index 30)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for Hezelaer Energy
+  deselect status: 200
+
+Provider: Holland Energie (index 31)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=750: Discovered tuple_id=20
+  y=1020: Discovered tuple_id=27
+  y=1110: Discovered tuple_id=30
+  y=1200: Discovered tuple_id=32
+  y=1260: Discovered tuple_id=34
+[OK] Discovered 21 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Energiebesteding VastZeker 1 jaar (double)
+  [OK] tuple_id=10: Gezinsenergie VastZeker 3 jaar (double)
+  [OK] tuple_id=11: Energiebesteding VastZeker 3 jaar (single)
+  [OK] tuple_id=12: Energiebesteding VastZeker 3 jaar (double)
+  [OK] tuple_id=13: Gezinsenergie VastZeker 3 jaar (single)
+  [OK] tuple_id=14: Gezinsenergie VastZeker 3 jaar (double)
+  [OK] tuple_id=15: Energiebesteding VastZeker 6 maanden (double)
+  [OK] tuple_id=16: Energiebesteding VastZeker 1 jaar (double)
+  [OK] tuple_id=17: Energiebesteding VastZeker 1 jaar (single)
+  [OK] tuple_id=20: Energiebesteding VastZeker 6 maanden (single)
+  [OK] tuple_id=27: Modelcontract (single)
+  [OK] tuple_id=3: Energiebesteding VastZeker 6 maanden (double)
+  [OK] tuple_id=30: Modelcontract (single)
+  [OK] tuple_id=32: Gezinsenergie MaandFlex (single)
+  [OK] tuple_id=34: Modelcontract (single)
+  [OK] tuple_id=4: Gezinsenergie VastZeker 6 maanden (double)
+  [OK] tuple_id=5: Energiebesteding VastZeker 6 maanden (single)
+  [OK] tuple_id=6: Gezinsenergie VastZeker 6 maanden (single)
+  [OK] tuple_id=7: Energiebesteding VastZeker 3 jaar (single)
+  [OK] tuple_id=8: Energiebesteding VastZeker 3 jaar (double)
+  [OK] tuple_id=9: Gezinsenergie VastZeker 3 jaar (single)
+[OK] 21 contracts fetched for Holland Energie
+  deselect status: 200
+
+Provider: HVC (index 32)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+[OK] Discovered 6 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Vaste prijs contract (double)
+  [OK] tuple_id=2: Vaste prijs contract (single)
+  [OK] tuple_id=3: Modelcontract (single)
+  [OK] tuple_id=4: Modelcontract (double)
+  [OK] tuple_id=5: Modelcontract (double)
+  [OK] tuple_id=6: Modelcontract (single)
+[OK] 6 contracts fetched for HVC
+  deselect status: 200
+
+Provider: Innova Energie (index 33)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for Innova Energie
+  deselect status: 200
+
+Provider: Kikker Energie (index 34)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+[OK] Discovered 4 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Gas variabel / Elektriciteit variabel groen (single)
+  [OK] tuple_id=2: Gas variabel / Elektriciteit variabel groen (double)
+  [OK] tuple_id=3: Modelcontract (single)
+  [OK] tuple_id=4: Modelcontract (double)
+[OK] 4 contracts fetched for Kikker Energie
+  deselect status: 200
+
+Provider: Mega (index 35)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+  y=780: Discovered tuple_id=21
+  y=810: Discovered tuple_id=22
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=900: Discovered tuple_id=24
+  y=930: Discovered tuple_id=25
+  y=960: Discovered tuple_id=26
+  y=990: Discovered tuple_id=27
+  y=1020: Discovered tuple_id=27
+  y=1050: Discovered tuple_id=28
+  y=1080: Discovered tuple_id=29
+  y=1110: Discovered tuple_id=30
+  y=1140: Discovered tuple_id=31
+  y=1170: Discovered tuple_id=31
+  y=1200: Discovered tuple_id=32
+  y=1230: Discovered tuple_id=33
+  y=1260: Discovered tuple_id=34
+  y=1290: Discovered tuple_id=34
+  y=1320: Discovered tuple_id=35
+  y=1350: Discovered tuple_id=36
+  y=1380: Discovered tuple_id=37
+  y=1410: Discovered tuple_id=38
+  y=1440: Discovered tuple_id=38
+  y=1470: Discovered tuple_id=39
+  y=1500: Discovered tuple_id=40
+  y=1530: Discovered tuple_id=41
+  y=1560: Discovered tuple_id=42
+  y=1590: Discovered tuple_id=42
+[OK] Discovered 42 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Kikker Energie Vast Particulier (double)
+  [OK] tuple_id=10: Keurmerk Energie Vast Zakelijk & Particulier (double)
+  [OK] tuple_id=11: Dynamiq Energy Services Vast Particulier en Zakelijk (double)
+  [OK] tuple_id=12: Dakprofijt Vast Particulier en Zakelijk (double)
+  [OK] tuple_id=13: Polisa Vast Particulier (single)
+  [OK] tuple_id=14: Terzake Energie Vast Particulier (single)
+  [OK] tuple_id=15: Dynamiq Energy Services Vast Particulier en Zakelijk (single)
+  [OK] tuple_id=16: Dakprofijt Vast Particulier en Zakelijk (single)
+  [OK] tuple_id=17: Kikker Energie Vast Particulier Wederverkoper (single)
+  [OK] tuple_id=18: SamSam Vast Particulier (single)
+  [OK] tuple_id=19: Keurmerk Energie Vast Zakelijk & Particulier (single)
+  [OK] tuple_id=2: Kikker Energie Vast Particulier (single)
+  [OK] tuple_id=20: PulsePower Vast Particulier en Zakelijk (single)
+  [OK] tuple_id=21: Modelcontract (double)
+  [OK] tuple_id=22: Modelcontract (single)
+  [OK] tuple_id=23: Groenland Wattzorgeloos Particulier (double)
+  [OK] tuple_id=24: PulsePower Wattzorgeloos Particulier (double)
+  [OK] tuple_id=25: Keurmerk Energie Wattzorgeloos Zakelijk & Particulier (double)
+  [OK] tuple_id=26: Keurmerk Energie Wattzorgeloos Zakelijk & Particulier (single)
+  [OK] tuple_id=27: KUKO Energy Wattzorgeloos Particulier (double)
+  [OK] tuple_id=28: Kikker Energie Vrij Maand (double)
+  [OK] tuple_id=29: Dakprofijt Wattzorgeloos Particulier (double)
+  [OK] tuple_id=3: KUKO Energy Vast Particulier (double)
+  [OK] tuple_id=30: SamSam Wattzorgeloos Particulier (double)
+  [OK] tuple_id=31: Terzake Energie Transparant Particulier (double)
+  [OK] tuple_id=32: Dakprofijt Wattzorgeloos Particulier (single)
+  [OK] tuple_id=33: Kikker Energie Wattzorgeloos Particulier (single)
+  [OK] tuple_id=34: Polisa Wattzorgeloos Particulier (single)
+  [OK] tuple_id=35: SamSam Wattzorgeloos Particulier (single)
+  [OK] tuple_id=36: KUKO Energy Wattzorgeloos Particulier (single)
+  [OK] tuple_id=37: Kikker Energie Wattzorgeloos Particulier (double)
+  [OK] tuple_id=38: Polisa Wattzorgeloos Particulier (double)
+  [OK] tuple_id=39: Groenland Wattzorgeloos Particulier (single)
+  [OK] tuple_id=4: KUKO Energy Vast Particulier (single)
+  [OK] tuple_id=40: Kikker Energie Vrij Maand (single)
+  [OK] tuple_id=41: PulsePower Wattzorgeloos Particulier (single)
+  [OK] tuple_id=42: Terzake Energie Transparant Particulier (single)
+  [OK] tuple_id=5: PulsePower Vast Particulier en Zakelijk (double)
+  [OK] tuple_id=6: Polisa Vast Particulier (double)
+  [OK] tuple_id=7: SamSam Vast Particulier (double)
+  [OK] tuple_id=8: Kikker Energie Vast Particulier Wederverkoper (double)
+  [OK] tuple_id=9: Terzake Energie Vast Particulier (double)
+[OK] 42 contracts fetched for Mega
+  deselect status: 200
+
+Provider: NewEnergy (index 36)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+[OK] Discovered 8 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Variabel maandelijks Mei (double)
+  [OK] tuple_id=2: Variabel maandelijks Mei (single)
+  [OK] tuple_id=3: Modelcontract (double)
+  [OK] tuple_id=4: Modelcontract (double)
+  [OK] tuple_id=5: Modelcontract (single)
+  [OK] tuple_id=6: Modelcontract (single)
+  [OK] tuple_id=7: Modelcontract (single)
+  [OK] tuple_id=8: Modelcontract (double)
+[OK] 8 contracts fetched for NewEnergy
+  deselect status: 200
+
+Provider: Nextenergy (index 37)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for Nextenergy
+  deselect status: 200
+
+Provider: Nieuwestroom (index 38)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+[OK] Discovered 2 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (single)
+  [OK] tuple_id=2: Modelcontract (single)
+[OK] 2 contracts fetched for Nieuwestroom
+  deselect status: 200
+
+Provider: Noord Energie (index 39)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+[OK] Discovered 2 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (single)
+  [OK] tuple_id=2: Modelcontract (single)
+[OK] 2 contracts fetched for Noord Energie
+  deselect status: 200
+
+Provider: Om | nieuwe energie (index 40)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+[OK] Discovered 18 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Noord Energie vast Online 3 jaar (double)
+  [OK] tuple_id=10: Noord Energie Variabel (double)
+  [OK] tuple_id=11: Zuid Energie 1 jaar vast particulier (single)
+  [OK] tuple_id=12: Noord Energie 3 jaar vast (double)
+  [OK] tuple_id=13: Noord Energie Actie 1 jaar vast (single)
+  [OK] tuple_id=14: Noord Energie Actie 1 jaar vast (double)
+  [OK] tuple_id=15: Noord Energie 2 jaar vast (double)
+  [OK] tuple_id=16: Noord Energie 2 jaar vast (single)
+  [OK] tuple_id=17: Noord Energie 1 jaar vast (single)
+  [OK] tuple_id=18: Noord Energie 1 jaar vast (double)
+  [OK] tuple_id=2: Noord Energie vast Online 3 jaar (single)
+  [OK] tuple_id=3: Zuid Energie 3 jaar vast particulier (double)
+  [OK] tuple_id=4: Zuid Energie 3 jaar vast particulier (single)
+  [OK] tuple_id=5: Noord Energie Actie 3 jaar vast (double)
+  [OK] tuple_id=6: Noord Energie Actie 3 jaar vast (single)
+  [OK] tuple_id=7: Zuid Energie 1 jaar vast particulier (double)
+  [OK] tuple_id=8: Noord Energie 3 jaar vast (single)
+  [OK] tuple_id=9: Noord Energie Variabel (single)
+[OK] 18 contracts fetched for Om | nieuwe energie
+  deselect status: 200
+
+Provider: Opensource energie (index 41)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+[OK] Discovered 16 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Variabel 202601 (single)
+  [OK] tuple_id=10: Modelcontract (double)
+  [OK] tuple_id=11: Modelcontract (single)
+  [OK] tuple_id=12: Modelcontract (double)
+  [OK] tuple_id=13: Modelcontract (single)
+  [OK] tuple_id=14: Modelcontract (double)
+  [OK] tuple_id=15: Modelcontract (single)
+  [OK] tuple_id=16: Modelcontract (double)
+  [OK] tuple_id=2: Variabel 202601 (double)
+  [OK] tuple_id=3: 1 jaar vast (single)
+  [OK] tuple_id=4: 1 jaar vast (double)
+  [OK] tuple_id=5: Vast tot 2027 (single)
+  [OK] tuple_id=6: Vast tot 2027 (double)
+  [OK] tuple_id=7: Flex 202605 (double)
+  [OK] tuple_id=8: Modelcontract (single)
+  [OK] tuple_id=9: Flex 202605 (single)
+[OK] 16 contracts fetched for Opensource energie
+  deselect status: 200
+
+Provider: OXXIO (index 42)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+[OK] Discovered 4 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (single)
+  [OK] tuple_id=2: Modelcontract (single)
+  [OK] tuple_id=3: Modelcontract (double)
+  [OK] tuple_id=4: Modelcontract (double)
+[OK] 4 contracts fetched for OXXIO
+  deselect status: 200
+
+Provider: Powerpeers (index 43)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+  y=780: Discovered tuple_id=21
+  y=810: Discovered tuple_id=22
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=900: Discovered tuple_id=24
+  y=930: Discovered tuple_id=25
+  y=960: Discovered tuple_id=26
+  y=990: Discovered tuple_id=27
+  y=1020: Discovered tuple_id=27
+  y=1050: Discovered tuple_id=28
+  y=1080: Discovered tuple_id=29
+  y=1110: Discovered tuple_id=30
+  y=1140: Discovered tuple_id=31
+  y=1170: Discovered tuple_id=31
+  y=1200: Discovered tuple_id=32
+  y=1230: Discovered tuple_id=33
+  y=1260: Discovered tuple_id=34
+  y=1290: Discovered tuple_id=34
+  y=1320: Discovered tuple_id=35
+  y=1350: Discovered tuple_id=36
+  y=1380: Discovered tuple_id=37
+  y=1410: Discovered tuple_id=38
+  y=1440: Discovered tuple_id=38
+  y=1470: Discovered tuple_id=39
+  y=1500: Discovered tuple_id=40
+  y=1530: Discovered tuple_id=41
+  y=1560: Discovered tuple_id=42
+  y=1590: Discovered tuple_id=42
+  y=1620: Discovered tuple_id=43
+  y=1650: Discovered tuple_id=44
+  y=1680: Discovered tuple_id=45
+  y=1710: Discovered tuple_id=46
+  y=1740: Discovered tuple_id=46
+  y=1770: Discovered tuple_id=47
+  y=1800: Discovered tuple_id=48
+  y=1830: Discovered tuple_id=49
+  y=1860: Discovered tuple_id=49
+  y=1890: Discovered tuple_id=50
+  y=1920: Discovered tuple_id=51
+  y=1950: Discovered tuple_id=52
+[OK] Discovered 52 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Oxxio Stroom LosVast & Oxxio Gas LosVast (single)
+  [OK] tuple_id=10: Oxxio LosVast Nederlandse Windstroom & Oxxio Gas LosVast (double)
+  [OK] tuple_id=11: Oxxio Europese Windstroom Zeker 1 jaar & Oxxio gas Zeker 1 jaar (single)
+  [OK] tuple_id=12: Oxxio Europese Windstroom Zeker 1 jaar & Oxxio gas Zeker 1 jaar (double)
+  [OK] tuple_id=13: Oxxio Europese Windstroom Zeker 1 jaar & Oxxio gas Zeker 1 jaar (single)
+  [OK] tuple_id=14: Oxxio Europese Windstroom Zeker 1 jaar & Oxxio gas Zeker 1 jaar (double)
+  [OK] tuple_id=15: Oxxio Sales Oxxio.nl 3 jaar stroom & Oxxio Sales Oxxio.nl 3 jaar gas (double)
+  [OK] tuple_id=16: Oxxio Sales Oxxio.nl 3 jaar stroom & Oxxio Sales Oxxio.nl 3 jaar gas (single)
+  [OK] tuple_id=17: Oxxio 3 jaar: Nederlandse Windstroom & Oxxio Sales Oxxio.nl 3 jaar gas (double)
+  [OK] tuple_id=18: Oxxio 3 jaar: Nederlandse Windstroom & Oxxio Sales Oxxio.nl 3 jaar gas (single)
+  [OK] tuple_id=19: Oxxio Stroom LosVast & Oxxio Gas LosVast (single)
+  [OK] tuple_id=2: Oxxio Stroom LosVast & Oxxio Gas LosVast (double)
+  [OK] tuple_id=20: Oxxio Stroom LosVast & Oxxio Gas LosVast (double)
+  [OK] tuple_id=21: Oxxio LosVast Nederlandse Windstroom & Oxxio Gas LosVast (single)
+  [OK] tuple_id=22: Oxxio LosVast Nederlandse Windstroom & Oxxio Gas LosVast (double)
+  [OK] tuple_id=23: Oxxio Sales Oxxio.nl 1 jaar stroom & Oxxio Sales Oxxio.nl 1 jaar gas (single)
+  [OK] tuple_id=24: Oxxio Sales Oxxio.nl 1 jaar stroom & Oxxio gas Tel 1 jaar (single)
+  [OK] tuple_id=25: Oxxio Sales Oxxio.nl 1 jaar stroom & Oxxio Sales Oxxio.nl 1 jaar gas (double)
+  [OK] tuple_id=26: Oxxio Sales Oxxio.nl 1 jaar stroom & Oxxio gas Tel 1 jaar (double)
+  [OK] tuple_id=27: Oxxio 1 jaar: Nederlandse Windstroom & Oxxio Sales Oxxio.nl 1 jaar gas (single)
+  [OK] tuple_id=28: Oxxio 1 jaar: Nederlandse Windstroom & Oxxio Sales Oxxio.nl 1 jaar gas (double)
+  [OK] tuple_id=29: Oxxio Sales Oxxio.nl 1 jaar stroom & Oxxio Sales Oxxio.nl 1 jaar gas (single)
+  [OK] tuple_id=3: Oxxio LosVast Nederlandse Windstroom & Oxxio Gas LosVast (single)
+  [OK] tuple_id=30: Oxxio Sales Oxxio.nl 1 jaar stroom & Oxxio gas Tel 1 jaar (single)
+  [OK] tuple_id=31: Oxxio Stroom LosVast & Oxxio gas LosVast + BewusteBijdrage (single)
+  [OK] tuple_id=32: Oxxio Sales Oxxio.nl 1 jaar stroom & Oxxio Sales Oxxio.nl 1 jaar gas (double)
+  [OK] tuple_id=33: Oxxio Sales Oxxio.nl 1 jaar stroom & Oxxio gas Tel 1 jaar (double)
+  [OK] tuple_id=34: Oxxio Stroom LosVast & Oxxio gas LosVast + BewusteBijdrage (double)
+  [OK] tuple_id=35: Oxxio 1 jaar: Nederlandse Windstroom & Oxxio Sales Oxxio.nl 1 jaar gas (single)
+  [OK] tuple_id=36: Oxxio LosVast Nederlandse Windstroom & Oxxio gas LosVast + BewusteBijdrage (single)
+  [OK] tuple_id=37: Oxxio 1 jaar: Nederlandse Windstroom & Oxxio Sales Oxxio.nl 1 jaar gas (double)
+  [OK] tuple_id=38: Oxxio LosVast Nederlandse Windstroom & Oxxio gas LosVast + BewusteBijdrage (double)
+  [OK] tuple_id=39: Modelcontract (single)
+  [OK] tuple_id=4: Oxxio LosVast Nederlandse Windstroom & Oxxio Gas LosVast (double)
+  [OK] tuple_id=40: Modelcontract (double)
+  [OK] tuple_id=41: Modelcontract (single)
+  [OK] tuple_id=42: Modelcontract (double)
+  [OK] tuple_id=43: Oxxio Europese Windstroom Variabel & Oxxio Gas Variabel (single)
+  [OK] tuple_id=44: Oxxio Europese Windstroom Variabel & Oxxio Gas Variabel (double)
+  [OK] tuple_id=45: Oxxio Nederlandse Windstroom Variabel & Oxxio Gas Variabel (single)
+  [OK] tuple_id=46: Oxxio Nederlandse Windstroom Variabel & Oxxio Gas Variabel (double)
+  [OK] tuple_id=47: Oxxio Europese Windstroom Variabel & Oxxio Gas Variabel (single)
+  [OK] tuple_id=48: Oxxio Europese Windstroom Variabel & Oxxio Gas Variabel (double)
+  [OK] tuple_id=49: Oxxio Nederlandse Windstroom Variabel & Oxxio Gas Variabel (single)
+  [OK] tuple_id=5: Oxxio Stroom LosVast & Oxxio LosVast CO2-gecompenseerd gas (single)
+  [OK] tuple_id=50: Oxxio Nederlandse Windstroom Variabel & Oxxio Gas Variabel (double)
+  [OK] tuple_id=51: Modelcontract (single)
+  [OK] tuple_id=52: Modelcontract (double)
+  [OK] tuple_id=6: Oxxio Stroom LosVast & Oxxio LosVast CO2-gecompenseerd gas (double)
+  [OK] tuple_id=7: Oxxio LosVast Nederlandse Windstroom & Oxxio LosVast CO2-gecompenseerd gas (single)
+  [OK] tuple_id=8: Oxxio LosVast Nederlandse Windstroom & Oxxio LosVast CO2-gecompenseerd gas (double)
+  [OK] tuple_id=9: Oxxio LosVast Nederlandse Windstroom & Oxxio Gas LosVast (single)
+[OK] 52 contracts fetched for Powerpeers
+  deselect status: 200
+
+Provider: Pure Energie (index 44)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+[OK] Discovered 10 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Samen Groen VP1 (single)
+  [OK] tuple_id=10: Modelcontract (single)
+  [OK] tuple_id=2: Variabel (single)
+  [OK] tuple_id=3: Variabel & 25% Groen Gas (single)
+  [OK] tuple_id=4: Samen Groen VP1 (single)
+  [OK] tuple_id=5: Modelcontract (single)
+  [OK] tuple_id=6: Variabel & 100% Groen Gas (single)
+  [OK] tuple_id=7: Variabel (single)
+  [OK] tuple_id=8: Modelcontract (single)
+  [OK] tuple_id=9: Maandelijks Wisselend (single)
+[OK] 10 contracts fetched for Pure Energie
+  deselect status: 200
+
+Provider: PZEM (index 45)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+[OK] Discovered 20 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (double)
+  [OK] tuple_id=10: Pure Energie Plus (single)
+  [OK] tuple_id=11: Vast Consument 25% groen gas (double)
+  [OK] tuple_id=12: Vast Consument 25% groen gas (single)
+  [OK] tuple_id=13: Modelcontract (double)
+  [OK] tuple_id=14: Modelcontract (single)
+  [OK] tuple_id=15: Pure Energie Variabel (single)
+  [OK] tuple_id=16: Pure Energie Variabel (double)
+  [OK] tuple_id=17: Pure Energie Plus Variabel (single)
+  [OK] tuple_id=18: Pure Energie Plus Variabel (double)
+  [OK] tuple_id=19: Vast Consument 100% groen gas (double)
+  [OK] tuple_id=2: Modelcontract (single)
+  [OK] tuple_id=20: Vast Consument 100% groen gas (single)
+  [OK] tuple_id=3: Verlenging Pure Energie Plus (double)
+  [OK] tuple_id=4: Verlenging Consument (double)
+  [OK] tuple_id=5: Vast Consument (double)
+  [OK] tuple_id=6: Vast Consument (single)
+  [OK] tuple_id=7: Verlenging Consument (single)
+  [OK] tuple_id=8: Verlenging Pure Energie Plus (single)
+  [OK] tuple_id=9: Pure Energie Plus (double)
+[OK] 20 contracts fetched for PZEM
+  deselect status: 200
+
+Provider: Qwint Energie (index 46)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+[OK] Discovered 6 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (double)
+  [OK] tuple_id=2: Modelcontract (double)
+  [OK] tuple_id=3: Modelcontract (double)
+  [OK] tuple_id=4: Modelcontract (single)
+  [OK] tuple_id=5: Modelcontract (single)
+  [OK] tuple_id=6: Modelcontract (single)
+[OK] 6 contracts fetched for Qwint Energie
+  deselect status: 200
+
+Provider: Scholt Energy (index 47)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for Scholt Energy
+  deselect status: 200
+
+Provider: Shell Energy (index 48)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+[OK] Discovered 2 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (single)
+  [OK] tuple_id=2: Modelcontract (double)
+[OK] 2 contracts fetched for Shell Energy
+  deselect status: 200
+
+Provider: Tibber (index 49)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for Tibber
+  deselect status: 200
+
+Provider: UnitedConsumers (index 50)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for UnitedConsumers
+  deselect status: 200
+
+Provider: Vandebron (index 51)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=360: Discovered tuple_id=10
+  y=420: Discovered tuple_id=12
+  y=600: Discovered tuple_id=16
+  y=660: Discovered tuple_id=18
+  y=750: Discovered tuple_id=20
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=900: Discovered tuple_id=24
+  y=930: Discovered tuple_id=25
+  y=990: Discovered tuple_id=27
+  y=1080: Discovered tuple_id=29
+  y=1110: Discovered tuple_id=30
+  y=1140: Discovered tuple_id=31
+  y=1200: Discovered tuple_id=32
+  y=1230: Discovered tuple_id=33
+  y=1290: Discovered tuple_id=34
+  y=1320: Discovered tuple_id=35
+  y=1350: Discovered tuple_id=36
+  y=1380: Discovered tuple_id=37
+  y=1410: Discovered tuple_id=38
+  y=1440: Discovered tuple_id=38
+  y=1470: Discovered tuple_id=39
+  y=1500: Discovered tuple_id=40
+  y=1530: Discovered tuple_id=41
+  y=1560: Discovered tuple_id=42
+  y=1590: Discovered tuple_id=42
+  y=1620: Discovered tuple_id=43
+  y=1650: Discovered tuple_id=44
+  y=1680: Discovered tuple_id=45
+  y=1710: Discovered tuple_id=46
+  y=1740: Discovered tuple_id=46
+  y=1770: Discovered tuple_id=47
+  y=1800: Discovered tuple_id=48
+  y=1830: Discovered tuple_id=49
+  y=1860: Discovered tuple_id=49
+  y=1890: Discovered tuple_id=50
+  y=1920: Discovered tuple_id=51
+  y=1950: Discovered tuple_id=52
+[OK] Discovered 38 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Variabel onbepaalde tijd (single)
+  [OK] tuple_id=10: Regiokorting Delta (double)
+  [OK] tuple_id=12: Regiokorting Eneco (double)
+  [OK] tuple_id=16: Stapelkorting Vattenfall (double)
+  [OK] tuple_id=18: Stapelkorting Essent (double)
+  [OK] tuple_id=2: Variabel onbepaalde tijd (double)
+  [OK] tuple_id=20: Stapelkorting Delta (double)
+  [OK] tuple_id=23: Variabel onbepaalde tijd (double)
+  [OK] tuple_id=24: Variabel onbepaalde tijd (single)
+  [OK] tuple_id=25: Regiokorting ENGIE (double)
+  [OK] tuple_id=27: Modelcontract (double)
+  [OK] tuple_id=29: 3 jaar wind mee (single)
+  [OK] tuple_id=3: Regiokorting Vattenfall (single)
+  [OK] tuple_id=30: Regiokorting ENGIE (single)
+  [OK] tuple_id=31: 1 jaar wind mee (double)
+  [OK] tuple_id=32: 1 jaar wind mee (single)
+  [OK] tuple_id=33: 2 jaar vaste prijs (double)
+  [OK] tuple_id=34: 2 jaar vaste prijs (single)
+  [OK] tuple_id=35: Variabel onbepaalde tijd (double)
+  [OK] tuple_id=36: Modelcontract (double)
+  [OK] tuple_id=37: Modelcontract (single)
+  [OK] tuple_id=38: Variabel onbepaalde tijd (single)
+  [OK] tuple_id=39: 3 jaar vaste prijs (double)
+  [OK] tuple_id=4: Regiokorting Vattenfall (double)
+  [OK] tuple_id=40: Modelcontract (double)
+  [OK] tuple_id=41: 1 jaar vaste prijs (double)
+  [OK] tuple_id=42: 3 jaar vaste prijs (single)
+  [OK] tuple_id=43: 1 jaar vaste prijs (single)
+  [OK] tuple_id=44: Modelcontract (single)
+  [OK] tuple_id=45: Variabel onbepaalde tijd (double)
+  [OK] tuple_id=46: Variabel onbepaalde tijd (single)
+  [OK] tuple_id=47: 3 jaar vaste prijs (double)
+  [OK] tuple_id=48: 3 jaar vaste prijs (single)
+  [OK] tuple_id=49: Variabel onbepaalde tijd (double)
+  [OK] tuple_id=5: Variabel onbepaalde tijd (double)
+  [OK] tuple_id=50: Variabel onbepaalde tijd (single)
+  [OK] tuple_id=51: Modelcontract (double)
+  [OK] tuple_id=52: Modelcontract (single)
+[OK] 38 contracts fetched for Vandebron
+  deselect status: 200
+
+Provider: VanHelder (index 52)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+[OK] Discovered 16 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Variabel Contract (single)
+  [OK] tuple_id=10: Modelcontract (double)
+  [OK] tuple_id=11: Modelcontract (double)
+  [OK] tuple_id=12: Modelcontract (single)
+  [OK] tuple_id=13: Variabel Contract (single)
+  [OK] tuple_id=14: Variabel Contract (double)
+  [OK] tuple_id=15: Modelcontract (double)
+  [OK] tuple_id=16: Modelcontract (single)
+  [OK] tuple_id=2: Variabel Contract (double)
+  [OK] tuple_id=3: 3 Jaar Vast Contract (double)
+  [OK] tuple_id=4: 3 Jaar Vast Contract (single)
+  [OK] tuple_id=5: 2 Jaar Vast Contract (double)
+  [OK] tuple_id=6: 2 Jaar Vast Contract (single)
+  [OK] tuple_id=7: 1 Jaar Vast Contract (double)
+  [OK] tuple_id=8: 1 Jaar Vast Contract (single)
+  [OK] tuple_id=9: Modelcontract (single)
+[OK] 16 contracts fetched for VanHelder
+  deselect status: 200
+
+Provider: Vattenfall (index 53)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+[OK] Discovered 10 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: VanHelder 3 jaar vast (double)
+  [OK] tuple_id=10: Modelcontract (single)
+  [OK] tuple_id=2: VanHelder 3 jaar vast (single)
+  [OK] tuple_id=3: VanHelder 2 jaar vast (double)
+  [OK] tuple_id=4: VanHelder 2 jaar vast (single)
+  [OK] tuple_id=5: Flexibel (double)
+  [OK] tuple_id=6: Flexibel (single)
+  [OK] tuple_id=7: VanHelder 1 jaar vast (double)
+  [OK] tuple_id=8: VanHelder 1 jaar vast (single)
+  [OK] tuple_id=9: Modelcontract (double)
+[OK] 10 contracts fetched for Vattenfall
+  deselect status: 200
+
+Provider: Ventum (index 54)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+  y=630: Discovered tuple_id=17
+  y=660: Discovered tuple_id=18
+  y=690: Discovered tuple_id=19
+  y=720: Discovered tuple_id=19
+  y=750: Discovered tuple_id=20
+  y=780: Discovered tuple_id=21
+  y=810: Discovered tuple_id=22
+  y=840: Discovered tuple_id=23
+  y=870: Discovered tuple_id=23
+  y=900: Discovered tuple_id=24
+  y=930: Discovered tuple_id=25
+  y=960: Discovered tuple_id=26
+  y=990: Discovered tuple_id=27
+  y=1020: Discovered tuple_id=27
+  y=1050: Discovered tuple_id=28
+  y=1080: Discovered tuple_id=29
+  y=1110: Discovered tuple_id=30
+  y=1140: Discovered tuple_id=31
+  y=1170: Discovered tuple_id=31
+  y=1200: Discovered tuple_id=32
+  y=1230: Discovered tuple_id=33
+  y=1260: Discovered tuple_id=34
+  y=1290: Discovered tuple_id=34
+[OK] Discovered 34 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: BudgetStroom & BudgetGas (double)
+  [OK] tuple_id=10: Groen uit Nederland &Gas met CO2-compensatie (single)
+  [OK] tuple_id=11: Groen uit Nederland &MixGroen Gas (single)
+  [OK] tuple_id=12: Groen uit Nederland &MixGroen Gas (double)
+  [OK] tuple_id=13: Stroom &Gas (single)
+  [OK] tuple_id=14: Groen uit Nederland &Gas (double)
+  [OK] tuple_id=15: Stroom &Gas (double)
+  [OK] tuple_id=16: Groen uit Nederland &Gas (single)
+  [OK] tuple_id=17: Groen uit Nederland &Gas met CO2-compensatie (single)
+  [OK] tuple_id=18: Groen uit Nederland &Gas met CO2-compensatie (double)
+  [OK] tuple_id=19: Groen uit Nederland &MixGroen Gas (double)
+  [OK] tuple_id=2: BudgetStroom & BudgetGas (single)
+  [OK] tuple_id=20: Groen uit Nederland &MixGroen Gas (single)
+  [OK] tuple_id=21: Modelcontract (single)
+  [OK] tuple_id=22: Modelcontract (double)
+  [OK] tuple_id=23: Groen uit Nederland &PuurGroen Gas (double)
+  [OK] tuple_id=24: Groen uit Nederland &PuurGroen Gas (single)
+  [OK] tuple_id=25: Groen uit NL &Gas (double)
+  [OK] tuple_id=26: Groen uit NL &Gas (single)
+  [OK] tuple_id=27: Modelcontract (single)
+  [OK] tuple_id=28: Modelcontract (double)
+  [OK] tuple_id=29: Groen uit Nederland &PuurGroen Gas (double)
+  [OK] tuple_id=3: Stroom ActieprijsGas Actieprijs (double)
+  [OK] tuple_id=30: Groen uit Nederland &PuurGroen Gas (single)
+  [OK] tuple_id=31: Modelcontract (double)
+  [OK] tuple_id=32: Modelcontract (single)
+  [OK] tuple_id=33: Modelcontract (double)
+  [OK] tuple_id=34: Modelcontract (single)
+  [OK] tuple_id=4: Stroom ActieprijsGas Actieprijs (single)
+  [OK] tuple_id=5: Groen uit Nederland &Gas (single)
+  [OK] tuple_id=6: Stroom &Gas (double)
+  [OK] tuple_id=7: Stroom &Gas (single)
+  [OK] tuple_id=8: Groen uit Nederland &Gas (double)
+  [OK] tuple_id=9: Groen uit Nederland &Gas met CO2-compensatie (double)
+[OK] 34 contracts fetched for Ventum
+  deselect status: 200
+
+Provider: Vrijopnaam (index 55)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+[OK] Discovered 6 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Modelcontract (double)
+  [OK] tuple_id=2: Modelcontract (single)
+  [OK] tuple_id=3: VT Flexibel (single)
+  [OK] tuple_id=4: VT Flexibel (double)
+  [OK] tuple_id=5: Modelcontract (single)
+  [OK] tuple_id=6: Modelcontract (double)
+[OK] 6 contracts fetched for Vrijopnaam
+  deselect status: 200
+
+Provider: WoonEnergie (index 56)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+  y=0: Discovered tuple_id=1
+  y=30: Discovered tuple_id=1
+  y=60: Discovered tuple_id=2
+  y=90: Discovered tuple_id=3
+  y=120: Discovered tuple_id=4
+  y=150: Discovered tuple_id=4
+  y=180: Discovered tuple_id=5
+  y=210: Discovered tuple_id=6
+  y=240: Discovered tuple_id=7
+  y=270: Discovered tuple_id=8
+  y=300: Discovered tuple_id=8
+  y=330: Discovered tuple_id=9
+  y=360: Discovered tuple_id=10
+  y=390: Discovered tuple_id=11
+  y=420: Discovered tuple_id=12
+  y=450: Discovered tuple_id=12
+  y=480: Discovered tuple_id=13
+  y=510: Discovered tuple_id=14
+  y=540: Discovered tuple_id=15
+  y=570: Discovered tuple_id=16
+  y=600: Discovered tuple_id=16
+[OK] Discovered 16 unique tuple IDs
+Phase 2: Fetching full contract data...
+  [OK] tuple_id=1: Variabel energiezuinig maandtarief (double)
+  [OK] tuple_id=10: 1 jaar vast (double)
+  [OK] tuple_id=11: 1 jaar vast (single)
+  [OK] tuple_id=12: Modelcontract (double)
+  [OK] tuple_id=13: Modelcontract (single)
+  [OK] tuple_id=14: Modelcontract (double)
+  [OK] tuple_id=15: Modelcontract (single)
+  [OK] tuple_id=16: 1 jaar vast ZonZeker (double)
+  [OK] tuple_id=2: Variabel energiezuinig maandtarief (single)
+  [OK] tuple_id=3: 1 jaar VoordeelVast (double)
+  [OK] tuple_id=4: 1 jaar VoordeelVast (single)
+  [OK] tuple_id=5: Variabel Energiezuinig maandtarief (double)
+  [OK] tuple_id=6: Variabel Energiezuinig maandtarief (single)
+  [OK] tuple_id=7: 1 jaar vast ZonZeker (single)
+  [OK] tuple_id=8: Variabel Maandtarief (double)
+  [OK] tuple_id=9: Variabel Maandtarief (single)
+[OK] 16 contracts fetched for WoonEnergie
+  deselect status: 200
+
+Provider: Zonneplan (index 57)
+Selecting provider...
+  select status: 200
+Phase 1: Scanning Y positions to discover tuple IDs...
+[OK] Discovered 0 unique tuple IDs
+[OK] 0 contracts fetched for Zonneplan
+  deselect status: 200
+[OK] Saved 869 contracts to: C:\Users\20203525\Documents\2025 2026\WB4U\wb4y-webscraper\Attempt3\2026\contracts_mei 2026.json
+
+============================================================
+Extraction Complete!
+============================================================
+Total months processed: 1
+Time elapsed: 1207.9 seconds (20.1 minutes)
+  mei 2026 (2026/): 869 contracts (454 single, 415 double meter)
+
+[OK] Extraction completed
+
