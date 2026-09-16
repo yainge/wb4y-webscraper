@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daisycon Energy Widget Test</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
+    }
+    header {
+      background: #1e3a5f;
+      color: #fff;
+      padding: 1.5rem 2rem;
+    }
+    header h1 { margin: 0 0 .25rem; font-size: 1.5rem; }
+    header p { margin: 0; opacity: .8; }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .card h2 { margin-top: 0; font-size: 1.15rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Widget test page</h1>
+    <p>Daisycon energy comparison tool (mediaId 415069)</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Some page content above the widget</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. This paragraph is here to see how the widget sits between regular content.</p>
+    </section>
+
+    <section class="card">
+      <h2>Energy widget</h2>
+      <script type="text/javascript" src="https://daisycon.tools/energy-nl/app.js"></script>
+      <div class="dc-tool dc-energy-tool" data-config='{"mediaId":415069,"locale":"nl-NL","buttonText":"Bekijken"}'></div>
+    </section>
+
+    <section class="card">
+      <h2>Some page content below the widget</h2>
+      <p>More filler text so you can judge spacing and how the widget's height affects the rest of the page.</p>
+    </section>
+  </main>
+</body>
+</html>
