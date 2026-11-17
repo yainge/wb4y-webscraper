@@ -1,0 +1,240 @@
+/* Watt's Best for You — page styles + restyle of the Daisycon energy widget.
+ *
+ * The widget is restyled ONLY through its own CSS variables (--wle-*), which
+ * the widget terms allow ("Appearance adjustments, for example by using an
+ * alternative CSS, are allowed"). Content, order of offers and the Daisycon
+ * disclaimer are left untouched.
+ *
+ * The widget writes its base variables inline on .wle-v2, so overrides need
+ * !important to win.
+ */
+
+:root {
+  --wb-bg: #f6f5f1;
+  --wb-surface: #fcfcfb;
+  --wb-surface-2: #f1f0eb;
+  --wb-ink: #121a17;
+  --wb-ink-2: #4b524e;
+  --wb-ink-3: #6b726e;
+  --wb-line: #e1e0d9;
+  --wb-line-strong: #c3c2b7;
+  --wb-green: #145c48;
+  --wb-green-dark: #0e4637;
+  --wb-green-wash: #e7f0ec;
+  --wb-orange: #eb6834;
+  --wb-orange-ink: #a6401a;
+  --wb-orange-wash: #fcebe3;
+  --wb-radius: 14px;
+  --wb-shadow: 0 1px 2px rgba(18, 26, 23, .04), 0 4px 16px rgba(18, 26, 23, .06);
+  --wb-font: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--wb-font);
+  background: var(--wb-bg);
+  color: var(--wb-ink);
+  line-height: 1.5;
+}
+
+/* ---------- page chrome ---------- */
+
+.site-header {
+  background: var(--wb-surface);
+  border-bottom: 1px solid var(--wb-line);
+}
+.site-header__inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -.01em;
+  color: var(--wb-ink);
+  text-decoration: none;
+}
+.logo__mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: var(--wb-green);
+  display: grid;
+  place-items: center;
+}
+.logo__mark svg { width: 18px; height: 18px; }
+
+.hero {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 40px 16px 24px;
+}
+.hero__eyebrow {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--wb-orange-ink);
+  background: var(--wb-orange-wash);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin: 0 0 14px;
+}
+.hero h1 {
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+  line-height: 1.1;
+  letter-spacing: -.025em;
+  margin: 0 0 12px;
+  max-width: 18ch;
+}
+.hero p {
+  font-size: 1.075rem;
+  color: var(--wb-ink-2);
+  margin: 0 0 14px;
+  max-width: 62ch;
+}
+.proofline {
+  font-size: .9rem;
+  color: var(--wb-ink-3);
+  margin: 0;
+}
+
+main {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 16px 56px;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  letter-spacing: -.01em;
+  margin: 40px 0 6px;
+}
+.section-intro {
+  color: var(--wb-ink-2);
+  margin: 0 0 18px;
+  max-width: 70ch;
+}
+
+/* ---------- own suppliers (outside the Daisycon tool) ---------- */
+
+.own-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+.own-card {
+  background: var(--wb-surface);
+  border: 1px solid var(--wb-line);
+  border-radius: var(--wb-radius);
+  box-shadow: var(--wb-shadow);
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 20px;
+  align-items: start;
+}
+.own-card__name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.own-card__contract {
+  color: var(--wb-ink-2);
+  margin: 0;
+}
+.own-card__tags {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.tag {
+  font-size: .8rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--wb-surface-2);
+  color: var(--wb-ink-2);
+}
+.tag--cashback { background: var(--wb-green-wash); color: var(--wb-green-dark); font-weight: 600; }
+.tag--example  { background: var(--wb-orange-wash); color: var(--wb-orange-ink); font-weight: 600; }
+.own-card__rates {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.own-card__rate { margin: 0; font-size: .95rem; color: var(--wb-ink-2); }
+.own-card__rate strong { color: var(--wb-ink); font-size: 1.15rem; }
+.own-card__footer {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid var(--wb-line);
+  padding-top: 12px;
+  margin-top: 4px;
+}
+.own-card__updated { font-size: .82rem; color: var(--wb-ink-3); }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--wb-green);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+}
+.btn:hover { background: var(--wb-green-dark); }
+.btn:focus-visible { outline: 3px solid var(--wb-orange); outline-offset: 2px; }
+
+@media (max-width: 560px) {
+  .own-card { grid-template-columns: 1fr; }
+  .own-card__rates { text-align: left; }
+}
+
+/* ---------- Daisycon widget restyle (variables only) ---------- */
+
+.dc-energy-tool .wle-v2 {
+  --wle-font-family: var(--wb-font) !important;
+  --wle-font-size-body: 13px !important;
+  --wle-font-size-body-pc: 15px !important;
+  --wle-font-size-header: 17px !important;
+  --wle-font-size-header-pc: 19px !important;
+  --wle-font-size-special-pc: 26px !important;
+
+  --wle-color-active: var(--wb-green) !important;
+  --wle-color-active-darken: var(--wb-green-dark) !important;
+  --wle-color-default: var(--wb-green) !important;
+  --wle-color-secondary: var(--wb-orange) !important;
+  --wle-color-on-active: #ffffff !important;
+  --wle-color-inactive: var(--wb-line-strong) !important;
+  --wle-color-background-panel: var(--wb-surface) !important;
+  --wle-color-background: transparent !important;
+
+  --wle-font-color-default: var(--wb-ink) !important;
+  --wle-font-color-secondary: var(--wb-ink-2) !important;
+  --wle-font-color-tertiary: var(--wb-ink-3) !important;
+
+  --wle-line: var(--wb-line) !important;
+  --wle-surface-2: var(--wb-surface-2) !important;
+  --wle-surface-3: #ebe9e3 !important;
+
+  --wle-small-border-radius: var(--wb-radius) !important;
+  --wle-input-border-radius: 12px !important;
+  --wle-shadow-1: var(--wb-shadow) !important;
+}

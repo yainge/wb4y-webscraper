@@ -1,0 +1,96 @@
+{
+  "description": "Links naar de aanmeldflows en tariefpagina's van energieleveranciers waar de tarieven getoond worden. Status per 2026-11-17.",
+  "suppliers": [
+    {
+      "supplier": "Budget Thuis",
+      "type": "aanmeldflow",
+      "url": "https://www.budgetthuis.nl/energie/aanbod-op-maat?postalCode=5014LD&houseNumber=12&houseNumberExt=&p=1&buildingNr=12&buildingNrExt=&city=TILBURG&street=Paduaplein&noSmartMeter=0&elePeak=&eleOffPeak=&gasUsage=&eleSolarPeak=&eleSolarOffPeak=&isHasGas=1&isHasElectricity=1",
+      "automated": false,
+      "reason": "robots.txt blokkeert /*aanbod-op-maat; disclaimer verbiedt hergebruik zonder toestemming"
+    },
+    {
+      "supplier": "PowerPeers",
+      "type": "aanmeldflow",
+      "url": "https://powerpeers.nl/aanvragen/?pc=4191EJ&hn=51&sm=true",
+      "automated": true,
+      "reason": "geen websitevoorwaarden met verbod gevonden"
+    },
+    {
+      "supplier": "SamenOM",
+      "type": "openbare tariefpagina",
+      "url": "https://www.samenom.nl/tarieven/",
+      "automated": true,
+      "reason": "geen verbod gevonden"
+    },
+    {
+      "supplier": "Energiedirect",
+      "type": "aanmeldflow",
+      "url": "https://www.energiedirect.nl/energie/aanbod?funnel_id=64cb720e-8f7c-493f-abc9-7c21110b8df5",
+      "automated": false,
+      "reason": "blokkeert automatische toegang (403); funnel_id is een sessielink die verloopt"
+    },
+    {
+      "supplier": "Eneco",
+      "type": "aanmeldflow",
+      "url": "https://www.eneco.nl/duurzame-energie/bestellen2/productkeuze/looptijd/",
+      "automated": false,
+      "reason": "disclaimer verbiedt reproduceren/gebruiken zonder toestemming"
+    },
+    {
+      "supplier": "Essent",
+      "type": "aanmeldflow",
+      "url": "https://www.essent.nl/energie/aanbod?funnel_id=82ae9df7-61a6-4b43-a4f6-c762c8356602",
+      "automated": false,
+      "reason": "blokkeert automatische toegang (403); funnel_id is een sessielink die verloopt"
+    },
+    {
+      "supplier": "Greenchoice",
+      "type": "aanmeldflow",
+      "url": "https://www.greenchoice.nl/aanmelden-v2/?stap=aanbod",
+      "automated": false,
+      "reason": "disclaimer verbiedt opslaan in geautomatiseerd gegevensbestand"
+    },
+    {
+      "supplier": "Energiek",
+      "type": "aanmeldflow",
+      "url": "https://www.energiek.nl/energie/klant-worden/kies-je-contract",
+      "automated": false,
+      "reason": "gebruiksvoorwaarden art. 8 verbieden hergebruik van gegevens"
+    },
+    {
+      "supplier": "Oxxio",
+      "type": "aanmeldflow",
+      "url": "https://www.oxxio.nl/klant-worden/energie/productkeuze/looptijd/",
+      "automated": false,
+      "reason": "disclaimer verbiedt reproduceren/gebruiken zonder toestemming"
+    },
+    {
+      "supplier": "Vattenfall",
+      "type": "aanmeldflow",
+      "url": "https://www.vattenfall.nl/energie-aanbiedingen/powerdeal/bestellen#ps-content",
+      "automated": false,
+      "reason": "voorwaarden verbieden kopiëren zonder toestemming; Vattenfall deelt prijzen alleen via de Daisycon-vergelijker"
+    },
+    {
+      "supplier": "Vandebron",
+      "type": "aanmeldflow",
+      "url": "https://vandebron.nl/aanmelden/aanbod?address.zipCode=4191EJ&address.number=51&typeOfHome=townhouse&numberOfResidents=2&connectionType=electricity-and-gas&hasSmartMeter=true&smartAssets.hasChargePoint=false&smartAssets.hasHeatPump=false&smartAssets.hasHomeBattery=false&hasProduction=yes&productionEstimate=1700",
+      "automated": false,
+      "reason": "voorwaarden verbieden reproduceren/gebruiken zonder toestemming"
+    },
+    {
+      "supplier": "UnitedConsumers",
+      "type": "aanmeldflow",
+      "url": "https://www.unitedconsumers.com/energie/aanmelden?HPPostcode=5621AK&HPHuisnummer=54",
+      "automated": false,
+      "reason": "disclaimer verbiedt elektronisch kopiëren zonder toestemming"
+    },
+    {
+      "supplier": "Pure Energie",
+      "type": "aanmeldflow",
+      "url": "https://pure-energie.nl/groene-stroom/aanmelden/aanbod",
+      "automated": true,
+      "reason": "geen verbod gevonden"
+    }
+  ]
+}

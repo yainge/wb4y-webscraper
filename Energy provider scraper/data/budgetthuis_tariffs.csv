@@ -1,0 +1,2 @@
+postal_code,house_number,scraped_at,offer,electricity_eur_per_kwh,electricity_eur_per_kwh_raw,electricity_offpeak_eur_per_kwh,electricity_offpeak_eur_per_kwh_raw,gas_eur_per_m3,gas_eur_per_m3_raw
+5014LD,12,2026-11-17T09:50:29,1 jaar stroom & gas vast,0.32672,"€ 0,32672 / kWh",0.32672,"€ 0,32672 / kWh",1.7984,"€ 1,79840 / m³"
